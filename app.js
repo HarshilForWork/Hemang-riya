@@ -329,6 +329,14 @@
   const COUNTDOWN_TARGET = Date.UTC(2027, 0, 27, 12, 30, 0);
   const img = (n) => `assets/rh/${n}.jpg`;
 
+  // Stable screen height (CSS 100svh). window.innerHeight changes whenever a phone browser's address
+  // bar slides in or out while scrolling; using it made the opening animation jump on iPhones.
+  const vhProbe = document.createElement("div");
+  vhProbe.setAttribute("aria-hidden", "true");
+  vhProbe.style.cssText = "position:absolute;top:0;left:0;width:0;height:100vh;height:100svh;visibility:hidden;pointer-events:none";
+  document.body.appendChild(vhProbe);
+  const VH = () => vhProbe.offsetHeight || window.innerHeight;
+
   // Places a photo inside its box (bw x bh) so both faces are always fully visible.
   // Normally the photo fills the box (like object-fit: cover), centred on the faces. When the box is too
   // narrow or too short for that (e.g. a wide photo on a tall phone screen), the photo shrinks just enough
@@ -454,7 +462,7 @@
   }
 
   function renderHero(target) {
-    const vw = window.innerWidth, vh = window.innerHeight;
+    const vw = window.innerWidth, vh = VH();
     heroP += (target - heroP) * 0.16;
     if (Math.abs(target - heroP) < 0.0005) heroP = target;
     const p = heroP;
@@ -502,7 +510,7 @@
     });
   }
   function renderWords() {
-    const vh = window.innerHeight;
+    const vh = VH();
     wordBlocks.forEach(({ p, spans }) => {
       const r = p.getBoundingClientRect();
       const prog = (vh * 0.8 - r.top) / (r.height + vh * 0.45);
@@ -565,7 +573,7 @@
 
   let storyGeom = null;
   function layoutStory() {
-    const vw = window.innerWidth, vh = window.innerHeight;
+    const vw = window.innerWidth, vh = VH();
     const s = vh / 900;
     const mobile = vw < 768;
     // in Mix mode the Gujarati line under "our story" needs a little room above the stack
@@ -623,7 +631,7 @@
   function frame() {
     const y = window.scrollY;
     nav.classList.toggle("is-scrolled", y > 30);
-    const range = (hero.offsetHeight - window.innerHeight) * (1000 / 1200);
+    const range = (hero.offsetHeight - VH()) * (1000 / 1200);
     const target = clamp((y - hero.offsetTop) / range);
     const moving = renderHero(target);
     renderWords();
@@ -633,7 +641,17 @@
   }
   const requestFrame = () => { if (!ticking) { ticking = true; requestAnimationFrame(frame); } };
   window.addEventListener("scroll", requestFrame, { passive: true });
-  window.addEventListener("resize", () => { layoutStory(); measureName(); applyFocus(); heroP = -1; requestFrame(); });
+  // Re-lay-out only when the width or the stable height actually changed (an address bar sliding in or
+  // out changes neither). The animation is never reset, so nothing jumps.
+  let lastW = window.innerWidth, lastVH = VH();
+  window.addEventListener("resize", () => {
+    const w = window.innerWidth, h = VH();
+    if (w !== lastW || Math.abs(h - lastVH) > 1) {
+      lastW = w; lastVH = h;
+      layoutStory(); measureName(); applyFocus();
+    }
+    requestFrame();
+  });
   document.addEventListener("load", (e) => { if (e.target.matches && e.target.matches("img[data-n]")) applyFocus(e.target.parentElement); }, true);
 
   /* ---------------- REVEAL ---------------- */
@@ -852,7 +870,6 @@
     applyFocus();
     tick();
     measureName();
-    heroP = -1;
     requestFrame();
   }
 
@@ -897,5 +914,5 @@
   /* ---------------- START ---------------- */
   applyLang();
   // re-measure the hero name once the web fonts (incl. Gujarati) have loaded
-  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { measureName(); heroP = -1; requestFrame(); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { measureName(); requestFrame(); });
 })();
