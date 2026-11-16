@@ -4,6 +4,8 @@ A single-page wedding site for Riya & Hemang: our story, the Sangeet (22 January
 
 It's plain HTML, CSS and JavaScript — **no build step, no dependencies**.
 
+**New to this project (person or Claude)? Start with [CONTEXT.md](CONTEXT.md)** — it links to the full documentation in [docs/](docs/).
+
 ```
 index.html        page structure
 styles.css        all styling (desktop, tablet, phone)
@@ -11,6 +13,11 @@ app.js            all text (English + Gujarati), photos, animations
 assets/rh/*.jpg   photos (already upright and web-sized)
 vercel.json       Vercel settings (caching, no search indexing)
 robots.txt        asks search engines not to index the site
+.vercelignore     keeps docs/, tools/ and *.md out of the deployment
+CONTEXT.md        start here: project context + map of the docs
+docs/             full documentation (overview, architecture, content, photos, testing, deployment, decisions)
+tools/photos/     scripts to straighten photos and detect faces (macOS)
+tools/test/       headless-Chrome test harness and tests
 ```
 
 ## Deploy on Vercel

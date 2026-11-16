@@ -6,29 +6,32 @@ This takes about five minutes and is free. After it's set up, every RSVP lands a
 
 ## 1. Create the sheet and script
 
-1. Create a new Google Sheet, e.g. "Riya & Hemang RSVPs".
+1. Create a new Google Sheet, e.g. "Riya & Hemang RSVPs" (it can be empty — the script adds the header row).
 2. In the sheet, open **Extensions → Apps Script**.
 3. Delete what's there, paste the script below, and click **Save**.
 
 ```js
-// Receives RSVPs from the wedding website and adds one row per RSVP.
-const COLUMNS = [
-  "submittedAt", "name", "phone", "side", "events", "guests",
-  "fromMumbai", "when", "ticketHelp", "stay", "nights", "stayCount",
-  "dietary", "note", "language", "summary",
-];
+// Receives RSVPs from the Riya & Hemang website and adds one row per RSVP.
+const KEYS = ["submittedAt", "name", "phone", "side", "events", "guests", "fromMumbai", "when",
+  "ticketHelp", "stay", "nights", "stayCount", "dietary", "note", "language", "summary"];
+const HEADERS = ["Submitted at", "Name", "Phone", "Side", "Events", "Guests", "From Mumbai", "Travel date",
+  "Ticket help", "Needs stay", "Nights", "People needing stay", "Dietary", "Note", "Language", "Summary"];
 
 function doPost(e) {
   const lock = LockService.getScriptLock();
   lock.waitLock(10000);
   try {
-    const ss = SpreadsheetApp.getActiveSpreadsheet();
-    const sheet = ss.getSheetByName("RSVPs") || ss.insertSheet("RSVPs");
-    if (sheet.getLastRow() === 0) sheet.appendRow(COLUMNS);
+    const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheets()[0]; // first tab, whatever its name
+    if (sheet.getLastRow() === 0) sheet.appendRow(HEADERS);
     const d = JSON.parse(e.postData.contents);
-    const row = COLUMNS.map((k) => (Array.isArray(d[k]) ? d[k].join(", ") : d[k] ?? ""));
+    const row = KEYS.map((k) => {
+      const v = Array.isArray(d[k]) ? d[k].join(", ") : (d[k] ?? "");
+      // keep text as text: otherwise "+91 98..." is read as a formula and "=..." would run as one
+      return typeof v === "string" && v !== "" ? "'" + v : v;
+    });
     sheet.appendRow(row);
-    return ContentService.createTextOutput(JSON.stringify({ ok: true })).setMimeType(ContentService.MimeType.JSON);
+    return ContentService.createTextOutput(JSON.stringify({ ok: true }))
+      .setMimeType(ContentService.MimeType.JSON);
   } finally {
     lock.releaseLock();
   }
@@ -42,6 +45,8 @@ function doPost(e) {
 3. Set **Execute as:** *Me*, and **Who has access:** *Anyone*.
 4. Click **Deploy**, approve the permissions, and copy the **Web app URL** (it ends in `/exec`).
 
+If **Who has access** doesn't offer *Anyone* (only "Anyone within your organization"), your Google account is a work account whose admin blocks public web apps. Do the setup in a personal Gmail account instead.
+
 ## 3. Connect the website
 
 In `app.js`, find this line near the top and paste the URL between the quotes:
@@ -50,7 +55,7 @@ In `app.js`, find this line near the top and paste the URL between the quotes:
 const RSVP_ENDPOINT = "";
 ```
 
-Commit and push; Vercel redeploys automatically. New RSVPs will now appear in the "RSVPs" tab of the sheet.
+Commit and push; Vercel redeploys automatically. New RSVPs will now appear in the first tab of the sheet.
 
 ## What each column means
 
