@@ -45,11 +45,22 @@ Everything guests read lives near the top of `app.js`:
 | Pop-up pages (Sangeet, Wedding, Travel, RSVP…) | `OVERLAYS` |
 | FAQ | `FAQ` |
 | RSVP phone numbers | `CONTACTS` |
+| Train suggestions (26/27 Jan) | `TRAINS` |
+| RSVP form text (EN + Gujarati) | `FORM` |
+| Where RSVPs go | `RSVP_WHATSAPP`, `RSVP_ENDPOINT` |
 | Countdown target | `COUNTDOWN_TARGET` |
 
 ### Adding or replacing a photo
 
 Each photo needs a row in `PHOTOS` in `app.js`: `[width, height, x0, y0, x1, y1]`, where the last four numbers mark the area (both faces) that must always stay visible, as fractions of the photo. The site uses that area to avoid cutting anyone off on any screen size. Save photos upright (no EXIF rotation) and about 1600px on the long side.
+
+## RSVPs
+
+The RSVP form asks for name, phone, side, events, guest count, Mumbai → Nadiad travel date (showing suggested trains), help with tickets, and accommodation in Nadiad. When a guest submits, they get a summary to send to Hemang on WhatsApp.
+
+To also collect every RSVP in a Google Sheet, follow [docs/rsvp-google-sheet.md](docs/rsvp-google-sheet.md) (about five minutes, free).
+
+Train timings in `TRAINS` come from the Indian Railways timetable as listed in November 2026; the site asks guests to confirm on IRCTC when booking.
 
 ## Search engines
 

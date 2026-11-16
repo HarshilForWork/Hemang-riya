@@ -30,7 +30,7 @@
       sangeetVenue: "Bhanushali Wadi, Nerul", sangeetAddr: "Basveshewar Maharaj Marg, Sector 19A, Nerul East, Navi Mumbai 400706",
       weddingKicker: "The Wedding", weddingDate: "Wednesday, 27 January 2027",
       weddingVenue: "Aavishkaar Party Lawns & Banquet", weddingAddr: "Near Fatehpura High School, Fatepur, Nadiad, Gujarat 387370",
-      rsvpTitle: "RSVP", rsvpNote: "call or text hemang or harsh", rsvpBtn: "RSVP now",
+      rsvpTitle: "RSVP", rsvpNote: "rsvp, travel & stay — all in one form", rsvpBtn: "RSVP now",
       detailsTitle: "and now some additional details...",
       detailsSub: "Two cities, two celebrations, and everything you need to be there for both.",
       vision: "Two very different people — one who plans everything, one who plans nothing at all — are doing the rest of it together.",
@@ -59,7 +59,7 @@
       sangeetVenue: "ભાનુશાલી વાડી, નેરુલ", sangeetAddr: "બસવેશ્વર મહારાજ માર્ગ, સેક્ટર ૧૯એ, નેરુલ ઈસ્ટ, નવી મુંબઈ ૪૦૦૭૦૬",
       weddingKicker: "શુભ લગ્ન", weddingDate: "બુધવાર, ૨૭ જાન્યુઆરી ૨૦૨૭",
       weddingVenue: "આવિષ્કાર પાર્ટી લૉન્સ & બેન્ક્વેટ", weddingAddr: "ફતેહપુરા હાઈસ્કૂલ પાસે, ફતેપુર, નડિયાદ, ગુજરાત ૩૮૭૩૭૦",
-      rsvpTitle: "હાજરી જણાવશો", rsvpNote: "હેમાંગ અથવા હર્ષને ફોન કે મેસેજ કરશો", rsvpBtn: "હાજરી જણાવો",
+      rsvpTitle: "હાજરી જણાવશો", rsvpNote: "હાજરી, મુસાફરી અને રોકાણ — એક જ ફોર્મમાં", rsvpBtn: "હાજરી જણાવો",
       detailsTitle: "અને હવે થોડી વધુ વિગતો...",
       detailsSub: "બે શહેર, બે ઉજવણી — અને બંનેમાં હાજર રહેવા માટે જરૂરી બધી માહિતી.",
       vision: "બે સાવ અલગ સ્વભાવના લોકો — એક જે બધું જ પ્લાન કરે, અને એક જે કંઈ જ પ્લાન ન કરે — હવે બાકીનું જીવન સાથે વિતાવશે.",
@@ -215,8 +215,8 @@
   const CARDS = [
     { id: "sangeet", image: 20, en: ["Sangeet", "Friday, 22 January · Navi Mumbai"], gu: ["સંગીત", "શુક્રવાર, ૨૨ જાન્યુઆરી · નવી મુંબઈ"] },
     { id: "wedding", image: 31, en: ["Wedding", "Wednesday, 27 January · Nadiad"], gu: ["લગ્ન", "બુધવાર, ૨૭ જાન્યુઆરી · નડિયાદ"] },
-    { id: "travel", image: 30, en: ["Travel & Stay", "Mumbai to Nadiad, and where to stay."], gu: ["પ્રવાસ અને રોકાણ", "મુંબઈથી નડિયાદ, અને ક્યાં રોકાવું."] },
-    { id: "rsvp", image: 35, en: ["RSVP", "Call or text Hemang or Harsh."], gu: ["હાજરી જણાવો", "હેમાંગ અથવા હર્ષને ફોન કે મેસેજ કરો."] },
+    { id: "travel", image: 30, en: ["Travel & Stay", "Trains from Mumbai and your stay in Nadiad."], gu: ["પ્રવાસ અને રોકાણ", "મુંબઈથી ટ્રેનો અને નડિયાદમાં રોકાણ."] },
+    { id: "rsvp", image: 35, en: ["RSVP", "Attendance, travel and stay in one form."], gu: ["હાજરી જણાવો", "હાજરી, મુસાફરી અને રોકાણ — એક જ ફોર્મમાં."] },
     { id: "hashtag", image: 27, en: ["#RiyaSangHemang", "Share every moment with us."], gu: ["#RiyaSangHemang", "દરેક પળ અમારી સાથે શેર કરો."] },
     { id: "more", image: 23, en: ["More to come", "Other celebrations, shared soon."], gu: ["હજી ઘણું બાકી છે", "બીજા પ્રસંગોની વિગતો ટૂંક સમયમાં."] },
   ];
@@ -257,28 +257,14 @@
       },
     },
     travel: {
-      image: 30,
-      en: {
-        title: "Travel & Stay", description: "The Sangeet is in Navi Mumbai and the wedding is in Nadiad, Gujarat, five days later.",
-        sections: [
-          ["Mumbai to Nadiad", "Joining us for the wedding?", "If you're travelling from Mumbai to Nadiad, let us know when you RSVP and tell us if you'd like help planning the journey."],
-          ["Staying over", "Need a place to stay?", "Mention it when you RSVP, for either city, and we'll help you sort it out."],
-          ["Questions", "We're a call away", "Call or text Hemang (+91 97693 33516) or Harsh (+91 83698 94213) with anything you need."],
-        ],
-      },
-      gu: {
-        title: "પ્રવાસ અને રોકાણ", description: "સંગીત નવી મુંબઈમાં છે અને તેના પાંચ દિવસ પછી લગ્ન નડિયાદ, ગુજરાતમાં છે.",
-        sections: [
-          ["મુંબઈથી નડિયાદ", "લગ્નમાં પધારો છો?", "જો આપ મુંબઈથી નડિયાદ આવી રહ્યા હો, તો હાજરી જણાવતી વખતે અમને કહેજો, અને પ્રવાસના આયોજનમાં મદદ જોઈએ તો પણ જણાવજો."],
-          ["રોકાણ", "રહેવાની વ્યવસ્થા જોઈએ છે?", "બંનેમાંથી કોઈ પણ શહેર માટે, હાજરી જણાવતી વખતે કહેજો — અમે વ્યવસ્થામાં મદદ કરીશું."],
-          ["પ્રશ્નો", "અમે એક ફોન દૂર છીએ", "કંઈ પણ જરૂર હોય તો હેમાંગ (+91 97693 33516) અથવા હર્ષ (+91 83698 94213) ને ફોન કે મેસેજ કરો."],
-        ],
-      },
+      image: 30, travel: true,
+      en: { title: "Travel & Stay", description: "The Sangeet is in Navi Mumbai and the wedding is in Nadiad, Gujarat, five days later. Here's how to get from Mumbai to Nadiad, and where you'll stay." },
+      gu: { title: "પ્રવાસ અને રોકાણ", description: "સંગીત નવી મુંબઈમાં છે અને તેના પાંચ દિવસ પછી લગ્ન નડિયાદ, ગુજરાતમાં છે. મુંબઈથી નડિયાદ કેવી રીતે પહોંચવું અને ક્યાં રોકાવું, તેની માહિતી અહીં છે." },
     },
     rsvp: {
       image: 35, rsvp: true,
-      en: { title: "RSVP", description: "Kindly let us know which celebrations you'll be joining by calling or texting Hemang or Harsh." },
-      gu: { title: "હાજરી જણાવો", description: "આપ કયા પ્રસંગોમાં પધારશો તે હેમાંગ અથવા હર્ષને ફોન કે મેસેજ કરીને જણાવશો." },
+      en: { title: "RSVP", description: "Please let us know who's coming, and whether you'd like help with travel or a stay in Nadiad." },
+      gu: { title: "હાજરી જણાવો", description: "કોણ પધારશે, અને મુસાફરી કે નડિયાદમાં રહેવાની મદદ જોઈએ છે કે નહીં, તે જણાવશો." },
     },
     hashtag: {
       image: 27,
@@ -308,8 +294,8 @@
     en: [
       ["When and where is the Sangeet?", ["Friday, 22 January 2027, from 6:00 PM at Bhanushali Wadi, Basveshewar Maharaj Marg, Sector 19A, Nerul East, Navi Mumbai."]],
       ["When and where is the wedding?", ["Wednesday, 27 January 2027, from 6:00 PM at Aavishkaar Party Lawns & Banquet, near Fatehpura High School, Fatepur, Nadiad, Gujarat."]],
-      ["How do I RSVP?", ["Call or text Hemang (+91 97693 33516) or Harsh (+91 83698 94213).", "Let us know which events you'll attend and how many of you are coming."]],
-      ["I'm travelling from Mumbai to Nadiad. Can you help?", ["Yes. Tell us when you RSVP whether you need help with travel or a place to stay, and we'll help you plan."]],
+      ["How do I RSVP?", ["Tap RSVP at the top of this page and fill in the short form. It also asks about travel and accommodation.", "You can also call or text Hemang (+91 97693 33516) or Harsh (+91 83698 94213)."]],
+      ["I'm travelling from Mumbai to Nadiad. Can you help?", ["Yes. Travel & Stay lists suggested trains for 26 and 27 January, and the RSVP form lets you ask for help with tickets and a stay in Nadiad."]],
       ["I have dietary needs. Who should I tell?", ["Mention any dietary needs when you RSVP and we'll take care of it."]],
       ["Are there any other events?", ["More celebrations are being planned. We'll share the details here soon."]],
       ["Do you have a wedding hashtag?", ["Yes! Please share your photos with #RiyaSangHemang."]],
@@ -317,12 +303,84 @@
     gu: [
       ["સંગીત ક્યારે અને ક્યાં છે?", ["શુક્રવાર, ૨૨ જાન્યુઆરી ૨૦૨૭, સાંજે ૬:૦૦ વાગ્યાથી, ભાનુશાલી વાડી, બસવેશ્વર મહારાજ માર્ગ, સેક્ટર ૧૯એ, નેરુલ ઈસ્ટ, નવી મુંબઈ."]],
       ["લગ્ન ક્યારે અને ક્યાં છે?", ["બુધવાર, ૨૭ જાન્યુઆરી ૨૦૨૭, સાંજે ૬:૦૦ વાગ્યાથી, આવિષ્કાર પાર્ટી લૉન્સ & બેન્ક્વેટ, ફતેહપુરા હાઈસ્કૂલ પાસે, ફતેપુર, નડિયાદ, ગુજરાત."]],
-      ["હાજરી કેવી રીતે જણાવું?", ["હેમાંગ (+91 97693 33516) અથવા હર્ષ (+91 83698 94213) ને ફોન કે મેસેજ કરો.", "આપ કયા પ્રસંગોમાં પધારશો અને કેટલા લોકો આવશો તે જણાવજો."]],
-      ["હું મુંબઈથી નડિયાદ આવું છું. મદદ મળશે?", ["હા. હાજરી જણાવતી વખતે કહેજો કે પ્રવાસ કે રહેવાની વ્યવસ્થામાં મદદ જોઈએ છે, અમે આયોજનમાં મદદ કરીશું."]],
+      ["હાજરી કેવી રીતે જણાવું?", ["આ પેજની ઉપર 'હાજરી જણાવો' પર ટૅપ કરીને નાનું ફોર્મ ભરો. તેમાં મુસાફરી અને રોકાણ વિશે પણ પૂછ્યું છે.", "આપ હેમાંગ (+91 97693 33516) અથવા હર્ષ (+91 83698 94213) ને ફોન કે મેસેજ પણ કરી શકો છો."]],
+      ["હું મુંબઈથી નડિયાદ આવું છું. મદદ મળશે?", ["હા. 'પ્રવાસ અને રોકાણ'માં ૨૬ અને ૨૭ જાન્યુઆરીની સૂચવેલી ટ્રેનો છે, અને હાજરીના ફોર્મમાં ટિકિટ તથા નડિયાદમાં રોકાણ માટે મદદ માગી શકો છો."]],
       ["ભોજન સંબંધિત ખાસ જરૂરિયાત છે. કોને કહું?", ["હાજરી જણાવતી વખતે જ કહેજો, અમે ધ્યાન રાખીશું."]],
       ["બીજા કોઈ પ્રસંગો છે?", ["બીજી ઉજવણીઓનું આયોજન ચાલી રહ્યું છે. વિગતો અહીં ટૂંક સમયમાં જણાવીશું."]],
       ["લગ્નનો કોઈ હેશટૅગ છે?", ["હા! આપના ફોટા #RiyaSangHemang સાથે શેર કરજો."]],
     ],
+  };
+
+  // Suggested trains Mumbai -> Nadiad (ND). Times from the Indian Railways timetable as listed on
+  // ConfirmTkt and ixigo in November 2026; guests are asked to confirm on IRCTC when booking.
+  // 26 Jan 2027 is a Tuesday (Republic Day), 27 Jan 2027 a Wednesday.
+  const TRAINS = {
+    d26: [
+      { no: "12009", en: ["Shatabdi Express", "Mumbai Central"], gu: ["શતાબ્દી એક્સપ્રેસ", "મુંબઈ સેન્ટ્રલ"], dep: "06:20", arr: "11:46" },
+      { no: "12933", en: ["Karnavati Express", "Bandra Terminus"], gu: ["કર્ણાવતી એક્સપ્રેસ", "બાંદ્રા ટર્મિનસ"], dep: "13:55", arr: "19:39" },
+      { no: "12931", en: ["AC Double Decker Express", "Mumbai Central"], gu: ["એસી ડબલ ડેકર એક્સપ્રેસ", "મુંબઈ સેન્ટ્રલ"], dep: "14:30", arr: "20:23" },
+    ],
+    d27: [
+      { no: "22945", en: ["Saurashtra Mail", "Mumbai Central"], gu: ["સૌરાષ્ટ્ર મેલ", "મુંબઈ સેન્ટ્રલ"], dep: "21:05", arr: "03:47", when: "night" },
+      { no: "12901", en: ["Gujarat Mail", "Dadar"], gu: ["ગુજરાત મેલ", "દાદર"], dep: "21:40", arr: "04:08", when: "night" },
+      { no: "12009", en: ["Shatabdi Express", "Mumbai Central"], gu: ["શતાબ્દી એક્સપ્રેસ", "મુંબઈ સેન્ટ્રલ"], dep: "06:20", arr: "11:46", when: "morning" },
+    ],
+  };
+
+  // Optional: paste a Google Apps Script web-app URL here to also collect RSVPs in a Google Sheet
+  // (see docs/rsvp-google-sheet.md). When empty, RSVPs are sent to Hemang on WhatsApp.
+  const RSVP_ENDPOINT = "";
+  const RSVP_WHATSAPP = "919769333516"; // Hemang
+
+  const FORM = {
+    en: {
+      intro: "Please fill this in once for your family — it takes about a minute.",
+      secYou: "About you", name: "Your name", namePh: "Full name", phone: "Phone (WhatsApp)", phonePh: "+91",
+      side: "You're from", sideRiya: "Riya's side", sideHemang: "Hemang's side",
+      secEvents: "Which celebrations will you attend?",
+      evSangeet: "Sangeet", evSangeetSub: "Fri 22 Jan · Navi Mumbai", evWedding: "Wedding", evWeddingSub: "Wed 27 Jan · Nadiad",
+      evNone: "Sorry, we can't make it", guests: "How many people, including you?",
+      secTravel: "Getting to Nadiad", fromMumbai: "Are you travelling from Mumbai?", yes: "Yes", no: "No",
+      when: "When do you plan to travel?", when26: "On 26 Jan", when26Sub: "the day before", when27: "Reach on 27 Jan", when27Sub: "wedding day", whenUnsure: "Not sure yet",
+      ticketHelp: "Would you like help booking tickets?",
+      secStay: "Stay in Nadiad", stayQ: "Do you need accommodation?",
+      stayPlan: "We've planned a stay in Nadiad for guests coming from Mumbai. Tell us how many of you need a room and for which nights, and we'll share the details with you closer to the date.",
+      nights: "Which nights?", n26: "26 Jan", n27: "27 Jan", stayCount: "How many people need a stay?",
+      secMore: "Anything else", dietary: "Dietary needs", dietaryPh: "e.g. Jain, no onion or garlic, allergies", note: "A note for Riya & Hemang (optional)",
+      submit: "Send RSVP",
+      errName: "Please enter your name.", errPhone: "Please enter a phone number we can reach you on.", errSide: "Please choose a side.", errEvents: "Please choose at least one option.",
+      doneTitle: "Thank you!", doneSaved: "We've received your RSVP.",
+      doneSend: "One last step: tap below to send your RSVP to Hemang on WhatsApp.", doneSendAlso: "You can also send a copy to Hemang on WhatsApp.",
+      sendHemang: "Send to Hemang on WhatsApp", edit: "Edit my answers", preferCall: "Prefer to call?",
+      trains26: "Suggested trains on 26 January", trains27: "Suggested trains to reach on 27 January",
+      night: "Leaves the night of 26 Jan, reaches early on 27 Jan", morning: "Morning of 27 Jan",
+      nadiad: "Nadiad", trainNote: "Timings are from the Indian Railways timetable — please confirm on IRCTC when booking. 26 January is Republic Day, so book early.",
+      stayTitle: "Where you'll stay", stayCta: "Tell us in the RSVP form", rsvpCta: "RSVP now",
+    },
+    gu: {
+      intro: "કૃપા કરીને આપના પરિવાર માટે એક વાર આ ફોર્મ ભરશો — ફક્ત એક મિનિટ લાગશે.",
+      secYou: "આપની વિગત", name: "આપનું નામ", namePh: "પૂરું નામ", phone: "ફોન (વૉટ્સએપ)", phonePh: "+91",
+      side: "આપ કોના તરફથી છો?", sideRiya: "રિયા તરફથી", sideHemang: "હેમાંગ તરફથી",
+      secEvents: "આપ કયા પ્રસંગમાં પધારશો?",
+      evSangeet: "સંગીત", evSangeetSub: "શુક્ર ૨૨ જાન્યુ · નવી મુંબઈ", evWedding: "લગ્ન", evWeddingSub: "બુધ ૨૭ જાન્યુ · નડિયાદ",
+      evNone: "માફ કરશો, અમે આવી શકીશું નહીં", guests: "કુલ કેટલા લોકો (આપ સહિત)?",
+      secTravel: "નડિયાદની મુસાફરી", fromMumbai: "શું આપ મુંબઈથી આવો છો?", yes: "હા", no: "ના",
+      when: "આપ ક્યારે મુસાફરી કરવાનું વિચારો છો?", when26: "૨૬ જાન્યુઆરીએ", when26Sub: "આગલા દિવસે", when27: "૨૭ જાન્યુઆરીએ પહોંચીશું", when27Sub: "લગ્નના દિવસે", whenUnsure: "હજી નક્કી નથી",
+      ticketHelp: "ટિકિટ બુક કરવામાં મદદ જોઈએ છે?",
+      secStay: "નડિયાદમાં રોકાણ", stayQ: "શું આપને રહેવાની વ્યવસ્થા જોઈએ છે?",
+      stayPlan: "મુંબઈથી આવતા મહેમાનો માટે અમે નડિયાદમાં રહેવાની વ્યવસ્થા કરી છે. કેટલા લોકોને અને કઈ રાત માટે રહેવાની જરૂર છે તે જણાવો — વિગતો અમે તારીખ નજીક આવતા આપને મોકલીશું.",
+      nights: "કઈ રાત?", n26: "૨૬ જાન્યુ", n27: "૨૭ જાન્યુ", stayCount: "કેટલા લોકોને રહેવાની જરૂર છે?",
+      secMore: "બીજું કંઈ", dietary: "ભોજન સંબંધિત જરૂરિયાત", dietaryPh: "દા.ત. જૈન, કાંદા-લસણ વગર, એલર્જી", note: "રિયા અને હેમાંગ માટે સંદેશ (વૈકલ્પિક)",
+      submit: "હાજરી મોકલો",
+      errName: "કૃપા કરીને આપનું નામ લખો.", errPhone: "કૃપા કરીને આપનો ફોન નંબર લખો.", errSide: "કૃપા કરીને પસંદ કરો.", errEvents: "કૃપા કરીને ઓછામાં ઓછો એક વિકલ્પ પસંદ કરો.",
+      doneTitle: "આભાર!", doneSaved: "આપની હાજરી અમને મળી ગઈ છે.",
+      doneSend: "છેલ્લું પગલું: નીચે ટૅપ કરીને આપની હાજરી વૉટ્સએપ પર હેમાંગને મોકલો.", doneSendAlso: "આપ તેની નકલ વૉટ્સએપ પર હેમાંગને પણ મોકલી શકો છો.",
+      sendHemang: "વૉટ્સએપ પર હેમાંગને મોકલો", edit: "જવાબ બદલો", preferCall: "ફોન કરવો છે?",
+      trains26: "૨૬ જાન્યુઆરીની સૂચવેલી ટ્રેનો", trains27: "૨૭ જાન્યુઆરીએ પહોંચવા માટે સૂચવેલી ટ્રેનો",
+      night: "૨૬ની રાત્રે ઊપડે, ૨૭ની વહેલી સવારે પહોંચે", morning: "૨૭ની સવારે",
+      nadiad: "નડિયાદ", trainNote: "સમય ભારતીય રેલવેના સમયપત્રક મુજબ છે — ટિકિટ બુક કરતી વખતે IRCTC પર ખાતરી કરી લેજો. ૨૬ જાન્યુઆરી પ્રજાસત્તાક દિન છે, એટલે વહેલું બુકિંગ કરજો.",
+      stayTitle: "આપ ક્યાં રોકાશો", stayCta: "હાજરીના ફોર્મમાં જણાવો", rsvpCta: "હાજરી જણાવો",
+    },
   };
 
   // Wedding: 2027-01-27 18:00 IST (UTC+5:30)
@@ -336,6 +394,13 @@
   vhProbe.style.cssText = "position:absolute;top:0;left:0;width:0;height:100vh;height:100svh;visibility:hidden;pointer-events:none";
   document.body.appendChild(vhProbe);
   const VH = () => vhProbe.offsetHeight || window.innerHeight;
+  // The opening section is sized to the LARGE viewport (100lvh: address bar hidden) so no strip opens up
+  // at the bottom when the bar slides away; text inside it is kept within the small viewport (always visible).
+  const lvhProbe = vhProbe.cloneNode();
+  lvhProbe.style.height = "100vh";
+  lvhProbe.style.height = "100lvh";
+  document.body.appendChild(lvhProbe);
+  const VHL = () => lvhProbe.offsetHeight || window.innerHeight;
 
   // Places a photo inside its box (bw x bh) so both faces are always fully visible.
   // Normally the photo fills the box (like object-fit: cover), centred on the faces. When the box is too
@@ -345,13 +410,14 @@
     const p = PHOTOS[n];
     if (!p || !bw || !bh) return;
     const [W, H, x0, y0, x1, y1] = p;
-    const m = 0.03; // a little breathing room around the faces
+    const m = 0.03; // a little breathing room around the faces when centring
     const fx0 = clamp(x0 - m), fx1 = clamp(x1 + m), fy0 = clamp(y0 - m), fy1 = clamp(y1 + m);
     const cover = Math.max(bw / W, bh / H);
-    const fit = Math.min(bw / ((fx1 - fx0) * W), bh / ((fy1 - fy0) * H));
-    const fitTight = Math.min(bw / ((x1 - x0) * W), bh / ((y1 - y0) * H));
-    // fill the box whenever the faces themselves fit; only shrink (with breathing room) when they don't
-    const sc = cover <= fitTight ? cover : Math.min(cover, fit);
+    // largest size at which the faces area (which already has padding) still fits inside the box
+    const fit = Math.min(bw / ((x1 - x0) * W), bh / ((y1 - y0) * H));
+    // One continuous rule: fill the box, but never so much that a face is cut. (Switching between two
+    // rules made the photo pop a little larger partway through the opening animation.)
+    const sc = Math.min(cover, fit);
     const dw = W * sc, dh = H * sc;
     const place = (box, d, a0, a1) => (d >= box ? clamp(box / 2 - ((a0 + a1) / 2) * d, box - d, 0) : (box - d) / 2);
     el.style.width = `${dw}px`;
@@ -370,8 +436,17 @@
       parent.insertBefore(fill, parent.firstChild);
     }
     if (fill) fill.hidden = !needsFill;
-    // tells the CSS which edges to fade into the blur ("v" = top/bottom, "h" = left/right)
-    el.dataset.fill = !needsFill ? "" : (dh < bh - 1 ? "v" : "") + (dw < bw - 1 ? "h" : "");
+    // Fade the photo's edges into the blur. The fade grows with the gap and is 0 when the photo fills the
+    // box, so it changes smoothly during animations instead of switching on and off (that read as a glitch).
+    const fv = Math.min(9, (Math.max(0, bh - dh) / 2 / dh) * 140);
+    const fh = Math.min(9, (Math.max(0, bw - dw) / 2 / dw) * 140);
+    if (fv > 0.05 || fh > 0.05) {
+      const m = `linear-gradient(to bottom, transparent 0, #000 ${fv.toFixed(2)}%, #000 ${(100 - fv).toFixed(2)}%, transparent 100%), linear-gradient(to right, transparent 0, #000 ${fh.toFixed(2)}%, #000 ${(100 - fh).toFixed(2)}%, transparent 100%)`;
+      el.style.webkitMaskImage = m; el.style.maskImage = m;
+      el.style.webkitMaskComposite = "source-in"; el.style.maskComposite = "intersect";
+    } else if (el.style.maskImage && el.style.maskImage !== "none") {
+      el.style.webkitMaskImage = "none"; el.style.maskImage = "none";
+    }
   }
   function applyFocus(root = document) {
     $$("img[data-n]", root).forEach((el) => {
@@ -461,37 +536,98 @@
     heroTitle.style.fontSize = prev;
   }
 
+  // Phone layout: main photo in the middle at full width, two side photos above and two below,
+  // aligned in a grid with equal gaps so nothing overlaps. Built inside the always-visible height.
+  function phoneLayout(vw, vhs) {
+    const pad = 16, gap = 12, top = 86, bottom = 18;
+    const ratio = PHOTOS[HERO_PHOTO][0] / PHOTOS[HERO_PHOTO][1];
+    const avail = vhs - top - bottom;
+    const rowW = (vw - pad * 2 - gap) / 2;
+    const minRow = Math.min(rowW * 0.72, 140);
+    let mainW = vw - pad * 2;
+    let mainH = mainW / ratio;
+    if (avail - mainH - gap * 2 < minRow * 2) { // short screen: shrink the main photo a little
+      mainH = Math.max(110, avail - gap * 2 - minRow * 2);
+      mainW = Math.min(vw - pad * 2, mainH * ratio);
+      mainH = mainW / ratio;
+    }
+    const rowH = Math.max(80, Math.min(rowW * 1.25, (avail - mainH - gap * 2) / 2));
+    const y = top + Math.max(0, (avail - (rowH * 2 + mainH + gap * 2)) / 2);
+    const yBottom = y + rowH + gap + mainH + gap;
+    const xRight = pad + rowW + gap;
+    return {
+      main: { x: (vw - mainW) / 2, y: y + rowH + gap, w: mainW, h: mainH },
+      // order matches the four side photos in the page: top-left, bottom-left, top-right, bottom-right
+      g: [{ x: pad, y, w: rowW, h: rowH }, { x: pad, y: yBottom, w: rowW, h: rowH },
+          { x: xRight, y, w: rowW, h: rowH }, { x: xRight, y: yBottom, w: rowW, h: rowH }],
+    };
+  }
+
+  let layoutKey = "";
+  let phone = null;
+  function layoutGallery(vw, vhs, mobile) {
+    const key = `${vw}x${vhs}x${mobile}`;
+    if (key === layoutKey) return;
+    layoutKey = key;
+    phone = mobile ? phoneLayout(vw, vhs) : null;
+    gallery.forEach((g, i) => {
+      if (phone) {
+        const r = phone.g[i];
+        // on phones the side photos sit BEHIND the main photo, which reveals them as it shrinks
+        Object.assign(g.style, { left: `${r.x}px`, top: `${r.y}px`, width: `${r.w}px`, height: `${r.h}px`, borderRadius: "18px", zIndex: "0" });
+      } else {
+        Object.assign(g.style, { left: "", top: "", width: "", height: "", borderRadius: "", zIndex: "" });
+      }
+      const im = $("img[data-n]", g);
+      placeFocus(im, +im.dataset.n, g.clientWidth, g.clientHeight);
+    });
+  }
+
   function renderHero(target) {
-    const vw = window.innerWidth, vh = VH();
+    const vw = window.innerWidth, vh = VHL(), vhs = VH();
     heroP += (target - heroP) * 0.16;
     if (Math.abs(target - heroP) < 0.0005) heroP = target;
     const p = heroP;
     // phones, and tablets held upright, use the phone layout for this section
     const mobile = vw < 768 || (vh > vw * 1.15 && vw < 1100);
+    layoutGallery(vw, vhs, mobile);
 
     const x0 = vw * 0.015, y0 = 14, w0 = vw - x0 * 2, h0 = vh - 27;
-    // on phones the photo settles into a box shaped like the photo itself, so nothing is cut
-    // (it stays in the gap between the top and bottom side photos: at most 33% of the screen height)
-    const ratio = PHOTOS[HERO_PHOTO][0] / PHOTOS[HERO_PHOTO][1];
-    const w1 = mobile ? Math.min(vw * 0.86, vh * 0.33 * ratio) : vw * 0.485;
-    const h1 = mobile ? w1 / ratio : vh * 0.829;
-    const x1 = (vw - w1) / 2, y1 = (vh - h1) / 2 + (mobile ? 0 : vh * 0.022);
-    const w = lerp(w0, w1, p), h = lerp(h0, h1, p);
+    let x1, y1, w1, h1;
+    if (phone) ({ x: x1, y: y1, w: w1, h: h1 } = phone.main);
+    else { w1 = vw * 0.485; h1 = vh * 0.829; x1 = (vw - w1) / 2; y1 = (vh - h1) / 2 + vh * 0.022; }
+    const w = lerp(w0, w1, p), h = lerp(h0, h1, p), top = lerp(y0, y1, p);
     heroMain.style.left = `${lerp(x0, x1, p)}px`;
-    heroMain.style.top = `${lerp(y0, y1, p)}px`;
+    heroMain.style.top = `${top}px`;
     heroMain.style.width = `${w}px`;
     heroMain.style.height = `${h}px`;
-    heroMain.style.borderRadius = `${lerp(18, 41, p)}px`;
+    heroMain.style.borderRadius = `${lerp(18, mobile ? 22 : 41, p)}px`;
     placeFocus(heroImg, HERO_PHOTO, w, h);
 
-    // the name always spans ~64% of the photo's width, whatever the language
+    // the name always spans ~64% of the photo's width, whatever the language, and sits inside the part
+    // of the photo that's on screen even when the address bar is showing
     heroTitle.style.fontSize = `${(w * (mobile ? 0.82 : 0.64)) / nameW100 * 100}px`;
+    const hiddenBelow = Math.max(0, top + h - vhs);
+    heroTitle.style.bottom = `${hiddenBelow + 0.13 * (h - hiddenBelow)}px`;
     heroTitle.style.opacity = 1 - clamp((p - 0.12) / 0.5);
     heroPrompt.style.opacity = 1 - clamp(p / 0.12);
+    heroPrompt.style.bottom = mobile ? `${vh - vhs + 28}px` : "";
 
     gallery.forEach((g, i) => {
+      if (mobile) {
+        // phone: each photo starts tucked in towards the middle (behind the main photo) and slides
+        // outwards into its grid slot as the main photo shrinks
+        const t = clamp((p - 0.28) / 0.62);
+        const e = easeOutCubic(t);
+        const tx = (1 - e) * -G_DIR[i] * vw * 0.14;
+        const ty = (1 - e) * (i % 2 === 0 ? 1 : -1) * vhs * 0.14;
+        g.style.transform = `translate3d(${tx}px, ${ty}px, 0) scale(${0.9 + 0.1 * e})`;
+        g.style.opacity = clamp(t * 2.5);
+        return;
+      }
       const t = clamp((p - G_START[i]) / 0.62);
       const e = easeOutCubic(t);
+      // desktop: photos fly in from the sides
       const tx = (1 - e) * G_DIR[i] * vw * 0.5;
       const ty = (1 - e) * vh * 0.444;
       g.style.transform = `translate3d(${tx}px, ${ty}px, 0) scale(${0.96 + 0.04 * e})`;
@@ -631,7 +767,7 @@
   function frame() {
     const y = window.scrollY;
     nav.classList.toggle("is-scrolled", y > 30);
-    const range = (hero.offsetHeight - VH()) * (1000 / 1200);
+    const range = (hero.offsetHeight - VHL()) * (1000 / 1200);
     const target = clamp((y - hero.offsetTop) / range);
     const moving = renderHero(target);
     renderWords();
@@ -643,11 +779,11 @@
   window.addEventListener("scroll", requestFrame, { passive: true });
   // Re-lay-out only when the width or the stable height actually changed (an address bar sliding in or
   // out changes neither). The animation is never reset, so nothing jumps.
-  let lastW = window.innerWidth, lastVH = VH();
+  let lastW = window.innerWidth, lastVH = VH(), lastVHL = VHL();
   window.addEventListener("resize", () => {
-    const w = window.innerWidth, h = VH();
-    if (w !== lastW || Math.abs(h - lastVH) > 1) {
-      lastW = w; lastVH = h;
+    const w = window.innerWidth, h = VH(), hl = VHL();
+    if (w !== lastW || Math.abs(h - lastVH) > 1 || Math.abs(hl - lastVHL) > 1) {
+      lastW = w; lastVH = h; lastVHL = hl;
       layoutStory(); measureName(); applyFocus();
     }
     requestFrame();
@@ -820,16 +956,205 @@
       h += `<iframe class="op__map" src="${mapsEmbed(o.map)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="${esc(T("mapTitle"))}"></iframe>
             <a class="btn-pill op__mapbtn" href="${mapsLink(o.map)}" target="_blank" rel="noopener">${esc(T("openMaps"))}</a>`;
     }
-    if (o.rsvp) {
-      h += `${contactHtml()}
-        <div class="op__sec">
-          <p class="op__label">${esc(T("rsvpListLabel"))}</p>
-          <p class="op__sub">${esc(T("rsvpListSub"))}</p>
-          <ul class="op__list">${T("rsvpItems").map((li) => `<li>${esc(li)}</li>`).join("")}</ul>
-        </div>`;
-    }
+    if (o.travel) h += travelHtml();
+    if (o.rsvp) h += rsvpHtml();
     sheetBody.innerHTML = h;
+    if (o.rsvp) wireRsvp();
     requestAnimationFrame(() => applyFocus(sheetBody));
+  }
+
+  /* ---------------- TRAVEL & STAY ---------------- */
+  const F = (key) => FORM[tl()][key];
+  function trainsHtml(day) {
+    const L = tl();
+    return `<div class="trains">
+      <p class="op__label">${esc(F(day === "d26" ? "trains26" : "trains27"))}</p>
+      ${TRAINS[day].map((t) => `
+        <div class="train">
+          <div class="train__top"><span class="train__no">${t.no}</span><span class="train__name">${esc(t[L][0])}</span></div>
+          <div class="train__times">
+            <span><b>${t.dep}</b> ${esc(t[L][1])}</span><span class="train__arrow" aria-hidden="true">→</span><span><b>${t.arr}</b> ${esc(F("nadiad"))}</span>
+          </div>
+          ${t.when ? `<p class="train__when">${esc(F(t.when))}</p>` : ""}
+        </div>`).join("")}
+    </div>`;
+  }
+  function travelHtml() {
+    return `<div class="op__sec">${trainsHtml("d26")}${trainsHtml("d27")}<p class="train__note">${esc(F("trainNote"))}</p></div>
+      <div class="op__sec">
+        <p class="op__label">${esc(F("stayTitle"))}</p>
+        <p class="op__sub">${esc(F("secStay"))}</p>
+        <div class="op__body"><p>${esc(F("stayPlan"))}</p></div>
+        <button class="btn-pill op__mapbtn" data-overlay="rsvp">${esc(F("rsvpCta"))}</button>
+      </div>`;
+  }
+
+  /* ---------------- RSVP FORM ---------------- */
+  const RSVP_KEY = "rh-rsvp-v2";
+  const blankRsvp = () => ({ name: "", phone: "", side: "", events: [], guests: 1, fromMumbai: "", when: "", ticketHelp: "",
+    stay: "", nights: [], stayCount: 1, dietary: "", note: "", done: false });
+  let rs = (() => {
+    try { return { ...blankRsvp(), ...JSON.parse(localStorage.getItem(RSVP_KEY) || "{}") }; } catch { return blankRsvp(); }
+  })();
+  const saveRsvp = () => { try { localStorage.setItem(RSVP_KEY, JSON.stringify(rs)); } catch { /* storage unavailable */ } };
+
+  const radios = (name, opts) => `<div class="pills" role="radiogroup">${opts.map(([v, label, sub]) => `
+      <label class="pill"><input type="radio" name="${name}" value="${v}" ${rs[name] === v ? "checked" : ""} />
+        <span>${esc(label)}${sub ? `<small>${esc(sub)}</small>` : ""}</span></label>`).join("")}</div>`;
+  const checks = (name, opts) => `<div class="pills">${opts.map(([v, label, sub]) => `
+      <label class="pill"><input type="checkbox" name="${name}" value="${v}" ${rs[name].includes(v) ? "checked" : ""} />
+        <span>${esc(label)}${sub ? `<small>${esc(sub)}</small>` : ""}</span></label>`).join("")}</div>`;
+  const stepper = (name, label) => `<div class="ffield">
+      <label class="flabel" for="f-${name}">${esc(label)}</label>
+      <div class="stepper"><button type="button" data-step="${name}" data-d="-1" aria-label="−">−</button>
+        <input id="f-${name}" name="${name}" type="number" inputmode="numeric" min="1" max="30" value="${rs[name]}" />
+        <button type="button" data-step="${name}" data-d="1" aria-label="+">+</button></div></div>`;
+
+  function rsvpHtml() {
+    if (rs.done) return rsvpDoneHtml();
+    return `<form class="rform" id="rsvpForm" novalidate>
+      <p class="rform__intro">${esc(F("intro"))}</p>
+      <fieldset class="fsec"><legend>${esc(F("secYou"))}</legend>
+        <div class="ffield"><label class="flabel" for="f-name">${esc(F("name"))}</label>
+          <input class="input" id="f-name" name="name" autocomplete="name" placeholder="${esc(F("namePh"))}" value="${esc(rs.name)}" /></div>
+        <div class="ffield"><label class="flabel" for="f-phone">${esc(F("phone"))}</label>
+          <input class="input" id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="${esc(F("phonePh"))}" value="${esc(rs.phone)}" /></div>
+        <div class="ffield"><span class="flabel">${esc(F("side"))}</span>${radios("side", [["riya", F("sideRiya")], ["hemang", F("sideHemang")]])}</div>
+      </fieldset>
+      <fieldset class="fsec"><legend>${esc(F("secEvents"))}</legend>
+        ${checks("events", [["sangeet", F("evSangeet"), F("evSangeetSub")], ["wedding", F("evWedding"), F("evWeddingSub")], ["none", F("evNone")]])}
+        <div data-show="attending">${stepper("guests", F("guests"))}</div>
+      </fieldset>
+      <fieldset class="fsec" data-show="wedding"><legend>${esc(F("secTravel"))}</legend>
+        <div class="ffield"><span class="flabel">${esc(F("fromMumbai"))}</span>${radios("fromMumbai", [["yes", F("yes")], ["no", F("no")]])}</div>
+        <div data-show="mumbai">
+          <div class="ffield"><span class="flabel">${esc(F("when"))}</span>${radios("when", [["26", F("when26"), F("when26Sub")], ["27", F("when27"), F("when27Sub")], ["unsure", F("whenUnsure")]])}</div>
+          <div data-show="when26">${trainsHtml("d26")}<p class="train__note">${esc(F("trainNote"))}</p></div>
+          <div data-show="when27">${trainsHtml("d27")}<p class="train__note">${esc(F("trainNote"))}</p></div>
+          <div class="ffield"><span class="flabel">${esc(F("ticketHelp"))}</span>${radios("ticketHelp", [["yes", F("yes")], ["no", F("no")]])}</div>
+        </div>
+      </fieldset>
+      <fieldset class="fsec" data-show="wedding"><legend>${esc(F("secStay"))}</legend>
+        <div class="ffield"><span class="flabel">${esc(F("stayQ"))}</span>${radios("stay", [["yes", F("yes")], ["no", F("no")]])}</div>
+        <div data-show="stay">
+          <p class="stay-plan">${esc(F("stayPlan"))}</p>
+          <div class="ffield"><span class="flabel">${esc(F("nights"))}</span>${checks("nights", [["26", F("n26")], ["27", F("n27")]])}</div>
+          ${stepper("stayCount", F("stayCount"))}
+        </div>
+      </fieldset>
+      <fieldset class="fsec" data-show="attending"><legend>${esc(F("secMore"))}</legend>
+        <div class="ffield"><label class="flabel" for="f-dietary">${esc(F("dietary"))}</label>
+          <input class="input" id="f-dietary" name="dietary" placeholder="${esc(F("dietaryPh"))}" value="${esc(rs.dietary)}" /></div>
+        <div class="ffield"><label class="flabel" for="f-note">${esc(F("note"))}</label>
+          <textarea class="input" id="f-note" name="note" rows="3">${esc(rs.note)}</textarea></div>
+      </fieldset>
+      <p class="rform__err" id="rsvpErr" role="alert" hidden></p>
+      <button class="btn-pill rform__submit" type="submit">${esc(F("submit"))}</button>
+    </form>
+    <div class="op__sec"><p class="op__label">${esc(F("preferCall"))}</p>${contactHtml()}</div>`;
+  }
+
+  // the RSVP as a plain-text message (always English so replies are easy to collect)
+  function rsvpSummary() {
+    const att = rs.events.includes("none") ? "Not attending" : rs.events.map((e) => (e === "sangeet" ? "Sangeet (22 Jan)" : "Wedding (27 Jan)")).join(", ");
+    const lines = ["RSVP — Riya & Hemang", `Name: ${rs.name}`, `Phone: ${rs.phone}`, `Side: ${rs.side === "riya" ? "Riya's side" : "Hemang's side"}`, `Attending: ${att}`];
+    if (!rs.events.includes("none")) lines.push(`Guests: ${rs.guests}`);
+    if (rs.events.includes("wedding")) {
+      if (rs.fromMumbai === "yes") {
+        const when = { 26: "26 Jan (day before)", 27: "reaching 27 Jan", unsure: "not sure yet" }[rs.when] || "not answered";
+        lines.push(`Travelling from Mumbai: yes, ${when}`);
+        if (rs.ticketHelp) lines.push(`Help booking tickets: ${rs.ticketHelp}`);
+      } else if (rs.fromMumbai === "no") lines.push("Travelling from Mumbai: no");
+      if (rs.stay === "yes") {
+        const nights = rs.nights.length ? rs.nights.map((n) => `${n} Jan`).join(" & ") : "nights not chosen";
+        lines.push(`Accommodation in Nadiad: yes, ${rs.stayCount} people, ${nights}`);
+      } else if (rs.stay === "no") lines.push("Accommodation in Nadiad: no");
+    }
+    if (rs.dietary.trim()) lines.push(`Dietary: ${rs.dietary.trim()}`);
+    if (rs.note.trim()) lines.push(`Note: ${rs.note.trim()}`);
+    return lines.join("\n");
+  }
+  const waLink = (to) => `https://wa.me/${to}?text=${encodeURIComponent(rsvpSummary())}`;
+
+  function rsvpDoneHtml() {
+    const saved = !!RSVP_ENDPOINT;
+    return `<div class="rdone">
+      <p class="rdone__title">${esc(F("doneTitle"))}</p>
+      ${saved ? `<p class="op__desc">${esc(F("doneSaved"))}</p>` : ""}
+      <p class="op__desc">${esc(F(saved ? "doneSendAlso" : "doneSend"))}</p>
+      <pre class="rdone__summary">${esc(rsvpSummary())}</pre>
+      <a class="btn-pill rdone__wa" href="${waLink(RSVP_WHATSAPP)}" target="_blank" rel="noopener">${esc(F("sendHemang"))}</a>
+      <button class="btn-line rdone__edit" type="button" data-rsvp-edit>${esc(F("edit"))}</button>
+    </div>`;
+  }
+
+  function syncRsvp(form) {
+    const ev = rs.events;
+    const attending = ev.length > 0 && !ev.includes("none");
+    const show = {
+      attending, wedding: ev.includes("wedding"), mumbai: ev.includes("wedding") && rs.fromMumbai === "yes",
+      when26: rs.when === "26", when27: rs.when === "27", stay: rs.stay === "yes",
+    };
+    $$("[data-show]", form).forEach((el) => { el.hidden = !show[el.dataset.show]; });
+  }
+
+  function readRsvp(form) {
+    const fd = new FormData(form);
+    rs.name = (fd.get("name") || "").toString();
+    rs.phone = (fd.get("phone") || "").toString();
+    rs.side = (fd.get("side") || "").toString();
+    rs.fromMumbai = (fd.get("fromMumbai") || "").toString();
+    rs.when = (fd.get("when") || "").toString();
+    rs.ticketHelp = (fd.get("ticketHelp") || "").toString();
+    rs.stay = (fd.get("stay") || "").toString();
+    rs.nights = fd.getAll("nights").map(String);
+    rs.dietary = (fd.get("dietary") || "").toString();
+    rs.note = (fd.get("note") || "").toString();
+    rs.guests = clamp(parseInt(fd.get("guests"), 10) || 1, 1, 30);
+    rs.stayCount = clamp(parseInt(fd.get("stayCount"), 10) || 1, 1, 30);
+  }
+
+  function wireRsvp() {
+    const done = $("[data-rsvp-edit]", sheetBody);
+    if (done) { done.addEventListener("click", () => { rs.done = false; saveRsvp(); renderSheet(); }); return; }
+    const form = $("#rsvpForm", sheetBody);
+    if (!form) return;
+    syncRsvp(form);
+    form.addEventListener("change", (e) => {
+      // "can't make it" and the events are mutually exclusive
+      if (e.target.name === "events") {
+        const boxes = $$('input[name="events"]', form);
+        if (e.target.value === "none" && e.target.checked) boxes.forEach((b) => { if (b.value !== "none") b.checked = false; });
+        if (e.target.value !== "none" && e.target.checked) boxes.forEach((b) => { if (b.value === "none") b.checked = false; });
+        rs.events = boxes.filter((b) => b.checked).map((b) => b.value);
+      }
+      readRsvp(form); saveRsvp(); syncRsvp(form);
+    });
+    form.addEventListener("input", () => { readRsvp(form); saveRsvp(); });
+    $$("[data-step]", form).forEach((b) => b.addEventListener("click", () => {
+      const inp = form.elements[b.dataset.step];
+      inp.value = clamp((parseInt(inp.value, 10) || 1) + +b.dataset.d, 1, 30);
+      readRsvp(form); saveRsvp();
+    }));
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      readRsvp(form);
+      const err = $("#rsvpErr", form);
+      const fail = (msg, field) => { err.textContent = msg; err.hidden = false; if (field) field.focus(); };
+      if (!rs.name.trim()) return fail(F("errName"), form.elements.name);
+      if (rs.phone.replace(/\D/g, "").length < 10) return fail(F("errPhone"), form.elements.phone);
+      if (!rs.side) return fail(F("errSide"));
+      if (!rs.events.length) return fail(F("errEvents"));
+      err.hidden = true;
+      rs.done = true; saveRsvp();
+      if (RSVP_ENDPOINT) {
+        // Google Apps Script web app (see docs/rsvp-google-sheet.md); no-cors because Apps Script sends no CORS headers
+        fetch(RSVP_ENDPOINT, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify({ ...rs, submittedAt: new Date().toISOString(), summary: rsvpSummary(), language: lang }) }).catch(() => {});
+      }
+      renderSheet();
+      panel.scrollTop = 0;
+    });
   }
   document.addEventListener("click", (e) => {
     const t = e.target.closest("[data-overlay]");

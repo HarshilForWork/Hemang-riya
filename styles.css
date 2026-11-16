@@ -152,8 +152,8 @@ h1, h2, h3, p { margin: 0; }
 .nav.is-scrolled .nav__links { gap: 16px; }
 
 /* ================= HERO ================= */
-.hero { position: relative; height: 233.34svh; }
-.hero__stage { position: sticky; top: 0; height: 100svh; overflow: hidden; }
+.hero { position: relative; height: 233.34vh; height: 233.34lvh; }
+.hero__stage { position: sticky; top: 0; height: 100vh; height: 100lvh; overflow: hidden; }
 .hero__main {
   position: absolute;
   overflow: hidden;
@@ -490,33 +490,6 @@ h1, h2, h3, p { margin: 0; }
 }
 .btn-line:hover { border-color: var(--accent); background: rgba(138, 90, 43, 0.06); }
 
-/* RSVP wizard */
-.rsvp { max-width: 560px; margin: 24px auto 0; text-align: center; }
-.rsvp h2 { font-family: var(--serif); font-weight: 400; font-size: clamp(3rem, 6vw, 4.5rem); line-height: 1; }
-.rsvp__sub { margin-top: 12px; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
-.rsvp__form { margin-top: 40px; display: grid; gap: 14px; text-align: left; }
-.rsvp__row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.field { width: 100%; padding: 15px 18px; border-radius: 12px; border: 1px solid var(--line); background: #fffaf2; font: inherit; font-size: 16px; color: var(--text); outline: none; transition: border-color 0.2s, box-shadow 0.2s; }
-.field:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(138, 90, 43, 0.15); }
-textarea.field { min-height: 90px; resize: vertical; }
-.rsvp label.lbl { display: block; font-size: 13px; font-weight: 600; margin: 8px 0 6px; }
-.rsvp .btn-pill { margin-top: 16px; justify-self: center; }
-.rsvp .btn-ghost { margin-top: 16px; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); padding: 14px 20px; }
-.rsvp__actions { display: flex; justify-content: center; gap: 12px; align-items: center; }
-.rsvp__empty { margin-top: 16px; font-size: 14px; color: #a2412b; text-align: center; }
-.choice { display: flex; align-items: center; gap: 12px; padding: 16px 18px; border: 1px solid var(--line); border-radius: 12px; background: #fffaf2; cursor: pointer; transition: border-color 0.2s, background-color 0.2s; }
-.choice:hover { border-color: var(--accent); }
-.choice input { accent-color: var(--accent); width: 18px; height: 18px; }
-.event-card { padding: 20px; border: 1px solid var(--line); border-radius: 16px; background: #fffaf2; }
-.event-card h4 { margin: 0; font-family: var(--serif); font-size: 28px; font-weight: 400; }
-.event-card small { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; }
-.yn { margin-top: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.yn button { padding: 12px; border-radius: 9999px; border: 1px solid var(--line); font-size: 14px; transition: all 0.2s; }
-.yn button.is-on { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
-.steps { display: flex; justify-content: center; gap: 8px; margin-top: 20px; }
-.steps i { width: 28px; height: 3px; border-radius: 2px; background: var(--line); }
-.steps i.is-on { background: var(--accent); }
-
 /* ================= LIGHTBOX ================= */
 .lightbox { position: fixed; inset: 0; z-index: 110; display: flex; align-items: center; justify-content: center; visibility: hidden; }
 .lightbox.is-open { visibility: visible; }
@@ -675,12 +648,63 @@ img.blurfill {
 }
 img.blurfill[hidden] { display: none; }
 /* fade the photo's edges into the blurred fill so there's no hard line */
-img[data-fill="v"] { -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 9%, #000 91%, transparent 100%); mask-image: linear-gradient(to bottom, transparent 0, #000 9%, #000 91%, transparent 100%); }
-img[data-fill="h"] { -webkit-mask-image: linear-gradient(to right, transparent 0, #000 9%, #000 91%, transparent 100%); mask-image: linear-gradient(to right, transparent 0, #000 9%, #000 91%, transparent 100%); }
+/* edge fades are set inline by placeFocus() in app.js so they change smoothly */
 /* tablets held upright use the phone arrangement of the opening side photos */
 @media (min-width: 768px) and (max-width: 1099px) and (orientation: portrait) {
   .hero__g--1 { left: 3vw;  top: 11vh; width: 34vw; height: 22vh; }
   .hero__g--2 { left: 6vw;  top: 70vh; width: 30vw; height: 16vh; }
   .hero__g--3 { left: 64vw; top: 13vh; width: 32vw; height: 16vh; }
   .hero__g--4 { left: 62vw; top: 68vh; width: 35vw; height: 22vh; }
+}
+
+/* ================= TRAVEL: TRAIN SUGGESTIONS ================= */
+.trains { margin-top: 20px; }
+.trains .op__label { margin-bottom: 10px; }
+.train { padding: 14px 16px; border: 1px solid var(--line); border-radius: 14px; background: #fffaf2; margin-top: 10px; }
+.train__top { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.train__no { font-size: 12px; font-weight: 600; letter-spacing: 0.06em; color: var(--accent); background: rgba(138, 90, 43, 0.1); padding: 2px 8px; border-radius: 999px; }
+.train__name { font-weight: 600; font-size: 16px; }
+.train__times { margin-top: 8px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; font-size: 15px; color: var(--muted); }
+.train__times b { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; }
+.train__arrow { color: var(--accent); }
+.train__when { margin-top: 6px; font-size: 13px; color: var(--accent); }
+.train__note { margin-top: 12px; font-size: 13px; line-height: 1.6; color: var(--muted); }
+
+/* ================= RSVP FORM ================= */
+.rform { margin-top: 28px; display: grid; gap: 18px; }
+.rform__intro { font-size: 15px; color: var(--muted); }
+.fsec { margin: 0; padding: 20px; border: 1px solid var(--line); border-radius: 18px; background: #fffaf2; display: grid; gap: 16px; min-width: 0; }
+.fsec[hidden], [data-show][hidden] { display: none !important; }
+.fsec legend { padding: 0 6px; font-family: var(--serif); font-size: 24px; line-height: 1.2; }
+.ffield { display: grid; gap: 8px; }
+.flabel { font-size: 14px; font-weight: 600; }
+.input { width: 100%; padding: 13px 15px; border-radius: 12px; border: 1px solid var(--line); background: var(--bg); font: inherit; font-size: 16px; color: var(--text); outline: none; transition: border-color 0.2s, box-shadow 0.2s; }
+.input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(138, 90, 43, 0.15); }
+textarea.input { resize: vertical; min-height: 84px; }
+.pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill { position: relative; cursor: pointer; }
+.pill input { position: absolute; opacity: 0; pointer-events: none; }
+.pill span { display: flex; flex-direction: column; padding: 10px 16px; border-radius: 14px; border: 1px solid var(--line); background: var(--bg); font-size: 15px; line-height: 1.3; transition: background-color 0.2s, border-color 0.2s, color 0.2s; }
+.pill small { font-size: 12px; color: var(--muted); margin-top: 2px; transition: color 0.2s; }
+.pill:hover span { border-color: var(--accent); }
+.pill input:checked + span { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.pill input:checked + span small { color: rgba(255, 249, 241, 0.85); }
+.pill input:focus-visible + span { box-shadow: 0 0 0 3px rgba(138, 90, 43, 0.25); }
+.stepper { display: inline-flex; align-items: center; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; width: max-content; background: var(--bg); }
+.stepper button { width: 44px; height: 44px; font-size: 20px; color: var(--accent); }
+.stepper button:hover { background: rgba(138, 90, 43, 0.08); }
+.stepper input { width: 52px; height: 44px; border: 0; text-align: center; font: inherit; font-size: 17px; background: transparent; color: var(--text); -moz-appearance: textfield; }
+.stepper input::-webkit-outer-spin-button, .stepper input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.stay-plan { padding: 12px 14px; border-radius: 12px; background: rgba(138, 90, 43, 0.08); font-size: 14px; line-height: 1.6; }
+.rform__err { color: #a2412b; font-size: 14px; }
+.rform__submit { justify-self: start; margin-top: 4px; }
+.rdone { margin-top: 28px; }
+.rdone__title { font-family: var(--serif); font-size: 44px; line-height: 1.1; }
+.rdone__summary { margin: 18px 0 0; padding: 16px; border-radius: 14px; background: #fffaf2; border: 1px solid var(--line); font: 14px/1.6 var(--sans); white-space: pre-wrap; color: var(--text); }
+.rdone__wa { display: inline-block; margin-top: 18px; text-decoration: none; }
+.rdone__edit { margin: 18px 0 0 10px; }
+html[lang="gu"] .fsec legend { font-family: var(--serif-gu); }
+@media (max-width: 767px) {
+  .fsec { padding: 16px; }
+  .rdone__edit { margin-left: 0; }
 }
