@@ -19,6 +19,9 @@
 | Invitation line: "a few moments that led us here… our love story" | Hemang wanted something calm, subtle and not cheesy; two "cordially invite" versions before it didn't read well |
 | Welcome screen: "welcome to the story of…" + "scroll to begin"; scroll, swipe, key or tap all enter | Hemang's idea: the hero name "Riya & Hemang" finishes the sentence; guests naturally scroll on phones, so scrolling must work, not just a tap |
 | Detail cards + pop-up banners use stock photos (no faces), not the couple's photos; "More to come" = haldi/mehndi/dandiya/bangles collage; Wedding = joined hands over the sacred fire | Hemang (18 Nov 2026) chose stock photos over an illustrated icon version, then picked the Wedding photo from five options |
+| RSVP = the couple's Google Form: every RSVP button (nav, callout, RSVP card, Travel & Stay) opens it in a new tab (`RSVP_FORM_URL`); the on-site form stays in the code, unused | Hemang made a Google Form (18 Nov 2026) |
+| Event photos (Sangeet, Wedding) are stock photos: Sangeet = Indian dance party with lights, Wedding = couple from behind at a palace arch | Hemang wanted no couple photos there; for Sangeet he asked for "dance and lights" |
+| A separate Sangeet-only site is being built (`sangeet-site/`, not yet deployed) | Not all Sangeet guests are invited to the wedding |
 | Footer has no photo: the closing quote sits on the dark warm welcome-screen colour | Hemang asked to remove the last photo (24, a pre-wedding shoot photo) |
 | Photos 5 and 52 only in the opening collage, not also in the story; #FirstBigDate moved to 41 (the dinner), #SevenCourses dropped | Hemang: no repeats once they're on top |
 | Opening collage side photos = 68 (ring), 54, 52, 5 — no pre-wedding shoot photos | Hemang wants the shoot photos saved for save-the-date and countdown posts ("10 days to go" etc.). First set was 68/14/67/56; Hemang then swapped 56→5, 14→52, 67→54 (52 and 5 also appear in the story) |
@@ -50,7 +53,7 @@
 
 ## Open items
 
-- [ ] **Other shoot photos still in use** — the Wedding event photo (33) and story ch.5 (32, 36, 26) are pre-wedding shoot photos (the detail cards now use stock photos; the footer has no photo). Ask Hemang whether to swap any of them too, given he wants shoot photos saved for later.
+- [ ] **Other shoot photos still in use** — story ch.5 (32, 36, 26) are pre-wedding shoot photos (detail cards and event photos now use stock photos; the footer has no photo). Ask Hemang whether to swap any of them too, given he wants shoot photos saved for later.
 - [ ] **Mix mode on short phones (390×664)**: the two-language chapter text is tall, cards hit their 140px minimum and the tilted card underneath grazes the chapter title by a few px (also on the previous version). Narrower cards made long hashtags spill; a real fix would shorten the Mix chapter text on phones.
 - [ ] **Sangeet and Wedding photos** — Hemang will send them; replace photos 21/20 (Sangeet) and 33/31 (Wedding) in index.html, `CARDS` and `OVERLAYS`, and add rows to `PHOTOS` (docs/04).
 - [ ] **Google Sheet for RSVPs** — set up in personal Gmail (docs/rsvp-google-sheet.md), then fill `RSVP_ENDPOINT`.

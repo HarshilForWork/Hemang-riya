@@ -109,10 +109,8 @@
     16: [1200, 1600, 0.477, 0.158, 0.656, 0.33],
     17: [1067, 1600, 0.117, 0.196, 0.603, 0.374],
     18: [1200, 1600, 0, 0.223, 0.973, 0.626],
-    21: [1200, 1600, 0.365, 0.327, 0.56, 0.448],
     26: [1066, 1600, 0.213, 0.556, 0.665, 0.662],
     32: [1066, 1600, 0.196, 0.563, 0.763, 0.705],
-    33: [1600, 1066, 0.416, 0.323, 0.814, 0.532],
     36: [1066, 1600, 0.3, 0.2, 0.7, 0.6],
     37: [1600, 1066, 0.225, 0.31, 0.807, 0.667],
     38: [1200, 1600, 0.476, 0.423, 0.588, 0.517],
@@ -334,8 +332,11 @@
     ],
   };
 
-  // Optional: paste a Google Apps Script web-app URL here to also collect RSVPs in a Google Sheet
-  // (see docs/rsvp-google-sheet.md). When empty, RSVPs are sent to Hemang on WhatsApp.
+  // RSVPs go to the couple's Google Form (Hemang, 18 Nov 2026): every RSVP button opens it in a new tab.
+  // Empty it to bring back the on-site form below.
+  const RSVP_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeD4dAbMXjewzgOCTjrC5tQziNs-6SC6AavZFkumD1hL90rlg/viewform";
+  // On-site form (unused while RSVP_FORM_URL is set). Optional: paste a Google Apps Script web-app URL here
+  // to also collect its RSVPs in a Google Sheet (see docs/rsvp-google-sheet.md); when empty they go to Hemang on WhatsApp.
   const RSVP_ENDPOINT = "";
   const RSVP_WHATSAPP = "919769333516"; // Hemang
 
@@ -1220,6 +1221,8 @@
     const t = e.target.closest("[data-overlay]");
     if (!t) return;
     e.preventDefault();
+    // every RSVP button (nav, callout, RSVP card, Travel & Stay) opens the couple's Google Form
+    if (t.dataset.overlay === "rsvp" && RSVP_FORM_URL) { window.open(RSVP_FORM_URL, "_blank", "noopener"); return; }
     openSheet(t.dataset.overlay);
   });
 

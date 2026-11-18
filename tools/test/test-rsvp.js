@@ -11,6 +11,22 @@ const visible = (sel) => { const el = $(sel); return !!el && !el.closest("[hidde
 const click = (sel) => { const el = $(sel); el.click(); return el; };
 const type = (sel, v) => { const el = $(sel); el.value = v; el.dispatchEvent(new Event("input", { bubbles: true })); };
 
+// RSVP buttons open the couple's Google Form in a new tab when RSVP_FORM_URL is set (current setup).
+// Check every RSVP button; the on-site form checks below only run if the form link is removed.
+const opened = []; const realOpen = window.open;
+window.open = (url, target) => { opened.push([url, target]); return null; };
+const sheetOpen = () => document.getElementById("sheet").classList.contains("is-open") || document.getElementById("sheet").getAttribute("aria-hidden") === "false";
+const triggers = { nav: ".btn-rsvp", callout: ".rsvp-callout [data-overlay=\"rsvp\"]", card: ".dcard[data-overlay=\"rsvp\"]" };
+out.formLink = {};
+for (const [name, sel] of Object.entries(triggers)) { opened.length = 0; click(sel); await wait(150); out.formLink[name] = opened.length ? opened[0][0].includes("docs.google.com/forms") && opened[0][1] === "_blank" && !sheetOpen() : false; }
+// the RSVP button at the bottom of Travel & Stay
+click(".dcard[data-overlay=\"travel\"]"); await wait(650); opened.length = 0;
+const tb = document.querySelector('#sheetBody [data-overlay="rsvp"]'); if (tb) { tb.click(); await wait(150); }
+out.formLink.travelPage = !!tb && opened.length === 1 && opened[0][0].includes("docs.google.com/forms");
+document.querySelector(".sheet__x").click(); await wait(400);
+window.open = realOpen;
+if (Object.values(out.formLink).every(Boolean)) return out;
+
 // open from the nav button
 click(".btn-rsvp"); await wait(700);
 out.sheetTitle = $("#sheetTitle").textContent;

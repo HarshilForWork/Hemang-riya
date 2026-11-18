@@ -10,6 +10,7 @@ All guest-facing text is in `app.js`, near the top. Every entry has an English (
 | Gujarati lines in Mix mode | `ACCENT` | Keys match `data-accent="key"` |
 | Story chapters and photo captions | `STORY` | `photos` order = `caps` order |
 | Detail cards (title, subtitle) | `CARDS` | Card + banner photo: `CARD_ART` (stock photos, see docs/04) |
+| RSVP link | `RSVP_FORM_URL` | Every RSVP button opens this Google Form in a new tab; empty it to bring back the on-site form |
 | Pop-up pages | `OVERLAYS` | `sections: [label, subtitle, body]`; sangeet/wedding have `map` |
 | FAQ | `FAQ.en` / `FAQ.gu` | `[question, [paragraphs]]` |
 | RSVP contacts (pop-up and form) | `CONTACTS` | phone in `tel` (no spaces) and `display` |
