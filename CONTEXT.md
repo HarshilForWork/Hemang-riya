@@ -45,8 +45,9 @@ python3 -m http.server 5173
 node tools/test/cdp-test.mjs "http://localhost:5173/?lang=en" 390 664 1 tools/test/test-hero.js
 node tools/test/cdp-test.mjs "http://localhost:5173/?lang=en" 390 664 1 tools/test/test-rsvp.js
 node tools/test/cdp-test.mjs "http://localhost:5173/?lang=en" 390 664 1 tools/test/test-audit.js
+node tools/test/cdp-test.mjs "http://localhost:5173/?lang=en" 390 664 1 tools/test/test-story.js
 ```
 
-## Current status (16 Nov 2026)
+## Current status (18 Nov 2026)
 
-Live and working: hero, story (21 photos, 5 chapters), events, RSVP form with travel and stay, details, FAQ, footer, three languages. Waiting on: Sangeet/Wedding photos from Hemang, the Google Sheet for RSVPs (personal Gmail, paused), Gujarati proofreading, a test on a real iPhone. Full list in docs/07.
+Live and working: hero, story (32 photos, 5 chapters, handwritten hashtags on the "firsts"), events, RSVP form with travel and stay, details, FAQ, footer, three languages. Waiting on: Sangeet/Wedding photos from Hemang, the Google Sheet for RSVPs (personal Gmail, paused), Gujarati proofreading, a test on a real iPhone. Full list in docs/07.

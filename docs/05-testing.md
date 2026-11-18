@@ -28,7 +28,8 @@ You can point it at the live site too: `https://hemang-riya.vercel.app/?lang=en`
 |---|---|
 | `test-hero.js` | Scrolls through the opening in 30px steps firing a resize at each (what iPhone Safari does): the photo must never grow, the name never reappear, the edge fade never jump. Then a resize storm when settled must change nothing. Grid has no overlaps on phones, nothing off screen, no face cut in any box, no sideways scrolling. |
 | `test-rsvp.js` | Fills the RSVP form: validation messages, sections appearing/disappearing, train suggestions for 26/27, "can't make it" exclusivity, summary text, WhatsApp link, answers kept after edit and after switching to Gujarati, Travel & Stay page, nothing wider than the screen. |
-| `test-audit.js` | All 21 story photos load and aren't cropped, faces visible in every box and every pop-up banner, all three languages render, no sideways scrolling. |
+| `test-story.js` | Story photos load and aren't cropped, every landed frame is on screen, no hashtag covers a face, and the chapter text never overlaps the photo pile (phone and desktop). Run it in each language on a short phone (390×664): Gujarati text is taller. |
+| `test-audit.js` | All story photos (32) load and aren't cropped, faces visible in every box and every pop-up banner, all three languages render, no sideways scrolling. |
 
 Expected results: `photoGrewWhileScrollingDown: 0`, `nameReappeared: 0`, `biggestEdgeFadeJump` small (a smooth ramp, under ~3% per 30px step), empty `gridOverlaps` on phones (desktop overlaps are the intended collage), empty `facesCut`, `pageErrors: []`.
 
@@ -38,6 +39,7 @@ Expected results: `photoGrewWhileScrollingDown: 0`, `nameReappeared: 0`, `bigges
 - **Browser caching on the local Python server**: after editing, the page may run an old `app.js`. Bump `?v=N` in index.html or force a reload.
 - **Python's `http.server` occasionally drops a connection** (`ERR_CONNECTION_RESET`) under many quick requests; re-run the test if one run shows a missing resource.
 - **zsh doesn't split unquoted variables** (`for s in "390 664"…; set -- $s` fails). Write each command out.
+- **The site uses smooth scrolling** (`scroll-behavior: smooth`), so a plain `scrollTo(0, y)` animates and measurements land mid-scroll. The tests override `scrollTo` to jump instantly; do the same in any new test.
 - **The face audit reads `PHOTOS` from the served `app.js`**, so it tests what's actually deployed at that URL.
 
 ## Manual checks still worth doing

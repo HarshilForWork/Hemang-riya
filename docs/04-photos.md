@@ -11,27 +11,36 @@ The couple's photos were collected in a folder on Hemang's Mac (`~/Downloads/wed
 | 1 | 28 Nov 2025 | Christmas tree lighting at the Distillery District, Toronto — their **second date**, first hot chocolate, first photo together (they first met at a concert, no photos) | Story ch.1 |
 | 2 | 20 Dec 2025 | Not described | — |
 | 3, 4 | 25 Dec 2025 | Looking at Christmas trees in downtown Toronto | Story ch.1 |
-| 5 | 31 Dec 2025 | First big date: a seven-course dinner | Story ch.2 |
-| 6 | 16 Jan 2026 | First movie date | Story ch.2 |
+| 5, 40, 41, 43 | 31 Dec 2025 | First big date: a seven-course dinner (40 dressed up in the lift, 41 dessert, 43 at the restaurant entrance) | Story ch.2: #FirstBigDate, #NewYearsEve, #SevenCourses, #FirstOfMany |
+| 6 | 16 Jan 2026 | First movie date | Story ch.2: #FirstMovieDate |
 | 7 | 7 Feb 2026 | Trip to Niagara Falls | Story ch.3 |
-| 8 | 14 Feb 2026 | First Valentine's date | Story ch.2 |
-| 9 | 1 May 2026 | Riya helping Hemang move | Story ch.2 |
-| 10, 11 | 26 May 2026 | Seeing the FIFA World Cup trophy while it was in Toronto | Story ch.3 |
-| 12 | 27 Jun 2026 | A date Hemang called "Allen Observatory" — the GPS points to **Allan Gardens** (conservatory, Jarvis & Carlton), so the site says Allan Gardens | Story ch.3 |
-| 13 | 2 Jul 2026 | The Portugal fans' march from Little Portugal to BMO Field for Portugal vs Croatia (Hemang: Ronaldo's second-last World Cup game) | Story ch.3 |
-| 14 | 11 Jul 2026 | Unknown; GPS is downtown Toronto near the Rogers Centre | — |
-| 15–18 | 27–28 Jul 2026 | Weekend getaway to Mexico for Riya's birthday (15 is nearly identical to 16) | 16, 17, 18 in story ch.4 |
-| 19–21, 23 | 5 Sep & 17 Oct 2026 | Their first Navratri together | 19 story ch.4; 21 Sangeet event photo; 20 Sangeet card; 23 "More to come" card |
-| 22 | 4 Oct 2026 | First fall colours hike (Hemang said Muskoka; GPS says Algonquin Park, so the site says "up north") | Story ch.4 |
+| 8, 44 | 14 Feb 2026 | First Valentine's date (44 = the dinner) | Story ch.2: #FirstValentines, #ValentinesDinner |
+| 45 | 25 Apr 2026 | Museum date (Museum of Illusions) | Story ch.2: #FirstMuseumDate |
+| 9 | 1 May 2026 | Riya helping Hemang move | Story ch.3 |
+| 10, 11 | 26 May 2026 | FIFA World Cup trophy (replaced by 46, 47) | — (removed from site) |
+| 46, 47 | 26 May 2026 | FIFA World Cup trophy tour in Toronto (46 fan-shop selfie, 47 with the trophy) | Story ch.3 |
+| 12 | 27 Jun 2026 | A date Hemang called "Allen Observatory" — the GPS points to **Allan Gardens** (conservatory, Jarvis & Carlton) | Story ch.3 |
+| 13 | 2 Jul 2026 | Portugal parade (replaced by 48) | — (removed from site) |
+| 48 | 2 Jul 2026 | The Portugal fans' parade from Little Portugal to BMO Field for Portugal vs Croatia (Hemang: Ronaldo's second-last World Cup game) | Story ch.3 |
+| 14, 49 | 11 Jul 2026 | Unknown (GPS near the Rogers Centre); Hemang asked to ignore 49 | — |
+| 50 | 24 Jul 2026 | **First flight together** (selfie on the plane to Mexico) | Story ch.4: #FirstFlightTogether |
+| 15–18, 51–53 | 24–28 Jul 2026 | Weekend getaway to Mexico for Riya's birthday (15 ≈ 16; 52 = swimming in a cenote) | 16, 17, 18, 51, 52 in story ch.4 |
+| 54 | 22 Aug 2026 | Not described | — |
+| 19–21, 23, 55–58 | 5 Sep & 17 Oct 2026 | Their first Navratri together | 57, 58 story ch.4 (#FirstNavratri, #GarbaNights); 21 Sangeet event photo; 20 Sangeet card; 23 "More to come" card |
+| 22, 59, 60 | 4 Oct 2026 | First fall colours trip (Hemang said Muskoka; GPS says Algonquin Park, so the site says "up north") | 59, 60 story ch.4 (#FirstFallColours on 59) |
 | 24–37 | 7 Nov 2026 | Pre-wedding photoshoot where Hemang **surprised Riya with the ring** (32 = kneeling, 36 = the ring) | 37 hero; 28/34/29/25 hero side photos; 32/36/26 story ch.5; 33 Wedding event photo; 31 Wedding card; 30 Travel card; 35 RSVP card; 27 hashtag card; 24 footer |
-| 38 | 8 Nov 2026 | Their first Diwali together | Story ch.5 |
+| 38 | 8 Nov 2026 | Their first Diwali together | Story ch.5: #FirstDiwali |
 | 39 | 16 Nov 2026 | Not described | — |
+| 61 | (no camera date) | **First artsy date** (a neon heart artwork) | Story ch.2: #FirstArtsyDate |
+| 62–66 | (no camera date) | Not described | — |
+
+Photos 40–66 were added on 18 Nov 2026 and numbered 40 onwards by capture date, so numbers 1–66 are no longer strictly in date order. 61–66 had no camera date and were numbered in the order they were saved. A duplicate of 43 (`DC0E557C…JPG (1).jpeg`) was left unnumbered in the folder.
 
 Hemang will send separate photos for the Sangeet and Wedding sections; until then those use the photos listed above.
 
 ### Mirrored selfies
 
-Photos 10, 11, 13, 18 and 23 are front-camera selfies saved mirrored (signs read backwards). That's how they're stored and how the phone shows them, so they were left as-is; flipping would also mirror the couple.
+Photos 18, 23, 46, 48, 50 and 51 (and the removed 10, 11, 13) are front-camera selfies saved mirrored (signs read backwards). That's how they're stored and how the phone shows them, so they were left as-is; flipping would also mirror the couple.
 
 ## The non-negotiable rule: no cropped faces
 
@@ -63,4 +72,4 @@ If face detection misses someone (distant or turned away), check the row by eye 
 
 ## Unused photos
 
-2, 14, 15 and 39 aren't on the site (15 is a near-duplicate of 16; 2, 14, 39 weren't described). Their originals are still in the wedding folder.
+2, 14, 15, 39, 49 (Hemang: ignore), 53–56 and 62–66 aren't on the site. 10, 11, 13, 19 and 22 were replaced and their files removed from `assets/rh/`. All originals stay in the wedding folder.

@@ -68,8 +68,9 @@ Every photo in a fixed-shape box (hero, side photos, event photos, detail cards,
 
 ## Story (polaroid stack)
 
-- `STORY` = 5 chapters, each with `side` (text left/right), `photos` (numbers) and `en`/`gu` `{title, body, caps[]}`.
-- `layoutStory()` sets each card's width from its photo shape and the room left below its stack slot (`perW = 0.045 + 0.91 × h/w + 0.16`), sets the story section height, and remembers `stack[]` (where each card stops) and `natural[]` (its position in the incoming column, `GAP` = 420px at 900px height apart).
+- `STORY` = 5 chapters, each with `side` (text left/right), `photos` (numbers), optional `tags` (hashtag per photo or `null`) and `en`/`gu` `{title, body, caps[]}`. For tagged photos the caption strip holds the date taken.
+- **Hashtags** (`.polaroid__tag`, Caveat font, white with a soft dark gradient) are written on the photo itself: at the bottom, or at the top when the faces area sits lower in the photo (`y0 > 1 − y1` in `PHOTOS`). Their size follows the card width via the `--cw` CSS variable. Hashtags stay in Latin script in every language.
+- `layoutStory()` sets each card's width from its photo shape and the room left below its stack slot (`perW = 0.045 + 0.91 × h/w + 0.16`), then **measures the real frames and shrinks any that overrun** (long captions wrap onto several lines on narrow phone cards). On phones the room ends 20px above the tallest chapter text. Each chapter's pile is kept within ~64px (desktop) / ~30px (phone) however many photos it has. It also sets the story section height, and remembers `stack[]` (where each card stops) and `natural[]` (its position in the incoming column, `GAP` = 400px at 900px height apart).
 - `renderStory()`: card top = `max(stack[k], natural[k] − scrolled)`, so cards slide up and stop on the pile. The active chapter = chapter of the last landed card. Desktop chapter text sits beside the pile (spacer = widest card so far + 24px); phone text (`.chapter-m`) sits at the bottom over a cream gradient.
 - In Mix mode the stack starts 50px lower to leave room for the Gujarati line under "our story".
 

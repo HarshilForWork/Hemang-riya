@@ -105,17 +105,12 @@
     7: [1200, 1600, 0.41, 0.385, 0.615, 0.519],
     8: [1200, 1600, 0.493, 0.462, 0.868, 0.711],
     9: [1200, 1600, 0.323, 0.18, 0.697, 0.405],
-    10: [1200, 1600, 0.207, 0.293, 0.834, 0.588],
-    11: [1200, 1600, 0.241, 0.423, 0.716, 0.672],
     12: [1200, 1600, 0.315, 0.19, 0.549, 0.377],
-    13: [1200, 1600, 0.035, 0, 1, 0.862],
     16: [1200, 1600, 0.477, 0.158, 0.656, 0.33],
     17: [1067, 1600, 0.117, 0.196, 0.603, 0.374],
     18: [1200, 1600, 0, 0.223, 0.973, 0.626],
-    19: [1200, 1600, 0.346, 0.297, 0.571, 0.424],
     20: [1200, 1600, 0.128, 0.207, 0.766, 0.433],
     21: [1200, 1600, 0.365, 0.327, 0.56, 0.448],
-    22: [1600, 1200, 0.304, 0.264, 0.614, 0.688],
     23: [1200, 1600, 0.257, 0.252, 0.749, 0.654],
     24: [1600, 1066, 0.282, 0.155, 0.926, 0.485],
     25: [1066, 1600, 0.578, 0.6, 0.766, 0.729],
@@ -132,10 +127,28 @@
     36: [1066, 1600, 0.3, 0.2, 0.7, 0.6],
     37: [1600, 1066, 0.225, 0.31, 0.807, 0.667],
     38: [1200, 1600, 0.476, 0.423, 0.588, 0.517],
+    40: [1200, 1600, 0.284, 0.198, 0.623, 0.401],
+    41: [1200, 1600, 0.3, 0.2, 0.7, 0.6],
+    43: [1200, 1600, 0.318, 0.271, 0.584, 0.466],
+    44: [1200, 1600, 0.3, 0.2, 0.7, 0.6],
+    45: [1200, 1600, 0.268, 0.27, 0.709, 0.608],
+    46: [1200, 1600, 0.262, 0.318, 0.825, 0.589],
+    47: [1200, 1600, 0.452, 0.406, 0.685, 0.489],
+    48: [1200, 1600, 0.159, 0.303, 1, 0.634],
+    50: [1200, 1600, 0.168, 0.136, 0.853, 0.54],
+    51: [1200, 1600, 0.186, 0.033, 0.967, 0.689],
+    52: [1200, 1600, 0.434, 0.43, 0.705, 0.598],
+    57: [1200, 1600, 0.276, 0.217, 0.685, 0.372],
+    58: [1200, 1600, 0.401, 0.319, 0.581, 0.477],
+    59: [1200, 1600, 0.037, 0.244, 0.629, 0.443],
+    60: [1600, 1200, 0.355, 0, 0.648, 0.893],
+    61: [1200, 1600, 0.3, 0.2, 0.7, 0.6],
   };
 
-  // Story chapters. photos: file numbers; captions per language in the same order.
-  // Story photos are shown whole (each frame takes the photo's own shape), so nothing is cropped.
+  // Story chapters. photos: file numbers; caps: caption under each photo (same order), per language.
+  // tags: optional handwritten hashtag written on the photo itself (used for "firsts"); for tagged photos
+  // the caption strip shows the date it was taken. Story photos are shown whole: each frame takes the
+  // photo's own shape, so nothing is ever cropped.
   const STORY = [
     {
       side: "left", photos: [1, 3, 4],
@@ -151,55 +164,58 @@
       },
     },
     {
-      side: "right", photos: [5, 6, 8, 9],
+      side: "right", photos: [5, 41, 40, 43, 6, 8, 44, 45, 61],
+      tags: ["#FirstBigDate", "#SevenCourses", "#NewYearsEve", "#FirstOfMany", "#FirstMovieDate", "#FirstValentines", "#ValentinesDinner", "#FirstMuseumDate", "#FirstArtsyDate"],
       en: {
-        title: "chapter two: a season of firsts",
-        body: "Our first big date was a seven-course dinner. Then came our first movie, our first Valentine's Day, and the real test — her helping me move from one place to the next.",
-        caps: ["Seven courses, zero awkward silences", "Our first movie date", "Our first Valentine's", "Moving day, with the best helper"],
+        title: "chapter two: our firsts, of so many dates",
+        body: "Our first big date was a seven-course dinner on the last night of 2025. Then came our first movie, our first Valentine's, a museum date full of illusions and our first artsy date — and we're still counting.",
+        caps: ["31 December 2025", "31 December 2025", "31 December 2025", "31 December 2025", "16 January 2026", "14 February 2026", "14 February 2026", "25 April 2026", ""],
       },
       gu: {
-        title: "પ્રકરણ બે: પહેલી વારની ઘણી યાદો",
-        body: "અમારી પહેલી મોટી ડેટ સાત-કોર્સ ડિનર હતી. પછી આવી અમારી પહેલી મૂવી, પહેલો વેલેન્ટાઇન્સ ડે, અને સાચી કસોટી — એક ઘરથી બીજા ઘરે શિફ્ટ થવામાં તેણે કરેલી મદદ.",
-        caps: ["સાત કોર્સ, અને વાતો ખૂટી જ નહીં", "અમારી પહેલી મૂવી ડેટ", "અમારો પહેલો વેલેન્ટાઇન્સ ડે", "શિફ્ટિંગનો દિવસ, સૌથી સારી મદદગાર સાથે"],
+        title: "પ્રકરણ બે: અમારી પહેલી વારની કેટલીય ડેટ્સ",
+        body: "અમારી પહેલી મોટી ડેટ ૨૦૨૫ની છેલ્લી રાત્રે સાત-કોર્સ ડિનર હતી. પછી આવી અમારી પહેલી મૂવી, પહેલો વેલેન્ટાઇન્સ ડે, ભ્રમથી ભરેલી મ્યુઝિયમ ડેટ અને અમારી પહેલી આર્ટી ડેટ — અને ગણતરી હજી ચાલુ છે.",
+        caps: ["૩૧ ડિસેમ્બર ૨૦૨૫", "૩૧ ડિસેમ્બર ૨૦૨૫", "૩૧ ડિસેમ્બર ૨૦૨૫", "૩૧ ડિસેમ્બર ૨૦૨૫", "૧૬ જાન્યુઆરી ૨૦૨૬", "૧૪ ફેબ્રુઆરી ૨૦૨૬", "૧૪ ફેબ્રુઆરી ૨૦૨૬", "૨૫ એપ્રિલ ૨૦૨૬", ""],
       },
     },
     {
-      side: "left", photos: [7, 10, 11, 12, 13],
+      side: "left", photos: [7, 9, 46, 47, 12, 48],
       en: {
         title: "chapter three: our city, our adventures",
-        body: "Toronto became our playground — a day at Niagara Falls, spotting the FIFA World Cup trophy, wandering Allan Gardens, and joining the Portugal parade from Little Portugal to BMO Field for Portugal vs Croatia.",
-        caps: ["Niagara Falls", "World Cup trophy sighting!", "Two fans, one golden trophy", "Allan Gardens", "The Portugal parade, for Ronaldo's second-last World Cup game"],
+        body: "Toronto became our playground — a day at Niagara Falls, her helping me move, spotting the FIFA World Cup trophy, wandering Allan Gardens, and joining the Portugal parade from Little Portugal to BMO Field.",
+        caps: ["Niagara Falls", "Moving day, with the best helper", "Two fans, full World Cup fever", "World Cup trophy sighting!", "Allan Gardens", "The Portugal parade, for Ronaldo's second-last World Cup game"],
       },
       gu: {
         title: "પ્રકરણ ત્રણ: અમારું શહેર, અમારા સાહસો",
-        body: "ટોરોન્ટો અમારું રમતનું મેદાન બની ગયું — નાયગ્રા ફૉલ્સની સફર, ફિફા વર્લ્ડ કપ ટ્રોફીના દર્શન, એલન ગાર્ડન્સમાં લટાર, અને પોર્ટુગલ વિરુદ્ધ ક્રોએશિયાની મેચ માટે લિટલ પોર્ટુગલથી BMO ફિલ્ડ સુધીની પોર્ટુગલ પરેડ.",
-        caps: ["નાયગ્રા ફૉલ્સ", "વર્લ્ડ કપ ટ્રોફી દેખાઈ ગઈ!", "બે ચાહકો, એક સોનેરી ટ્રોફી", "એલન ગાર્ડન્સ", "પોર્ટુગલ પરેડ, રોનાલ્ડોની છેલ્લેથી બીજી વર્લ્ડ કપ મેચ માટે"],
+        body: "ટોરોન્ટો અમારું રમતનું મેદાન બની ગયું — નાયગ્રા ફૉલ્સની સફર, શિફ્ટિંગમાં તેની મદદ, ફિફા વર્લ્ડ કપ ટ્રોફીના દર્શન, એલન ગાર્ડન્સમાં લટાર, અને લિટલ પોર્ટુગલથી BMO ફિલ્ડ સુધીની પોર્ટુગલ પરેડ.",
+        caps: ["નાયગ્રા ફૉલ્સ", "શિફ્ટિંગનો દિવસ, સૌથી સારી મદદગાર સાથે", "બે ચાહકો, વર્લ્ડ કપનો પૂરો જોશ", "વર્લ્ડ કપ ટ્રોફી દેખાઈ ગઈ!", "એલન ગાર્ડન્સ", "પોર્ટુગલ પરેડ, રોનાલ્ડોની છેલ્લેથી બીજી વર્લ્ડ કપ મેચ માટે"],
       },
     },
     {
-      side: "right", photos: [16, 17, 18, 19, 22],
+      side: "right", photos: [50, 16, 17, 18, 51, 52, 57, 58, 59, 60],
+      tags: ["#FirstFlightTogether", null, null, null, null, null, "#FirstNavratri", "#GarbaNights", "#FirstFallColours", null],
       en: {
-        title: "chapter four: mexico, garba & fall colours",
-        body: "For her birthday we escaped to Mexico for a weekend. Then came our first Navratri together and our first fall colours hike up north.",
-        caps: ["Her birthday weekend in Mexico", "Off-roading, birthday edition", "Making a splash in Mexico", "Our first Navratri", "Our first fall colours hike"],
+        title: "chapter four: first flight, mexico, garba & fall colours",
+        body: "Our first flight together took us to Mexico for her birthday weekend. Then came our first Navratri together and our first fall colours trip up north.",
+        caps: ["24 July 2026", "Her birthday weekend in Mexico", "Off-roading, birthday edition", "Making a splash in Mexico", "Palm trees and birthday smiles", "Into the cenote", "5 September 2026", "5 September 2026", "4 October 2026", "Fall colours, up north"],
       },
       gu: {
-        title: "પ્રકરણ ચાર: મેક્સિકો, ગરબા અને પાનખરના રંગો",
-        body: "તેના જન્મદિવસે અમે વીકએન્ડ માટે મેક્સિકો ગયા. પછી આવી અમારી સાથેની પહેલી નવરાત્રિ અને પાનખરના રંગો જોવા ઉત્તર તરફની અમારી પહેલી હાઇક.",
-        caps: ["મેક્સિકોમાં તેનો બર્થડે વીકએન્ડ", "બર્થડે સ્પેશિયલ ઑફ-રોડિંગ", "મેક્સિકોમાં છબછબિયાં", "અમારી પહેલી નવરાત્રિ", "પાનખરના રંગોની અમારી પહેલી હાઇક"],
+        title: "પ્રકરણ ચાર: પહેલી ફ્લાઇટ, મેક્સિકો, ગરબા અને પાનખરના રંગો",
+        body: "અમારી સાથેની પહેલી ફ્લાઇટ અમને તેના જન્મદિવસના વીકએન્ડ માટે મેક્સિકો લઈ ગઈ. પછી આવી અમારી સાથેની પહેલી નવરાત્રિ અને પાનખરના રંગો જોવા ઉત્તર તરફની અમારી પહેલી ટ્રિપ.",
+        caps: ["૨૪ જુલાઈ ૨૦૨૬", "મેક્સિકોમાં તેનો બર્થડે વીકએન્ડ", "બર્થડે સ્પેશિયલ ઑફ-રોડિંગ", "મેક્સિકોમાં છબછબિયાં", "તાડનાં વૃક્ષો અને બર્થડે સ્મિત", "મેક્સિકોની ગુફાના પાણીમાં", "૫ સપ્ટેમ્બર ૨૦૨૬", "૫ સપ્ટેમ્બર ૨૦૨૬", "૪ ઑક્ટોબર ૨૦૨૬", "ઉત્તરમાં પાનખરના રંગો"],
       },
     },
     {
       side: "left", photos: [32, 36, 26, 38],
+      tags: [null, null, null, "#FirstDiwali"],
       en: {
         title: "chapter five: the question",
         body: "A photoshoot for our wedding — or so she thought. Somewhere between the lake and the old stone buildings, I got down on one knee with a ring. The next day, we celebrated our first Diwali together.",
-        caps: ["The surprise", "She said yes", "Engaged", "Our first Diwali"],
+        caps: ["The surprise", "She said yes", "Engaged", "8 November 2026"],
       },
       gu: {
         title: "પ્રકરણ પાંચ: એ સવાલ",
         body: "અમારા લગ્ન માટેનું ફોટોશૂટ — એવું તે માનતી હતી. તળાવ અને જૂની પથ્થરની ઇમારતો વચ્ચે ક્યાંક, હું વીંટી લઈને એક ઘૂંટણે બેસી ગયો. બીજા જ દિવસે અમે સાથે અમારી પહેલી દિવાળી ઉજવી.",
-        caps: ["સરપ્રાઇઝ", "તેણે હા પાડી", "સગાઈ થઈ ગઈ", "અમારી પહેલી દિવાળી"],
+        caps: ["સરપ્રાઇઝ", "તેણે હા પાડી", "સગાઈ થઈ ગઈ", "૮ નવેમ્બર ૨૦૨૬"],
       },
     },
   ];
@@ -663,7 +679,7 @@
   let chaptersM = [];
   const CH_W = [0.324, 0.35, 0.37, 0.39, 0.4125];
   const CH_H = [0.399, 0.43, 0.455, 0.48, 0.507];
-  const GAP = 420;
+  const GAP = 400;
 
   function buildStory() {
     [...chapters, ...chaptersM, ...cards.map((c) => c.el)].forEach((el) => el.remove());
@@ -688,16 +704,21 @@
 
       ch.photos.forEach((n, pi) => {
         const cap = t.caps[pi];
+        const tag = ch.tags && ch.tags[pi];
         const k = cards.length;
+        // hashtag goes at the bottom of the photo, or at the top if the faces sit low
+        const [, , , fy0, , fy1] = PHOTOS[n];
+        const tagPos = fy0 > 1 - fy1 ? "top" : "bottom";
+        const label = tag ? `${tag}${cap ? ` · ${cap}` : ""}` : cap;
         const wrap = document.createElement("div");
         wrap.className = "polaroid-wrap";
         wrap.innerHTML = `
-          <div class="polaroid" style="transform: rotate(${ROTATIONS[pi % ROTATIONS.length]}deg)" role="button" tabindex="0" aria-label="${esc(cap)}">
-            <div class="polaroid__img" style="aspect-ratio:${PHOTOS[n][0]} / ${PHOTOS[n][1]}"><img src="${img(n)}" alt="${esc(cap)}" loading="${k < 3 ? "eager" : "lazy"}" decoding="async" /></div>
-            <p class="polaroid__cap">${esc(cap)}</p>
+          <div class="polaroid${tag ? " polaroid--first" : ""}" style="transform: rotate(${ROTATIONS[pi % ROTATIONS.length]}deg)" role="button" tabindex="0" aria-label="${esc(label)}">
+            <div class="polaroid__img" style="aspect-ratio:${PHOTOS[n][0]} / ${PHOTOS[n][1]}"><img src="${img(n)}" alt="${esc(label)}" loading="${k < 3 ? "eager" : "lazy"}" decoding="async" />${tag ? `<span class="polaroid__tag polaroid__tag--${tagPos}">${esc(tag)}</span>` : ""}</div>
+            <p class="polaroid__cap">${esc(cap) || "&nbsp;"}</p>
           </div>`;
         const pol = $(".polaroid", wrap);
-        const open = () => openLightbox(img(n), cap);
+        const open = () => openLightbox(img(n), cap, tag);
         pol.addEventListener("click", open);
         pol.addEventListener("keydown", (e) => { if (e.key === "Enter") open(); });
         stage.appendChild(wrap);
@@ -715,21 +736,44 @@
     // in Mix mode the Gujarati line under "our story" needs a little room above the stack
     const off = mix() ? 50 : 0;
     const step = mix() ? 20 : 26;
-    const stack = cards.map((c) => mobile
-      ? vh * 0.19 + off * 0.6 + c.chapter * 6 + c.i * 6
-      : s * (255 + off + c.chapter * step + c.i * 17));
+    const perChapter = STORY.map((ch) => ch.photos.length);
+    const stack = cards.map((c) => {
+      const n = perChapter[c.chapter];
+      // keep each chapter's pile within ~64px (desktop) / ~30px (phone), however many photos it has
+      const iStep = mobile ? Math.min(6, 30 / Math.max(1, n - 1)) : Math.min(17, 64 / Math.max(1, n - 1));
+      return mobile
+        ? vh * 0.19 + off * 0.6 + c.chapter * 6 + c.i * iStep
+        : s * (255 + off + c.chapter * step + c.i * iStep);
+    });
     // widest a landscape card may get in each chapter (grows a little per chapter, like the template)
     const maxW = STORY.map((_, ci) => (mobile ? vw * 0.82 : vw * CH_W[ci % CH_W.length]));
+    // phone: chapter text sits at the bottom; photos must end above the tallest chapter text
+    // (its top padding is only a fade, so it may overlap)
+    const textTop = mobile ? vh - Math.max(...chaptersM.map((m) => m.offsetHeight - 28)) : vh;
     cards.forEach((c, k) => {
       const [pw, ph] = PHOTOS[c.n];
       // frame height ≈ width × (top border + photo + caption strip)
       const perW = 0.045 + 0.91 * (ph / pw) + 0.16;
       const room = mobile
-        ? vh * 0.64 - stack[k]
+        ? textTop - 20 - stack[k]
         : Math.min(vh * CH_H[c.chapter % CH_H.length] * 1.12, vh - stack[k] - 22 * s);
       c.w = Math.max(140, Math.min(maxW[c.chapter], room / perW));
       c.el.style.width = `${c.w}px`;
+      c.el.style.setProperty("--cw", `${c.w}px`); // hashtag size follows the card size
     });
+    // The estimate above assumes a one-line caption; long captions wrap on narrow cards. Measure the real
+    // frames and shrink any that would run past their limit (two passes, since the caption re-wraps).
+    for (let pass = 0; pass < 2; pass++) {
+      cards.forEach((c, k) => {
+        const limit = mobile ? textTop - 20 : vh - 22 * s;
+        const hgt = c.el.offsetHeight;
+        if (stack[k] + hgt > limit && hgt > 0) {
+          c.w = Math.max(140, c.w * (limit - stack[k]) / hgt);
+          c.el.style.width = `${c.w}px`;
+          c.el.style.setProperty("--cw", `${c.w}px`);
+        }
+      });
+    }
     // the text sits beside the pile, which still holds photos from earlier chapters, so clear the widest so far
     chapters.forEach((ch, i) => {
       const ws = cards.filter((c) => c.chapter <= i).map((c) => c.w);
@@ -1165,8 +1209,8 @@
 
   /* ---------------- LIGHTBOX ---------------- */
   const lb = $("#lightbox");
-  function openLightbox(src, cap) {
-    $("#lightboxCard").innerHTML = `<img src="${src}" alt="${esc(cap)}" /><figcaption>${esc(cap)}</figcaption>`;
+  function openLightbox(src, cap, tag) {
+    $("#lightboxCard").innerHTML = `<img src="${src}" alt="${esc(tag || cap)}" /><figcaption>${tag ? `<span class="lightbox__tag">${esc(tag)}</span>` : ""}${esc(cap)}</figcaption>`;
     lb.classList.add("is-open");
     lb.setAttribute("aria-hidden", "false");
   }
@@ -1239,5 +1283,5 @@
   /* ---------------- START ---------------- */
   applyLang();
   // re-measure the hero name once the web fonts (incl. Gujarati) have loaded
-  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { measureName(); requestFrame(); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { measureName(); layoutStory(); requestFrame(); });
 })();

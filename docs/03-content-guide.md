@@ -19,15 +19,19 @@ All guest-facing text is in `app.js`, near the top. Every entry has an English (
 | Countdown target | `COUNTDOWN_TARGET` | UTC; currently 27 Jan 2027 18:00 IST |
 | Hero photo | `HERO_PHOTO` in app.js + `src` in index.html | keep both the same |
 
-## Story captions (current)
+## Story chapters, captions and hashtags (current)
 
-Captions were rewritten to the couple's taste ("cuter", not plain like "Our first movie date" for everything — though that one was kept on request). Current English captions by chapter:
+Chapter two is a dedicated "firsts" chapter: each photo has a handwritten hashtag on it and the date under it. Other "first" photos elsewhere in the story get the same treatment. Hashtags are in Latin script in all languages (like #RiyaSangHemang); the dates under them are translated.
 
 1. *a concert, then hot chocolate* — The Distillery District, our first photo · Our first December, twinkle lights & all · Cold noses, warm hearts
-2. *a season of firsts* — Seven courses, zero awkward silences · Our first movie date · Our first Valentine's · Moving day, with the best helper
-3. *our city, our adventures* — Niagara Falls · World Cup trophy sighting! · Two fans, one golden trophy · Allan Gardens · The Portugal parade, for Ronaldo's second-last World Cup game
-4. *mexico, garba & fall colours* — Her birthday weekend in Mexico · Off-roading, birthday edition · Making a splash in Mexico · Our first Navratri · Our first fall colours hike
-5. *the question* — The surprise · She said yes · Engaged · Our first Diwali
+2. *our firsts, of so many dates* — #FirstBigDate (5) · #SevenCourses (41) · #NewYearsEve (40) · #FirstOfMany (43) · #FirstMovieDate (6) · #FirstValentines (8) · #ValentinesDinner (44) · #FirstMuseumDate (45) · #FirstArtsyDate (61, no date known)
+3. *our city, our adventures* — Niagara Falls · Moving day, with the best helper · Two fans, full World Cup fever · World Cup trophy sighting! · Allan Gardens · The Portugal parade, for Ronaldo's second-last World Cup game
+4. *first flight, mexico, garba & fall colours* — #FirstFlightTogether (50) · Her birthday weekend in Mexico · Off-roading, birthday edition · Making a splash in Mexico · Palm trees and birthday smiles · Into the cenote · #FirstNavratri (57) · #GarbaNights (58) · #FirstFallColours (59) · Fall colours, up north (60)
+5. *the question* — The surprise · She said yes · Engaged · #FirstDiwali (38)
+
+Photo 60 has no hashtag on purpose: the couple's faces fill most of that photo, so any writing would cover them.
+
+To tag a photo: add a `tags` array to its chapter in `STORY` (same order as `photos`, `null` for untagged) and put the date in that position of `caps` (both languages). Run `tools/test/test-story.js` — it fails if a hashtag covers a face.
 
 ## Trains (Mumbai → Nadiad)
 

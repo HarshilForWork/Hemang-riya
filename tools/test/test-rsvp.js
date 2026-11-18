@@ -1,4 +1,5 @@
 // RSVP form: conditional sections, train suggestions, validation, summary + WhatsApp link, Gujarati, travel page.
+const scrollTo = (x, y) => window.scrollTo({ left: x, top: y, behavior: "instant" }); // the site uses smooth scrolling; tests must jump
 const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];

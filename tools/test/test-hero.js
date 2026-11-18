@@ -1,4 +1,5 @@
 // Opening section: smooth on scroll + resize events, grid without overlaps, faces visible.
+const scrollTo = (x, y) => window.scrollTo({ left: x, top: y, behavior: "instant" }); // the site uses smooth scrolling; tests must jump
 const frames = (n) => new Promise((r) => { let i = 0; const t = () => (++i >= n ? r() : requestAnimationFrame(t)); requestAnimationFrame(t); });
 const settle = async () => { let prev = -1, still = 0; for (let i = 0; i < 300 && still < 8; i++) { await frames(1); const w = hm.getBoundingClientRect().width; still = Math.abs(w - prev) < 0.01 ? still + 1 : 0; prev = w; } };
 document.getElementById("intro").click();

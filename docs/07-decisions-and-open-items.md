@@ -10,6 +10,9 @@
 | Phone hero: tidy grid, none of the four side photos overlapping the main one; they slide out from behind it | Hemang asked for "all overlapping or none"; "none" was recommended and built |
 | Desktop hero keeps the original overlapping collage | Only the phone layout was a problem |
 | Story captions rewritten to be cuter; some kept as-is | Hemang's line-by-line feedback (see docs/03) |
+| Chapter two = "our firsts, of so many dates"; "first" photos carry a handwritten hashtag on the photo (white Caveat script) and the date in the caption strip | Hemang asked to categorise the firsts with hashtags like #FirstMovieDate (18 Nov 2026) |
+| New photos: 40/41/43 with the big-date dinner, 44 Valentine's, 45 museum date, 46/47 replace the trophy photos, 48 replaces the parade photo, 50 first flight, 51/52 Mexico, 57/58 replace Navratri, 59/60 replace the fall hike, 61 artsy date; 49 ignored | Hemang's instructions (18 Nov 2026); "first life together" for 50 was read as "first flight together" (it's a selfie on the plane, on the first Mexico day) |
+| Moving day moved from the firsts chapter to "our city, our adventures" | It isn't a date; keeps the firsts chapter about dates |
 | Three languages EN / ગુજ / Mix; Hind Vadodara + Rasa fonts | Carried over from the earlier e-invite; Hindi ruled out |
 | RSVP as an on-site form, sent to Hemang on WhatsApp | Works with no backend; ~600+ guests, mostly on WhatsApp |
 | Ask about Mumbai → Nadiad travel (26 vs 27 Jan) with train suggestions, and accommodation in Nadiad | Hemang's request; many guests travel from Mumbai and the couple arranged a stay |
@@ -32,6 +35,7 @@
 | Nested boxes in the RSVP form | Leftover `.field` class from the old demo | Old styles removed; new class `.ffield` |
 | Welcome line running off phone screens (Gujarati) | Non-breaking spaces from the letter animation | Real spaces; English letters wrapped per word |
 | Chapter text overlapping the photo pile | Spacer only as wide as the current chapter's cards | Spacer = widest card so far + 24px |
+| Phone story frames reaching the chapter text | Long captions wrap onto several lines; size estimate assumed one line | Measure real frames and shrink; room ends above the tallest chapter text |
 | Phones keeping an old app.js | Caching | `?v=N` on CSS/JS links |
 
 ## Open items
@@ -43,4 +47,5 @@
 - [ ] **Confirm train suggestions** with Hemang (and on IRCTC closer to the date).
 - [ ] **Accommodation wording** — confirm the stay-plan text matches the actual arrangement; add details (hotel, check-in) when ready.
 - [ ] **Other wedding events** — details "to be shared later"; the "More to come" card is a placeholder.
-- [ ] Photos 2, 14, 39 have no context yet (unused).
+- [ ] Photos 2, 14, 39, 53–56, 62–66 have no context yet (unused); 49 to be ignored.
+- [ ] Confirm "first flight together" for photo 50 (Hemang said "first life together").
