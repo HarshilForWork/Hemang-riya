@@ -33,7 +33,8 @@ The layout and scroll animations are modelled on a Cordially "origins" wedding t
 3. **Every visible text has an English and a Gujarati version.** Add both. Gujarati still needs a native speaker's proofread.
 4. **Photos must be stored upright** (orientation baked into the pixels) before measuring sizes or detecting faces. Most iPhone originals carry a rotate/mirror EXIF tag.
 5. **Bump the `?v=N` on `styles.css` and `app.js` in `index.html`** whenever you change them, so phones don't keep an old copy.
-6. Don't reset the hero animation on resize, and measure heights with the svh/lvh probes, not `window.innerHeight` (iPhone Safari's moving address bar caused visible jumps before). See docs/07.
+6. **Keep the pre-wedding shoot photos (24–37) out of the opening collage.** Only the main hero photo (37) is from the shoot; the rest are saved for save-the-date and countdown posts. See docs/04.
+7. Don't reset the hero animation on resize, and measure heights with the svh/lvh probes, not `window.innerHeight` (iPhone Safari's moving address bar caused visible jumps before). See docs/07.
 
 ## Quick commands
 
@@ -50,4 +51,4 @@ node tools/test/cdp-test.mjs "http://localhost:5173/?lang=en" 390 664 1 tools/te
 
 ## Current status (18 Nov 2026)
 
-Live and working: hero, story (31 photos, 5 chapters, handwritten hashtags on the "firsts"), events, RSVP form with travel and stay, details, FAQ, footer, three languages. Waiting on: Sangeet/Wedding photos from Hemang, the Google Sheet for RSVPs (personal Gmail, paused), Gujarati proofreading, a test on a real iPhone. Full list in docs/07.
+Live and working: hero, story (32 photos, 5 chapters, handwritten hashtags on the "firsts"), events, RSVP form with travel and stay, details, FAQ, footer, three languages. Waiting on: Sangeet/Wedding photos from Hemang, the Google Sheet for RSVPs (personal Gmail, paused), Gujarati proofreading, a test on a real iPhone. Full list in docs/07.

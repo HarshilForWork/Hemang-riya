@@ -14,6 +14,9 @@
 | New photos: 40/41/43 with the big-date dinner, 44 Valentine's, 45 museum date, 46/47 replace the trophy photos, 48 replaces the parade photo, 51/52 Mexico, 57/58 replace Navratri, 59/60 replace the fall hike, 61 artsy date; 49 ignored | Hemang's instructions (18 Nov 2026) |
 | Photo 50 (plane selfie) not used, and no "first flight" chapter wording | Hemang: not appropriate for the website |
 | Moving day moved from the firsts chapter to "our city, our adventures" | It isn't a date; keeps the firsts chapter about dates |
+| Invitation line: "we are pleased to cordially invite you to the adventure that is… our love story" | Hemang found the old "cordially invited to celebrate the story of… our story" didn't read well |
+| Opening collage side photos = 68 (ring), 14, 67, 56 — no pre-wedding shoot photos | Hemang wants the shoot photos saved for save-the-date and countdown posts ("10 days to go" etc.); 14 and 56 came from unused photos so nothing left the story |
+| Hot chocolate photo 69 added to chapter one with #FirstHotChocolate | Hemang's request |
 | Three languages EN / ગુજ / Mix; Hind Vadodara + Rasa fonts | Carried over from the earlier e-invite; Hindi ruled out |
 | RSVP as an on-site form, sent to Hemang on WhatsApp | Works with no backend; ~600+ guests, mostly on WhatsApp |
 | Ask about Mumbai → Nadiad travel (26 vs 27 Jan) with train suggestions, and accommodation in Nadiad | Hemang's request; many guests travel from Mumbai and the couple arranged a stay |
@@ -41,6 +44,7 @@
 
 ## Open items
 
+- [ ] **Other shoot photos still in use** — the event photos (33), detail cards (31, 30, 35, 27), footer (24) and story ch.5 (32, 36, 26) are pre-wedding shoot photos. Ask Hemang whether to swap any of them too, given he wants shoot photos saved for later.
 - [ ] **Sangeet and Wedding photos** — Hemang will send them; replace photos 21/20 (Sangeet) and 33/31 (Wedding) in index.html, `CARDS` and `OVERLAYS`, and add rows to `PHOTOS` (docs/04).
 - [ ] **Google Sheet for RSVPs** — set up in personal Gmail (docs/rsvp-google-sheet.md), then fill `RSVP_ENDPOINT`.
 - [ ] **Gujarati proofreading** by a native speaker (all `gu` text, `ACCENT`, `FORM.gu`).
@@ -48,4 +52,4 @@
 - [ ] **Confirm train suggestions** with Hemang (and on IRCTC closer to the date).
 - [ ] **Accommodation wording** — confirm the stay-plan text matches the actual arrangement; add details (hotel, check-in) when ready.
 - [ ] **Other wedding events** — details "to be shared later"; the "More to come" card is a placeholder.
-- [ ] Photos 2, 14, 39, 53–56, 62–66 have no context yet (unused); 49 and 50 are not to be used.
+- [ ] Photos 2, 39, 53–55, 62–66 have no context yet (unused); 49 and 50 are not to be used.

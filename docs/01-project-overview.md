@@ -34,9 +34,9 @@ Many guests travel Mumbai → Nadiad for the wedding. The site suggests trains (
 ## What's on the site (top to bottom)
 
 1. Welcome screen ("welcome to our love story…", click to enter)
-2. Hero: photo 37 (Toronto streetcar) shrinking into a collage with four more photos
-3. "you're cordially invited to celebrate the story of…" (word-by-word reveal)
-4. **Our story**: five chapters, 31 polaroid photos that stack as you scroll; chapter two, "our firsts, of so many dates", and other "first" photos carry a handwritten hashtag (#FirstMovieDate, #FirstValentines…)
+2. Hero: photo 37 (Toronto streetcar) shrinking into a collage with four more photos — 68 (Riya showing off the ring), 14 (summer selfie), 67 (walking hand in hand), 56 (Navratri portrait); deliberately **not** pre-wedding shoot photos
+3. "we are pleased to cordially invite you to the adventure that is…" (word-by-word reveal), leading into the title "our love story"
+4. **Our love story**: five chapters, 32 polaroid photos that stack as you scroll; chapter two, "our firsts, of so many dates", and other "first" photos carry a handwritten hashtag (#FirstMovieDate, #FirstValentines…)
 5. "so please join us…" with the dates and a countdown
 6. The two events side by side (photo, date, time, venue, map link)
 7. RSVP call-out (opens the RSVP form)

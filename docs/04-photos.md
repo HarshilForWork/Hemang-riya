@@ -22,19 +22,23 @@ The couple's photos were collected in a folder on Hemang's Mac (`~/Downloads/wed
 | 12 | 27 Jun 2026 | A date Hemang called "Allen Observatory" — the GPS points to **Allan Gardens** (conservatory, Jarvis & Carlton) | Story ch.3 |
 | 13 | 2 Jul 2026 | Portugal parade (replaced by 48) | — (removed from site) |
 | 48 | 2 Jul 2026 | The Portugal fans' parade from Little Portugal to BMO Field for Portugal vs Croatia (Hemang: Ronaldo's second-last World Cup game) | Story ch.3 |
-| 14, 49 | 11 Jul 2026 | Unknown (GPS near the Rogers Centre); Hemang asked to ignore 49 | — |
+| 14 | 11 Jul 2026 | Summer selfie (GPS near the Rogers Centre) | Hero side photo (bottom-left on phones) |
+| 49 | 11 Jul 2026 | Hemang asked to ignore | — |
 | 50 | 24 Jul 2026 | Selfie on the plane to Mexico | — (removed: Hemang felt it wasn't right for the site) |
 | 15–18, 51–53 | 24–28 Jul 2026 | Weekend getaway to Mexico for Riya's birthday (15 ≈ 16; 52 = swimming in a cenote) | 16, 17, 18, 51, 52 in story ch.4 |
 | 54 | 22 Aug 2026 | Not described | — |
-| 19–21, 23, 55–58 | 5 Sep & 17 Oct 2026 | Their first Navratri together | 57, 58 story ch.4 (#FirstNavratri, #GarbaNights); 21 Sangeet event photo; 20 Sangeet card; 23 "More to come" card |
+| 19–21, 23, 55–58 | 5 Sep & 17 Oct 2026 | Their first Navratri together (55, 56 = posed portrait in black outfits) | 57, 58 story ch.4 (#FirstNavratri, #GarbaNights); 56 hero side photo; 21 Sangeet event photo; 20 Sangeet card; 23 "More to come" card |
 | 22, 59, 60 | 4 Oct 2026 | First fall colours trip (Hemang said Muskoka; GPS says Algonquin Park, so the site says "up north") | 59, 60 story ch.4 (#FirstFallColours on 59) |
-| 24–37 | 7 Nov 2026 | Pre-wedding photoshoot where Hemang **surprised Riya with the ring** (32 = kneeling, 36 = the ring) | 37 hero; 28/34/29/25 hero side photos; 32/36/26 story ch.5; 33 Wedding event photo; 31 Wedding card; 30 Travel card; 35 RSVP card; 27 hashtag card; 24 footer |
+| 24–37 | 7 Nov 2026 | Pre-wedding photoshoot where Hemang **surprised Riya with the ring** (32 = kneeling, 36 = the ring). **Mostly saved for save-the-date / countdown posts** — keep them out of the opening collage | 37 hero (main photo only); 32/36/26 story ch.5; 33 Wedding event photo; 31 Wedding card; 30 Travel card; 35 RSVP card; 27 hashtag card; 24 footer |
 | 38 | 8 Nov 2026 | Their first Diwali together | Story ch.5: #FirstDiwali |
 | 39 | 16 Nov 2026 | Not described | — |
 | 61 | (no camera date) | **First artsy date** (a neon heart artwork) | Story ch.2: #FirstArtsyDate |
+| 67 | 7 Nov 2026 | Walking hand in hand down a brick lane (phone photo, proposal day) | Hero side photo (top-right on phones) |
+| 68 | 7 Nov 2026 | Riya **showing off the ring** (selfie, proposal day) | Hero side photo (top-left on phones) |
+| 69 | (no camera date) | Two hot chocolates — their first hot chocolate, at the Distillery District on their second date (date shown: 28 Nov 2025, same evening as photo 1) | Story ch.1: #FirstHotChocolate |
 | 62–66 | (no camera date) | Not described | — |
 
-Photos 40–66 were added on 18 Nov 2026 and numbered 40 onwards by capture date, so numbers 1–66 are no longer strictly in date order. 61–66 had no camera date and were numbered in the order they were saved. A duplicate of 43 (`DC0E557C…JPG (1).jpeg`) was left unnumbered in the folder.
+Photos 67–69 were added later on 18 Nov 2026 (69 had been saved four times; the three identical copies were left unnumbered). Photos 40–66 were added on 18 Nov 2026 and numbered 40 onwards by capture date, so numbers 1–66 are no longer strictly in date order. 61–66 had no camera date and were numbered in the order they were saved. A duplicate of 43 (`DC0E557C…JPG (1).jpeg`) was left unnumbered in the folder.
 
 Hemang will send separate photos for the Sangeet and Wedding sections; until then those use the photos listed above.
 
@@ -72,4 +76,4 @@ If face detection misses someone (distant or turned away), check the row by eye 
 
 ## Unused photos
 
-2, 14, 15, 39, 49 (Hemang: ignore), 53–56 and 62–66 aren't on the site. 10, 11, 13, 19, 22 (replaced) and 50 (not appropriate for the site) were removed from `assets/rh/`. All originals stay in the wedding folder.
+2, 15, 39, 49 (Hemang: ignore), 53–55 and 62–66 aren't on the site (53 is a swimsuit photo; 62, 64, 65 are food; 2 shows only Riya). 10, 11, 13, 19, 22 (replaced), 50 (not appropriate) and the shoot photos 25, 28, 29, 34 (taken out of the hero) were removed from `assets/rh/`. Good spare couple photos if the hero needs a swap: 66 (winter selfie), 55 (Navratri portrait), 54, 63. All originals stay in the wedding folder.

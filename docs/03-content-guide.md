@@ -19,11 +19,15 @@ All guest-facing text is in `app.js`, near the top. Every entry has an English (
 | Countdown target | `COUNTDOWN_TARGET` | UTC; currently 27 Jan 2027 18:00 IST |
 | Hero photo | `HERO_PHOTO` in app.js + `src` in index.html | keep both the same |
 
+## Invitation line before the story
+
+`UI.storyIntro` + `UI.storyTitle`: "we are pleased to cordially invite you to the adventure that is…" → **"our love story"** (Gujarati: "આપને ભાવભર્યું આમંત્રણ આપતાં અમને આનંદ થાય છે, એ સાહસમાં જેનું નામ છે…" → "અમારી પ્રેમકહાણી"). Hemang's wording, from an Instagram post he liked; it replaced "you're cordially invited to celebrate the story of… our story".
+
 ## Story chapters, captions and hashtags (current)
 
 Chapter two is a dedicated "firsts" chapter: each photo has a handwritten hashtag on it and the date under it. Other "first" photos elsewhere in the story get the same treatment. Hashtags are in Latin script in all languages (like #RiyaSangHemang); the dates under them are translated.
 
-1. *a concert, then hot chocolate* — The Distillery District, our first photo · Our first December, twinkle lights & all · Cold noses, warm hearts
+1. *a concert, then hot chocolate* — The Distillery District, our first photo · #FirstHotChocolate (69) · Our first December, twinkle lights & all · Cold noses, warm hearts
 2. *our firsts, of so many dates* — #FirstBigDate (5) · #SevenCourses (41) · #NewYearsEve (40) · #FirstOfMany (43) · #FirstMovieDate (6) · #FirstValentines (8) · #ValentinesDinner (44) · #FirstMuseumDate (45) · #FirstArtsyDate (61, no date known)
 3. *our city, our adventures* — Niagara Falls · Moving day, with the best helper · Two fans, full World Cup fever · World Cup trophy sighting! · Allan Gardens · The Portugal parade, for Ronaldo's second-last World Cup game
 4. *mexico, garba & fall colours* — Her birthday weekend in Mexico · Off-roading, birthday edition · Making a splash in Mexico · Palm trees and birthday smiles · Into the cenote · #FirstNavratri (57) · #GarbaNights (58) · #FirstFallColours (59) · Fall colours, up north (60)
