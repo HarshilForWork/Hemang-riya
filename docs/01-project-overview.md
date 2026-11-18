@@ -39,7 +39,7 @@ Many guests travel Mumbai → Nadiad for the wedding. The site suggests trains (
 4. **Our love story**: five chapters, 30 photos framed like Instagram prints (white border, deeper bottom edge) that stack as you scroll; chapter two, "our firsts, of so many dates", and other "first" photos have a hashtag handwritten on the bottom edge (#FirstMovieDate, #FirstValentines…), other photos their caption; no dates on any photo
 5. "so please join us…" with the dates and a countdown
 6. The two events side by side (photo, date, time, venue, map link)
-7. RSVP call-out (opens the RSVP form)
+7. RSVP call-out (opens the couple's Google Form in a new tab)
 8. Six detail cards opening pop-up pages: Sangeet, Wedding, Travel & Stay, RSVP, #RiyaSangHemang, More to come
 9. The tagline (word-by-word reveal)
 10. FAQ
@@ -47,10 +47,14 @@ Many guests travel Mumbai → Nadiad for the wedding. The site suggests trains (
 
 Floating UI: language button (EN / ગુજ / Mix, bottom right), menu bar (R&H, Sangeet, Wedding, FAQ, RSVP), red hearts on click in empty space.
 
+## Related sites
+
+Two trimmed copies of this site exist for other guest lists: a **short invite** (`lite-site/`, live at riya-hemang-invite.vercel.app) and a **Sangeet-only** site (`sangeet-site/`, not deployed). See "Three sites" in CONTEXT.md.
+
 ## Earlier work (outside this repo)
 
 Before this site, a separate single-page e-invite was made in another Claude session (tabs Home / Sangeet / Wedding / RSVP & Travel; three colour themes; EN/ગુજ/Mix). This repo replaced it as the main website. Hindi was explicitly ruled out in favour of Gujarati.
 
 ## Privacy
 
-The site shows phone numbers and family photos, so it asks search engines not to index it (robots.txt, `X-Robots-Tag` header in vercel.json, meta tag in index.html). If the GitHub repo is public, its contents (photos, numbers) are visible there too.
+The site shows phone numbers and family photos, so it asks search engines not to index it (robots.txt, `X-Robots-Tag` header in vercel.json, meta tag in index.html). The GitHub repo `HarshilForWork/Hemang-riya` is **public** (checked 18 Nov 2026), so its photos and numbers are visible there; making it private was suggested to Hemang (Vercel keeps deploying private repos). The short invite's repo is private; the Sangeet repo is public.

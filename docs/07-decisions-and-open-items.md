@@ -21,7 +21,8 @@
 | Detail cards + pop-up banners use stock photos (no faces), not the couple's photos; "More to come" = haldi/mehndi/dandiya/bangles collage; Wedding = joined hands over the sacred fire | Hemang (18 Nov 2026) chose stock photos over an illustrated icon version, then picked the Wedding photo from five options |
 | RSVP = the couple's Google Form: every RSVP button (nav, callout, RSVP card, Travel & Stay) opens it in a new tab (`RSVP_FORM_URL`); the on-site form stays in the code, unused | Hemang made a Google Form (18 Nov 2026) |
 | Event photos (Sangeet, Wedding) are stock photos: Sangeet = Indian dance party with lights, Wedding = couple from behind at a palace arch | Hemang wanted no couple photos there; for Sangeet he asked for "dance and lights" |
-| A separate Sangeet-only site is being built (`sangeet-site/`, not yet deployed) | Not all Sangeet guests are invited to the wedding |
+| Three sites: full (`site/`), short invite (`lite-site/`, live), Sangeet-only (`sangeet-site/`, not deployed) | Not every guest needs the whole story; not all Sangeet guests are invited to the wedding |
+| Short invite: one-chapter story (photos 1, 16, 32 #SheSaidYes), all six detail cards, FAQ = RSVP / travel / hashtag, no closing quote, no "two very different people" block | Hemang (18 Nov 2026): less context and fewer photos for most guests; he removed the footer quote and the dietary FAQ |
 | Footer has no photo: the closing quote sits on the dark warm welcome-screen colour | Hemang asked to remove the last photo (24, a pre-wedding shoot photo) |
 | Photos 5 and 52 only in the opening collage, not also in the story; #FirstBigDate moved to 41 (the dinner), #SevenCourses dropped | Hemang: no repeats once they're on top |
 | Opening collage side photos = 68 (ring), 54, 52, 5 — no pre-wedding shoot photos | Hemang wants the shoot photos saved for save-the-date and countdown posts ("10 days to go" etc.). First set was 68/14/67/56; Hemang then swapped 56→5, 14→52, 67→54 (52 and 5 also appear in the story) |
@@ -55,11 +56,14 @@
 
 - [ ] **Other shoot photos still in use** — story ch.5 (32, 36, 26) are pre-wedding shoot photos (detail cards and event photos now use stock photos; the footer has no photo). Ask Hemang whether to swap any of them too, given he wants shoot photos saved for later.
 - [ ] **Mix mode on short phones (390×664)**: the two-language chapter text is tall, cards hit their 140px minimum and the tilted card underneath grazes the chapter title by a few px (also on the previous version). Narrower cards made long hashtags spill; a real fix would shorten the Mix chapter text on phones.
-- [ ] **Sangeet and Wedding photos** — Hemang will send them; replace photos 21/20 (Sangeet) and 33/31 (Wedding) in index.html, `CARDS` and `OVERLAYS`, and add rows to `PHOTOS` (docs/04).
-- [ ] **Google Sheet for RSVPs** — set up in personal Gmail (docs/rsvp-google-sheet.md), then fill `RSVP_ENDPOINT`.
-- [ ] **Gujarati proofreading** by a native speaker (all `gu` text, `ACCENT`, `FORM.gu`).
-- [ ] **Test on a real iPhone** in Safari (opening animation, rotation, RSVP form).
+- [ ] **Sangeet and Wedding photos** — if Hemang sends real photos from the events, ask where they should go (event photos and cards now deliberately use stock photos with no faces).
+- [x] ~~Google Sheet for RSVPs~~ — superseded: RSVPs go to the couple's Google Form (`RSVP_FORM_URL`).
+- [ ] **Gujarati proofreading** by a native speaker (all `gu` text, `ACCENT`; also the new text on the short invite and the Sangeet site).
+- [ ] **Test on a real iPhone** in Safari (welcome screen swipe, opening animation, rotation), on all live sites.
 - [ ] **Confirm train suggestions** with Hemang (and on IRCTC closer to the date).
 - [ ] **Accommodation wording** — confirm the stay-plan text matches the actual arrangement; add details (hotel, check-in) when ready.
 - [ ] **Other wedding events** — details "to be shared later"; the "More to come" card is a placeholder.
 - [ ] Photos 2, 39, 53, 55, 62–66 have no context yet (unused); 49 and 50 are not to be used.
+- [ ] **Repo visibility** — `Hemang-riya` and `Hemang-riya-sangeet` are public on GitHub (family photos, phone numbers). Suggested to Hemang to make them private; his call.
+- [ ] **Sangeet-only site** — not deployed yet (repo exists); its own open items are in `sangeet-site/CONTEXT.md` (separate Sangeet Google Form, copy approval).
+- [ ] **R&H logo** — options in `logo-options/` (Claude Design canvas linked in its README, plus three Canva designs). Hemang hasn't picked one; the nav still shows plain text "R&H".

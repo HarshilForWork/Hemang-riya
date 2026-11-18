@@ -85,6 +85,8 @@ Every couple photo in a fixed-shape box (hero, side photos) is an absolutely pos
 
 ## Pop-up sheet and RSVP
 
+**RSVP today:** every element with `data-overlay="rsvp"` (nav, call-out, RSVP card, the button in Travel & Stay) is intercepted in the document click handler and opens `RSVP_FORM_URL` (the couple's Google Form) in a new tab. The on-site form described below is still in the code but unused; emptying `RSVP_FORM_URL` brings it back.
+
 - Detail cards and pop-up banners show `CARD_ART[id]` from `assets/stock/` (one photo, or four for the "More to come" collage: 2×2 on the card, a row of four in the banner). Never the couple's photos.
 - Any element with `data-overlay="id"` opens `OVERLAYS[id]` in a bottom sheet. `renderSheet()` builds banner, title, description, sections, map (sangeet/wedding), the travel page (`travel: true`) or the RSVP form (`rsvp: true`).
 - RSVP state `rs` lives in memory and localStorage `rh-rsvp-v2`, so answers survive closing the sheet, switching language and reloading.

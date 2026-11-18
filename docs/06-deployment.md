@@ -20,6 +20,25 @@
 - `.vercelignore` keeps `docs/`, `tools/`, and Markdown files out of the deployment.
 - `vercel.json`: assets cached for a day (`stale-while-revalidate` a week), `X-Robots-Tag: noindex, nofollow`, `nosniff`, referrer policy, clean URLs.
 
+## Sibling sites (same setup)
+
+| Site | Folder | Repo | Vercel |
+|---|---|---|---|
+| Short invite | `lite-site/` | `git@github-personal:HarshilForWork/riya-hemang-invite.git` (private) | https://riya-hemang-invite.vercel.app (imported by Hemang on 18 Nov 2026; auto-deploys on push) |
+| Sangeet-only | `sangeet-site/` | `git@github-personal:HarshilForWork/Hemang-riya-sangeet.git` (public) | not imported yet: Vercel → Add New → Project → import the repo, preset **Other**, no build command |
+
+Each repo's local git config uses the same personal identity (`HarshilForwork`). Each has its own `?v=N` counter, so bump it in that site's `index.html`.
+
+## GitHub CLI accounts on Hemang's Mac
+
+`gh` is signed in to two accounts: **HarshilForWork** (personal, owns all three repos; active since 18 Nov 2026) and **harshilbhanushali-rgb** (work). Pushing uses the `github-personal` SSH alias either way, but creating repos with `gh repo create` needs HarshilForWork active:
+```bash
+gh auth status                                   # which account is active
+gh auth switch --user HarshilForWork            # personal (wedding repos)
+gh auth switch --user harshilbhanushali-rgb     # back to work
+```
+There is no Vercel CLI on that Mac; Vercel projects are imported in the browser by Hemang.
+
 ## Releasing a change
 
 1. Edit, then bump `?v=N` for `styles.css` / `app.js` in `index.html` if either changed.
@@ -31,6 +50,6 @@
    ```
 5. Optionally run the harness against the live URL.
 
-## Google Sheet for RSVPs (paused)
+## Google Sheet for RSVPs (superseded)
 
-Decided: do it in Hemang's **personal Gmail** (his work Google account may not allow public Apps Script web apps, and guest data shouldn't live there). Steps are in docs/rsvp-google-sheet.md; once he has the `/exec` URL, set `RSVP_ENDPOINT` in app.js, bump `?v`, test, push. A sheet created earlier in the work Drive was moved to trash.
+RSVPs now go to the couple's own Google Form (`RSVP_FORM_URL` in app.js), so this is no longer needed. Kept for reference. Decided at the time: do it in Hemang's **personal Gmail** (his work Google account may not allow public Apps Script web apps, and guest data shouldn't live there). Steps are in docs/rsvp-google-sheet.md; once he has the `/exec` URL, set `RSVP_ENDPOINT` in app.js, bump `?v`, test, push. A sheet created earlier in the work Drive was moved to trash.
