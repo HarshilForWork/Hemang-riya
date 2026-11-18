@@ -43,7 +43,7 @@ Many guests travel Mumbai → Nadiad for the wedding. The site suggests trains (
 8. Six detail cards opening pop-up pages: Sangeet, Wedding, Travel & Stay, RSVP, #RiyaSangHemang, More to come
 9. The tagline (word-by-word reveal)
 10. FAQ
-11. Footer photo with "from a concert in Toronto to a mandap in Nadiad."
+11. Footer: "from a concert in Toronto to a mandap in Nadiad." on a dark warm frame matching the welcome screen (no photo, Hemang 18 Nov 2026)
 
 Floating UI: language button (EN / ગુજ / Mix, bottom right), menu bar (R&H, Sangeet, Wedding, FAQ, RSVP), red hearts on click in empty space.
 

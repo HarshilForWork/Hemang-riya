@@ -394,8 +394,8 @@ h1, h2, h3, p { margin: 0; }
 /* ================= FOOTER ================= */
 .footer { position: relative; height: 100svh; padding: 20px 22px 24px; }
 .footer__frame { position: relative; height: 100%; border-radius: 18px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
-.footer__frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.footer__shade { position: absolute; inset: 0; background: rgba(17, 12, 9, 0.52); }
+/* no photo here (Hemang): the closing frame matches the dark welcome screen, with a soft warm glow */
+.footer__frame { background: radial-gradient(ellipse at 50% 42%, rgba(196, 140, 84, 0.22), rgba(196, 140, 84, 0) 62%), var(--intro); }
 .footer__quote {
   position: relative; z-index: 1;
   max-width: min(976px, 88vw);

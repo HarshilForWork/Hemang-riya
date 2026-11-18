@@ -58,7 +58,7 @@ The hero uses a smoothed value `heroP` that eases towards `target` (`heroP += (t
 
 ## Face-aware photo placement — `placeFocus()`
 
-Every photo in a fixed-shape box (hero, side photos, event photos, detail cards, pop-up banners, footer) is an absolutely positioned `<img data-n="N">` sized by script:
+Every photo in a fixed-shape box (hero, side photos, event photos) is an absolutely positioned `<img data-n="N">` sized by script:
 
 - `PHOTOS[N] = [width, height, x0, y0, x1, y1]`; the last four are the faces area as fractions (from Apple Vision, padded).
 - Scale = `min(cover, fit)`: fill the box like `object-fit: cover`, but never so large that the faces area doesn't fit. One continuous rule (an older two-rule version made the photo pop mid-animation).
