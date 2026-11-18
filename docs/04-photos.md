@@ -29,7 +29,7 @@ The couple's photos were collected in a folder on Hemang's Mac (`~/Downloads/wed
 | 54 | 22 Aug 2026 | Sunny patio in Toronto, both in caps | Hero side photo (top-right on phones) |
 | 19–21, 23, 55–58 | 5 Sep & 17 Oct 2026 | Their first Navratri together (55, 56 = posed portrait in black outfits) | 57, 58 story ch.4 (#FirstNavratri, #GarbaNights); 21 Sangeet event photo (20, 23 were card photos until the cards moved to stock photos) |
 | 22, 59, 60 | 4 Oct 2026 | First fall colours trip (Hemang said Muskoka; GPS says Algonquin Park, so the site says "up north") | 59, 60 story ch.4 (#FirstFallColours on 59) |
-| 24–37 | 7 Nov 2026 | Pre-wedding photoshoot where Hemang **surprised Riya with the ring** (32 = kneeling, 36 = the ring). **Mostly saved for save-the-date / countdown posts** — keep them out of the opening collage | 37 hero (main photo only); 32/36/26 story ch.5; 33 Wedding event photo; 24 footer (31, 30, 35, 27 were card photos until the cards moved to stock photos) |
+| 24–37 | 7 Nov 2026 | Pre-wedding photoshoot where Hemang **surprised Riya with the ring** (32 = kneeling, 36 = the ring). **Mostly saved for save-the-date / countdown posts** — keep them out of the opening collage | 37 hero (main photo only); 32/36/26 story ch.5; 33 Wedding event photo (24 was the footer photo until 18 Nov; 31, 30, 35, 27 were card photos until the cards moved to stock photos) |
 | 38 | 8 Nov 2026 | Their first Diwali together | Story ch.5: #FirstDiwali |
 | 39 | 16 Nov 2026 | Not described | — |
 | 61 | (no camera date) | **First artsy date** (a neon heart artwork) | Story ch.2: #FirstArtsyDate |
