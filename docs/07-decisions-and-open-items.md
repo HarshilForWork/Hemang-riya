@@ -11,7 +11,8 @@
 | Desktop hero keeps the original overlapping collage | Only the phone layout was a problem |
 | Story captions rewritten to be cuter; some kept as-is | Hemang's line-by-line feedback (see docs/03) |
 | Chapter two = "our firsts, of so many dates"; "first" photos carry a handwritten hashtag on the photo (white Caveat script) and the date in the caption strip | Hemang asked to categorise the firsts with hashtags like #FirstMovieDate (18 Nov 2026) |
-| New photos: 40/41/43 with the big-date dinner, 44 Valentine's, 45 museum date, 46/47 replace the trophy photos, 48 replaces the parade photo, 50 first flight, 51/52 Mexico, 57/58 replace Navratri, 59/60 replace the fall hike, 61 artsy date; 49 ignored | Hemang's instructions (18 Nov 2026); "first life together" for 50 was read as "first flight together" (it's a selfie on the plane, on the first Mexico day) |
+| New photos: 40/41/43 with the big-date dinner, 44 Valentine's, 45 museum date, 46/47 replace the trophy photos, 48 replaces the parade photo, 51/52 Mexico, 57/58 replace Navratri, 59/60 replace the fall hike, 61 artsy date; 49 ignored | Hemang's instructions (18 Nov 2026) |
+| Photo 50 (plane selfie) not used, and no "first flight" chapter wording | Hemang: not appropriate for the website |
 | Moving day moved from the firsts chapter to "our city, our adventures" | It isn't a date; keeps the firsts chapter about dates |
 | Three languages EN / ગુજ / Mix; Hind Vadodara + Rasa fonts | Carried over from the earlier e-invite; Hindi ruled out |
 | RSVP as an on-site form, sent to Hemang on WhatsApp | Works with no backend; ~600+ guests, mostly on WhatsApp |
@@ -47,5 +48,4 @@
 - [ ] **Confirm train suggestions** with Hemang (and on IRCTC closer to the date).
 - [ ] **Accommodation wording** — confirm the stay-plan text matches the actual arrangement; add details (hotel, check-in) when ready.
 - [ ] **Other wedding events** — details "to be shared later"; the "More to come" card is a placeholder.
-- [ ] Photos 2, 14, 39, 53–56, 62–66 have no context yet (unused); 49 to be ignored.
-- [ ] Confirm "first flight together" for photo 50 (Hemang said "first life together").
+- [ ] Photos 2, 14, 39, 53–56, 62–66 have no context yet (unused); 49 and 50 are not to be used.

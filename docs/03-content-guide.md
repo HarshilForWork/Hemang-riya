@@ -26,7 +26,7 @@ Chapter two is a dedicated "firsts" chapter: each photo has a handwritten hashta
 1. *a concert, then hot chocolate* — The Distillery District, our first photo · Our first December, twinkle lights & all · Cold noses, warm hearts
 2. *our firsts, of so many dates* — #FirstBigDate (5) · #SevenCourses (41) · #NewYearsEve (40) · #FirstOfMany (43) · #FirstMovieDate (6) · #FirstValentines (8) · #ValentinesDinner (44) · #FirstMuseumDate (45) · #FirstArtsyDate (61, no date known)
 3. *our city, our adventures* — Niagara Falls · Moving day, with the best helper · Two fans, full World Cup fever · World Cup trophy sighting! · Allan Gardens · The Portugal parade, for Ronaldo's second-last World Cup game
-4. *first flight, mexico, garba & fall colours* — #FirstFlightTogether (50) · Her birthday weekend in Mexico · Off-roading, birthday edition · Making a splash in Mexico · Palm trees and birthday smiles · Into the cenote · #FirstNavratri (57) · #GarbaNights (58) · #FirstFallColours (59) · Fall colours, up north (60)
+4. *mexico, garba & fall colours* — Her birthday weekend in Mexico · Off-roading, birthday edition · Making a splash in Mexico · Palm trees and birthday smiles · Into the cenote · #FirstNavratri (57) · #GarbaNights (58) · #FirstFallColours (59) · Fall colours, up north (60)
 5. *the question* — The surprise · She said yes · Engaged · #FirstDiwali (38)
 
 Photo 60 has no hashtag on purpose: the couple's faces fill most of that photo, so any writing would cover them.

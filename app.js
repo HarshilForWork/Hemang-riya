@@ -135,7 +135,6 @@
     46: [1200, 1600, 0.262, 0.318, 0.825, 0.589],
     47: [1200, 1600, 0.452, 0.406, 0.685, 0.489],
     48: [1200, 1600, 0.159, 0.303, 1, 0.634],
-    50: [1200, 1600, 0.168, 0.136, 0.853, 0.54],
     51: [1200, 1600, 0.186, 0.033, 0.967, 0.689],
     52: [1200, 1600, 0.434, 0.43, 0.705, 0.598],
     57: [1200, 1600, 0.276, 0.217, 0.685, 0.372],
@@ -191,17 +190,17 @@
       },
     },
     {
-      side: "right", photos: [50, 16, 17, 18, 51, 52, 57, 58, 59, 60],
-      tags: ["#FirstFlightTogether", null, null, null, null, null, "#FirstNavratri", "#GarbaNights", "#FirstFallColours", null],
+      side: "right", photos: [16, 17, 18, 51, 52, 57, 58, 59, 60],
+      tags: [null, null, null, null, null, "#FirstNavratri", "#GarbaNights", "#FirstFallColours", null],
       en: {
-        title: "chapter four: first flight, mexico, garba & fall colours",
-        body: "Our first flight together took us to Mexico for her birthday weekend. Then came our first Navratri together and our first fall colours trip up north.",
-        caps: ["24 July 2026", "Her birthday weekend in Mexico", "Off-roading, birthday edition", "Making a splash in Mexico", "Palm trees and birthday smiles", "Into the cenote", "5 September 2026", "5 September 2026", "4 October 2026", "Fall colours, up north"],
+        title: "chapter four: mexico, garba & fall colours",
+        body: "For her birthday we escaped to Mexico for a weekend. Then came our first Navratri together and our first fall colours trip up north.",
+        caps: ["Her birthday weekend in Mexico", "Off-roading, birthday edition", "Making a splash in Mexico", "Palm trees and birthday smiles", "Into the cenote", "5 September 2026", "5 September 2026", "4 October 2026", "Fall colours, up north"],
       },
       gu: {
-        title: "પ્રકરણ ચાર: પહેલી ફ્લાઇટ, મેક્સિકો, ગરબા અને પાનખરના રંગો",
-        body: "અમારી સાથેની પહેલી ફ્લાઇટ અમને તેના જન્મદિવસના વીકએન્ડ માટે મેક્સિકો લઈ ગઈ. પછી આવી અમારી સાથેની પહેલી નવરાત્રિ અને પાનખરના રંગો જોવા ઉત્તર તરફની અમારી પહેલી ટ્રિપ.",
-        caps: ["૨૪ જુલાઈ ૨૦૨૬", "મેક્સિકોમાં તેનો બર્થડે વીકએન્ડ", "બર્થડે સ્પેશિયલ ઑફ-રોડિંગ", "મેક્સિકોમાં છબછબિયાં", "તાડનાં વૃક્ષો અને બર્થડે સ્મિત", "મેક્સિકોની ગુફાના પાણીમાં", "૫ સપ્ટેમ્બર ૨૦૨૬", "૫ સપ્ટેમ્બર ૨૦૨૬", "૪ ઑક્ટોબર ૨૦૨૬", "ઉત્તરમાં પાનખરના રંગો"],
+        title: "પ્રકરણ ચાર: મેક્સિકો, ગરબા અને પાનખરના રંગો",
+        body: "તેના જન્મદિવસે અમે વીકએન્ડ માટે મેક્સિકો ગયા. પછી આવી અમારી સાથેની પહેલી નવરાત્રિ અને પાનખરના રંગો જોવા ઉત્તર તરફની અમારી પહેલી ટ્રિપ.",
+        caps: ["મેક્સિકોમાં તેનો બર્થડે વીકએન્ડ", "બર્થડે સ્પેશિયલ ઑફ-રોડિંગ", "મેક્સિકોમાં છબછબિયાં", "તાડનાં વૃક્ષો અને બર્થડે સ્મિત", "મેક્સિકોની ગુફાના પાણીમાં", "૫ સપ્ટેમ્બર ૨૦૨૬", "૫ સપ્ટેમ્બર ૨૦૨૬", "૪ ઑક્ટોબર ૨૦૨૬", "ઉત્તરમાં પાનખરના રંગો"],
       },
     },
     {

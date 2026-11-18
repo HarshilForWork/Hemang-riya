@@ -23,7 +23,7 @@ The couple's photos were collected in a folder on Hemang's Mac (`~/Downloads/wed
 | 13 | 2 Jul 2026 | Portugal parade (replaced by 48) | — (removed from site) |
 | 48 | 2 Jul 2026 | The Portugal fans' parade from Little Portugal to BMO Field for Portugal vs Croatia (Hemang: Ronaldo's second-last World Cup game) | Story ch.3 |
 | 14, 49 | 11 Jul 2026 | Unknown (GPS near the Rogers Centre); Hemang asked to ignore 49 | — |
-| 50 | 24 Jul 2026 | **First flight together** (selfie on the plane to Mexico) | Story ch.4: #FirstFlightTogether |
+| 50 | 24 Jul 2026 | Selfie on the plane to Mexico | — (removed: Hemang felt it wasn't right for the site) |
 | 15–18, 51–53 | 24–28 Jul 2026 | Weekend getaway to Mexico for Riya's birthday (15 ≈ 16; 52 = swimming in a cenote) | 16, 17, 18, 51, 52 in story ch.4 |
 | 54 | 22 Aug 2026 | Not described | — |
 | 19–21, 23, 55–58 | 5 Sep & 17 Oct 2026 | Their first Navratri together | 57, 58 story ch.4 (#FirstNavratri, #GarbaNights); 21 Sangeet event photo; 20 Sangeet card; 23 "More to come" card |
@@ -40,7 +40,7 @@ Hemang will send separate photos for the Sangeet and Wedding sections; until the
 
 ### Mirrored selfies
 
-Photos 18, 23, 46, 48, 50 and 51 (and the removed 10, 11, 13) are front-camera selfies saved mirrored (signs read backwards). That's how they're stored and how the phone shows them, so they were left as-is; flipping would also mirror the couple.
+Photos 18, 23, 46, 48 and 51 (and the removed 10, 11, 13, 50) are front-camera selfies saved mirrored (signs read backwards). That's how they're stored and how the phone shows them, so they were left as-is; flipping would also mirror the couple.
 
 ## The non-negotiable rule: no cropped faces
 
@@ -72,4 +72,4 @@ If face detection misses someone (distant or turned away), check the row by eye 
 
 ## Unused photos
 
-2, 14, 15, 39, 49 (Hemang: ignore), 53–56 and 62–66 aren't on the site. 10, 11, 13, 19 and 22 were replaced and their files removed from `assets/rh/`. All originals stay in the wedding folder.
+2, 14, 15, 39, 49 (Hemang: ignore), 53–56 and 62–66 aren't on the site. 10, 11, 13, 19, 22 (replaced) and 50 (not appropriate for the site) were removed from `assets/rh/`. All originals stay in the wedding folder.
