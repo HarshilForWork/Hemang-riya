@@ -30,7 +30,7 @@ You can point it at the live site too: `https://hemang-riya.vercel.app/?lang=en`
 | `test-welcome.js` | Welcome screen text and "scroll to begin": a small wheel nudge is ignored, a real wheel scroll, a swipe (phones), ↓ and a tap each open the site and unlock scrolling. |
 | `test-rsvp.js` | Fills the RSVP form: validation messages, sections appearing/disappearing, train suggestions for 26/27, "can't make it" exclusivity, summary text, WhatsApp link, answers kept after edit and after switching to Gujarati, Travel & Stay page, nothing wider than the screen. |
 | `test-story.js` | Story photos load and aren't cropped, every landed frame is on screen, 13 hashtags on the print's bottom edge, nothing written on a photo (`textOnPhoto`), no dates (`datesOnPhotos`), no caption too wide for its edge (`captionOverflow`), and the chapter text never overlaps the photo pile (phone and desktop). Run it in each language on a short phone (390×664): Gujarati text is taller. Known: Mix mode at 390×664 reports a few px of `chapterTextOverlapsPile` (cards are at their 140px minimum; see docs/07). |
-| `test-audit.js` | All story photos (30) load and aren't cropped, faces visible in every box and every pop-up banner, all three languages render, no sideways scrolling. |
+| `test-audit.js` | All story photos (30) load and aren't cropped, faces visible in every box, detail cards and pop-up banners use stock artwork (no couple photos, none empty), all three languages render, no sideways scrolling. |
 
 Expected results: `photoGrewWhileScrollingDown: 0`, `nameReappeared: 0`, `biggestEdgeFadeJump` small (a smooth ramp, under ~3% per 30px step), empty `gridOverlaps` on phones (desktop overlaps are the intended collage), empty `facesCut`, `pageErrors: []`.
 

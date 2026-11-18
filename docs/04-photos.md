@@ -27,9 +27,9 @@ The couple's photos were collected in a folder on Hemang's Mac (`~/Downloads/wed
 | 50 | 24 Jul 2026 | Selfie on the plane to Mexico | — (removed: Hemang felt it wasn't right for the site) |
 | 15–18, 51–53 | 24–28 Jul 2026 | Weekend getaway to Mexico for Riya's birthday (15 ≈ 16; 52 = at a cenote) | 16, 17, 18, 51 in story ch.4; 52 is a hero side photo only (bottom-left on phones) |
 | 54 | 22 Aug 2026 | Sunny patio in Toronto, both in caps | Hero side photo (top-right on phones) |
-| 19–21, 23, 55–58 | 5 Sep & 17 Oct 2026 | Their first Navratri together (55, 56 = posed portrait in black outfits) | 57, 58 story ch.4 (#FirstNavratri, #GarbaNights); 21 Sangeet event photo; 20 Sangeet card; 23 "More to come" card |
+| 19–21, 23, 55–58 | 5 Sep & 17 Oct 2026 | Their first Navratri together (55, 56 = posed portrait in black outfits) | 57, 58 story ch.4 (#FirstNavratri, #GarbaNights); 21 Sangeet event photo (20, 23 were card photos until the cards moved to stock photos) |
 | 22, 59, 60 | 4 Oct 2026 | First fall colours trip (Hemang said Muskoka; GPS says Algonquin Park, so the site says "up north") | 59, 60 story ch.4 (#FirstFallColours on 59) |
-| 24–37 | 7 Nov 2026 | Pre-wedding photoshoot where Hemang **surprised Riya with the ring** (32 = kneeling, 36 = the ring). **Mostly saved for save-the-date / countdown posts** — keep them out of the opening collage | 37 hero (main photo only); 32/36/26 story ch.5; 33 Wedding event photo; 31 Wedding card; 30 Travel card; 35 RSVP card; 27 hashtag card; 24 footer |
+| 24–37 | 7 Nov 2026 | Pre-wedding photoshoot where Hemang **surprised Riya with the ring** (32 = kneeling, 36 = the ring). **Mostly saved for save-the-date / countdown posts** — keep them out of the opening collage | 37 hero (main photo only); 32/36/26 story ch.5; 33 Wedding event photo; 24 footer (31, 30, 35, 27 were card photos until the cards moved to stock photos) |
 | 38 | 8 Nov 2026 | Their first Diwali together | Story ch.5: #FirstDiwali |
 | 39 | 16 Nov 2026 | Not described | — |
 | 61 | (no camera date) | **First artsy date** (a neon heart artwork) | Story ch.2: #FirstArtsyDate |
@@ -43,6 +43,24 @@ Photos 67–69 were added later on 18 Nov 2026 (69 had been saved four times; th
 Hemang will send separate photos for the Sangeet and Wedding sections; until then those use the photos listed above.
 
 ### Mirrored selfies
+
+## Stock photos for the detail cards (assets/stock/)
+
+The six detail cards and their pop-up banners use free stock photos, **never the couple's photos** (Hemang, 18 Nov 2026). All are from Unsplash under the Unsplash License (free for commercial use, no credit required), chosen with **no faces visible**. Downloaded from `images.unsplash.com/photo-<id>`, resized to 1400px (collage tiles 900px).
+
+| File | Card | What it shows | Unsplash photo id |
+|---|---|---|---|
+| sangeet.jpg | Sangeet | Hands playing a tabla, warm stage light | 1633411988188-6e63354a9019 |
+| wedding.jpg | Wedding | Joined mehndi hands tied with yellow cloth, sacred fire behind (cropped to the hands: `ART_POS` in app.js) | 1654156577076-e0350ba86cc1 |
+| travel.jpg | Travel & Stay | A train pulling into a Mumbai platform at sunset | 1582217900003-2b19c0e3a7d0 |
+| rsvp.jpg | RSVP | Cream wedding stationery suite (names on it are a stranger's, too small to read) | 1758825178518-ca48833a6c57 |
+| hashtag.jpg | #RiyaSangHemang | Instant prints on a dark table | 1771681617105-745758eae89b |
+| more-haldi.jpg | More to come (collage) | Haldi paste on a marigold tray | 1776581487097-1e40a4c0a15d |
+| more-mehndi.jpg | More to come (collage) | Mehndi hands | 1732118400647-a81e3b37be87 |
+| more-dandiya.jpg | More to come (collage) | Dandiya sticks with marigolds | 1606293927185-20fad5f0a93e |
+| more-bangles.jpg | More to come (collage) | Gold bangles with marigolds | 1606293926249-ed22e446d476 |
+
+Hemang also considered (not used): an illustrated icon version of the cards; for Wedding, a couple from behind (1775566416606-b47c6787ca2f), a varmala under a floral arch (1744804298564-92600fc82879, groom's profile visible), a sunset silhouette (1649291334951-c272ac382435) and a hand-drawn animated varmala.
 
 Photos 18, 23, 46, 48 and 51 (and the removed 10, 11, 13, 50) are front-camera selfies saved mirrored (signs read backwards). That's how they're stored and how the phone shows them, so they were left as-is; flipping would also mirror the couple.
 

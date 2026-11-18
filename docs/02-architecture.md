@@ -21,7 +21,7 @@ tools/test/         headless-Chrome test harness and test scripts
 
 | Block | What it holds |
 |---|---|
-| Content constants | `UI` (page text, en/gu), `ACCENT` (Gujarati lines for Mix mode), `PHOTOS` (size + face box per photo), `STORY`, `ROTATIONS`, `CONTACTS`, `CARDS`, `OVERLAYS` (pop-up pages), `FAQ`, `TRAINS`, `RSVP_ENDPOINT`, `RSVP_WHATSAPP`, `FORM` (RSVP form text), `COUNTDOWN_TARGET` |
+| Content constants | `UI` (page text, en/gu), `ACCENT` (Gujarati lines for Mix mode), `PHOTOS` (size + face box per photo), `STORY`, `ROTATIONS`, `CONTACTS`, `CARDS`, `OVERLAYS` (pop-up pages), `CARD_ART` + `ART_POS` (stock photos for the cards/banners), `FAQ`, `TRAINS`, `RSVP_ENDPOINT`, `RSVP_WHATSAPP`, `FORM` (RSVP form text), `COUNTDOWN_TARGET` |
 | Viewport probes | `VH()` = height of a hidden `100svh` element; `VHL()` = `100lvh` element |
 | Photo placement | `placeFocus(img, n, boxW, boxH)`, `applyFocus(root)` |
 | Language state | `lang` (`en`/`gu`/`mix`), `tl()` (text set: gu or en), `mix()`, `T(key)`, `num()` (Gujarati digits) |
@@ -85,6 +85,7 @@ Every photo in a fixed-shape box (hero, side photos, event photos, detail cards,
 
 ## Pop-up sheet and RSVP
 
+- Detail cards and pop-up banners show `CARD_ART[id]` from `assets/stock/` (one photo, or four for the "More to come" collage: 2×2 on the card, a row of four in the banner). Never the couple's photos.
 - Any element with `data-overlay="id"` opens `OVERLAYS[id]` in a bottom sheet. `renderSheet()` builds banner, title, description, sections, map (sangeet/wedding), the travel page (`travel: true`) or the RSVP form (`rsvp: true`).
 - RSVP state `rs` lives in memory and localStorage `rh-rsvp-v2`, so answers survive closing the sheet, switching language and reloading.
 - Form sections show/hide via `data-show` keys computed in `syncRsvp()`: `attending`, `wedding`, `mumbai`, `when26`, `when27`, `stay`.

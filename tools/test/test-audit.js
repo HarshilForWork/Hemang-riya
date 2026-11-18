@@ -20,11 +20,16 @@ out.lowestStoryFrame = Math.round(Math.max(...$$(".polaroid-wrap").map((w) => w.
 out.screenHeight = innerHeight;
 // faces in fixed boxes
 out.facesCut = $$("img[data-n]").filter((el) => el.parentElement.clientWidth && !faceOk(el, el.dataset.n)).map((el) => el.dataset.n);
-// pop-up banners
-out.bannerFacesCut = [];
+// detail cards and pop-up banners use artwork (stock photo or illustration), never the couple's photos
+out.cardCouplePhotos = $$(".dcard img[data-n]").map((el) => el.dataset.n);
+out.bannerCouplePhotos = []; out.bannerEmpty = [];
 for (const id of ["sangeet", "wedding", "travel", "rsvp", "hashtag", "more"]) {
   $(`.dcard[data-overlay="${id}"]`).click(); await wait(650);
-  const b = $(".op__banner img"); if (!faceOk(b, b.dataset.n)) out.bannerFacesCut.push(id);
+  const b = $(".op__banner");
+  if (b.querySelector("img[data-n]")) out.bannerCouplePhotos.push(id);
+  const im = b.querySelector("img");
+  if (im) await (im.complete ? 1 : new Promise((r) => { im.onload = im.onerror = r; }));
+  if (!(im ? im.naturalWidth : b.querySelector("svg"))) out.bannerEmpty.push(id);
   $(".sheet__x").click(); await wait(400);
 }
 // languages

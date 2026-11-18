@@ -9,7 +9,7 @@ All guest-facing text is in `app.js`, near the top. Every entry has an English (
 | Static page text (headings, dates, venues, buttons, FAQ intro…) | `UI.en` / `UI.gu` | Keys match `data-i18n="key"` in index.html |
 | Gujarati lines in Mix mode | `ACCENT` | Keys match `data-accent="key"` |
 | Story chapters and photo captions | `STORY` | `photos` order = `caps` order |
-| Detail cards (title, subtitle, image) | `CARDS` | |
+| Detail cards (title, subtitle) | `CARDS` | Card + banner photo: `CARD_ART` (stock photos, see docs/04) |
 | Pop-up pages | `OVERLAYS` | `sections: [label, subtitle, body]`; sangeet/wedding have `map` |
 | FAQ | `FAQ.en` / `FAQ.gu` | `[question, [paragraphs]]` |
 | RSVP contacts (pop-up and form) | `CONTACTS` | phone in `tel` (no spaces) and `display` |
@@ -71,6 +71,6 @@ name, phone, side (`riya`/`hemang`), events (`sangeet`, `wedding`, or `none`), g
 
 ## Adding a new pop-up page or card
 
-1. Add an entry to `OVERLAYS` (with `image`, `en`, `gu`).
+1. Add an entry to `OVERLAYS` (with `en`, `gu`), and a stock photo (no faces) to `assets/stock/` + `CARD_ART`.
 2. Add a card to `CARDS` with the same `id` (grid shows 3 per row on desktop, 2 on tablet, 1 on phone).
 3. Make sure the card's photo is in `PHOTOS` (docs/04).

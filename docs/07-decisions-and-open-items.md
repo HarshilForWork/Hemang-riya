@@ -18,6 +18,7 @@
 | Moving day moved from the firsts chapter to "our city, our adventures" | It isn't a date; keeps the firsts chapter about dates |
 | Invitation line: "a few moments that led us here… our love story" | Hemang wanted something calm, subtle and not cheesy; two "cordially invite" versions before it didn't read well |
 | Welcome screen: "welcome to the story of…" + "scroll to begin"; scroll, swipe, key or tap all enter | Hemang's idea: the hero name "Riya & Hemang" finishes the sentence; guests naturally scroll on phones, so scrolling must work, not just a tap |
+| Detail cards + pop-up banners use stock photos (no faces), not the couple's photos; "More to come" = haldi/mehndi/dandiya/bangles collage; Wedding = joined hands over the sacred fire | Hemang (18 Nov 2026) chose stock photos over an illustrated icon version, then picked the Wedding photo from five options |
 | Photos 5 and 52 only in the opening collage, not also in the story; #FirstBigDate moved to 41 (the dinner), #SevenCourses dropped | Hemang: no repeats once they're on top |
 | Opening collage side photos = 68 (ring), 54, 52, 5 — no pre-wedding shoot photos | Hemang wants the shoot photos saved for save-the-date and countdown posts ("10 days to go" etc.). First set was 68/14/67/56; Hemang then swapped 56→5, 14→52, 67→54 (52 and 5 also appear in the story) |
 | Hot chocolate photo 69 added to chapter one with #FirstHotChocolate | Hemang's request |
@@ -48,7 +49,7 @@
 
 ## Open items
 
-- [ ] **Other shoot photos still in use** — the event photos (33), detail cards (31, 30, 35, 27), footer (24) and story ch.5 (32, 36, 26) are pre-wedding shoot photos. Ask Hemang whether to swap any of them too, given he wants shoot photos saved for later.
+- [ ] **Other shoot photos still in use** — the Wedding event photo (33), footer (24) and story ch.5 (32, 36, 26) are pre-wedding shoot photos (the detail cards now use stock photos). Ask Hemang whether to swap any of them too, given he wants shoot photos saved for later.
 - [ ] **Mix mode on short phones (390×664)**: the two-language chapter text is tall, cards hit their 140px minimum and the tilted card underneath grazes the chapter title by a few px (also on the previous version). Narrower cards made long hashtags spill; a real fix would shorten the Mix chapter text on phones.
 - [ ] **Sangeet and Wedding photos** — Hemang will send them; replace photos 21/20 (Sangeet) and 33/31 (Wedding) in index.html, `CARDS` and `OVERLAYS`, and add rows to `PHOTOS` (docs/04).
 - [ ] **Google Sheet for RSVPs** — set up in personal Gmail (docs/rsvp-google-sheet.md), then fill `RSVP_ENDPOINT`.

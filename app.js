@@ -109,17 +109,11 @@
     16: [1200, 1600, 0.477, 0.158, 0.656, 0.33],
     17: [1067, 1600, 0.117, 0.196, 0.603, 0.374],
     18: [1200, 1600, 0, 0.223, 0.973, 0.626],
-    20: [1200, 1600, 0.128, 0.207, 0.766, 0.433],
     21: [1200, 1600, 0.365, 0.327, 0.56, 0.448],
-    23: [1200, 1600, 0.257, 0.252, 0.749, 0.654],
     24: [1600, 1066, 0.282, 0.155, 0.926, 0.485],
     26: [1066, 1600, 0.213, 0.556, 0.665, 0.662],
-    27: [1066, 1600, 0.428, 0.474, 0.787, 0.586],
-    30: [1600, 1066, 0.381, 0.296, 0.653, 0.486],
-    31: [1066, 1600, 0.247, 0.535, 0.548, 0.651],
     32: [1066, 1600, 0.196, 0.563, 0.763, 0.705],
     33: [1600, 1066, 0.416, 0.323, 0.814, 0.532],
-    35: [1200, 1600, 0.271, 0.312, 0.734, 0.49],
     36: [1066, 1600, 0.3, 0.2, 0.7, 0.6],
     37: [1600, 1066, 0.225, 0.31, 0.807, 0.667],
     38: [1200, 1600, 0.476, 0.423, 0.588, 0.517],
@@ -229,17 +223,17 @@
   const mapsLink = (q) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
 
   const CARDS = [
-    { id: "sangeet", image: 20, en: ["Sangeet", "Friday, 22 January · Navi Mumbai"], gu: ["સંગીત", "શુક્રવાર, ૨૨ જાન્યુઆરી · નવી મુંબઈ"] },
-    { id: "wedding", image: 31, en: ["Wedding", "Wednesday, 27 January · Nadiad"], gu: ["લગ્ન", "બુધવાર, ૨૭ જાન્યુઆરી · નડિયાદ"] },
-    { id: "travel", image: 30, en: ["Travel & Stay", "Trains from Mumbai and your stay in Nadiad."], gu: ["પ્રવાસ અને રોકાણ", "મુંબઈથી ટ્રેનો અને નડિયાદમાં રોકાણ."] },
-    { id: "rsvp", image: 35, en: ["RSVP", "Attendance, travel and stay in one form."], gu: ["હાજરી જણાવો", "હાજરી, મુસાફરી અને રોકાણ — એક જ ફોર્મમાં."] },
-    { id: "hashtag", image: 27, en: ["#RiyaSangHemang", "Share every moment with us."], gu: ["#RiyaSangHemang", "દરેક પળ અમારી સાથે શેર કરો."] },
-    { id: "more", image: 23, en: ["More to come", "Other celebrations, shared soon."], gu: ["હજી ઘણું બાકી છે", "બીજા પ્રસંગોની વિગતો ટૂંક સમયમાં."] },
+    { id: "sangeet", en: ["Sangeet", "Friday, 22 January · Navi Mumbai"], gu: ["સંગીત", "શુક્રવાર, ૨૨ જાન્યુઆરી · નવી મુંબઈ"] },
+    { id: "wedding", en: ["Wedding", "Wednesday, 27 January · Nadiad"], gu: ["લગ્ન", "બુધવાર, ૨૭ જાન્યુઆરી · નડિયાદ"] },
+    { id: "travel", en: ["Travel & Stay", "Trains from Mumbai and your stay in Nadiad."], gu: ["પ્રવાસ અને રોકાણ", "મુંબઈથી ટ્રેનો અને નડિયાદમાં રોકાણ."] },
+    { id: "rsvp", en: ["RSVP", "Attendance, travel and stay in one form."], gu: ["હાજરી જણાવો", "હાજરી, મુસાફરી અને રોકાણ — એક જ ફોર્મમાં."] },
+    { id: "hashtag", en: ["#RiyaSangHemang", "Share every moment with us."], gu: ["#RiyaSangHemang", "દરેક પળ અમારી સાથે શેર કરો."] },
+    { id: "more", en: ["More to come", "Other celebrations, shared soon."], gu: ["હજી ઘણું બાકી છે", "બીજા પ્રસંગોની વિગતો ટૂંક સમયમાં."] },
   ];
 
   const OVERLAYS = {
     sangeet: {
-      image: 20, map: "Bhanushali Wadi, Sector 19A, Nerul East, Navi Mumbai",
+      map: "Bhanushali Wadi, Sector 19A, Nerul East, Navi Mumbai",
       en: {
         title: "Sangeet", description: "An evening of music and dance as both families come together in Navi Mumbai.",
         sections: [
@@ -256,7 +250,7 @@
       },
     },
     wedding: {
-      image: 31, map: "Aavishkaar Party Lawns & Banquet, Fatepur, Nadiad, Gujarat",
+      map: "Aavishkaar Party Lawns & Banquet, Fatepur, Nadiad, Gujarat",
       en: {
         title: "Wedding", description: "Five days after the Sangeet, we celebrate the wedding in Riya's hometown, Nadiad.",
         sections: [
@@ -273,17 +267,16 @@
       },
     },
     travel: {
-      image: 30, travel: true,
+      travel: true,
       en: { title: "Travel & Stay", description: "The Sangeet is in Navi Mumbai and the wedding is in Nadiad, Gujarat, five days later. Here's how to get from Mumbai to Nadiad, and where you'll stay." },
       gu: { title: "પ્રવાસ અને રોકાણ", description: "સંગીત નવી મુંબઈમાં છે અને તેના પાંચ દિવસ પછી લગ્ન નડિયાદ, ગુજરાતમાં છે. મુંબઈથી નડિયાદ કેવી રીતે પહોંચવું અને ક્યાં રોકાવું, તેની માહિતી અહીં છે." },
     },
     rsvp: {
-      image: 35, rsvp: true,
+      rsvp: true,
       en: { title: "RSVP", description: "Please let us know who's coming, and whether you'd like help with travel or a stay in Nadiad." },
       gu: { title: "હાજરી જણાવો", description: "કોણ પધારશે, અને મુસાફરી કે નડિયાદમાં રહેવાની મદદ જોઈએ છે કે નહીં, તે જણાવશો." },
     },
     hashtag: {
-      image: 27,
       en: {
         title: "#RiyaSangHemang", description: "Snap, post and tag — we'd love to see both celebrations through your eyes.",
         sections: [["Our hashtag", "#RiyaSangHemang", "Use it on Instagram, WhatsApp statuses and anywhere else you share photos from the Sangeet and the wedding."]],
@@ -294,7 +287,6 @@
       },
     },
     more: {
-      image: 23,
       en: {
         title: "More to come", description: "The Sangeet and the wedding are just the beginning.",
         sections: [["Coming soon", "Other celebrations", "Details of the other wedding events will be shared here soon. Check back closer to the dates."]],
@@ -911,6 +903,21 @@
   })();
 
   /* ---------------- DETAILS GRID ---------------- */
+
+  // Detail cards and their pop-up banners use stock photos, never the couple's photos (Hemang, 18 Nov 2026).
+  // Files in assets/stock/ (Unsplash License: free, no credit required; sources in docs/04-photos.md).
+  // "More to come" is a collage of other ceremonies: haldi, mehndi, garba (dandiya), bangles.
+  const CARD_ART = {
+    sangeet: ["sangeet"], wedding: ["wedding"], travel: ["travel"], rsvp: ["rsvp"], hashtag: ["hashtag"],
+    more: ["more-haldi", "more-mehndi", "more-dandiya", "more-bangles"],
+  };
+  // where to crop a photo when the box is wider than the photo (default: centre)
+  const ART_POS = { wedding: "50% 14%" }; // keep the joined hands in frame, not just the fire
+  const artMedia = (id) => {
+    const files = CARD_ART[id].map((f) => `<img src="assets/stock/${f}.jpg" alt="" loading="lazy"${ART_POS[f] ? ` style="object-position:${ART_POS[f]}"` : ""} />`).join("");
+    return CARD_ART[id].length > 1 ? `<span class="collage">${files}</span>` : files;
+  };
+
   const plusSvg = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>`;
   let gridBuilt = false;
   function buildGrid() {
@@ -920,7 +927,7 @@
       return `
       <div data-reveal class="${gridBuilt ? "is-in" : ""}" style="transition-delay:${(i % 3) * 90}ms">
         <button class="dcard" data-overlay="${c.id}" aria-label="${esc(title)}">
-          <img src="${img(c.image)}" data-n="${c.image}" alt="" loading="lazy" />
+          ${artMedia(c.id)}
           <div class="dcard__text">${accent}<h3>${esc(title)}</h3><p>${esc(sub)}</p></div>
           <span class="dcard__plus">${plusSvg}</span>
         </button>
@@ -994,10 +1001,8 @@
     const t = o[tl()];
     sheetTitle.textContent = t.title;
     const accent = mix() && o.gu.title !== o.en.title ? `<span class="accent accent--op">${esc(o.gu.title)}</span>` : "";
-    // banners are wide (2.3:1) but get taller when that's needed to fit both faces
-    const [bw0, bh0, , by0, , by1] = PHOTOS[o.image];
-    const bannerRatio = clamp((bw0 / bh0) / (by1 - by0 + 0.06), 1.5, 2.3).toFixed(3);
-    let h = `<div class="op__banner" style="aspect-ratio:${bannerRatio}"><img src="${img(o.image)}" data-n="${o.image}" alt="" /></div>
+    // banner = the same stock photo (or collage) as the card, never the couple's photos
+    let h = `<div class="op__banner">${artMedia(openId)}</div>
              <h1 class="op__title">${esc(t.title)}${accent}</h1>
              <p class="op__desc">${esc(t.description)}</p>`;
     if (t.sections) {
