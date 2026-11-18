@@ -106,7 +106,6 @@
     8: [1200, 1600, 0.493, 0.462, 0.868, 0.711],
     9: [1200, 1600, 0.323, 0.18, 0.697, 0.405],
     12: [1200, 1600, 0.315, 0.19, 0.549, 0.377],
-    14: [1200, 1600, 0.155, 0.288, 0.814, 0.677],
     16: [1200, 1600, 0.477, 0.158, 0.656, 0.33],
     17: [1067, 1600, 0.117, 0.196, 0.603, 0.374],
     18: [1200, 1600, 0, 0.223, 0.973, 0.626],
@@ -134,21 +133,21 @@
     48: [1200, 1600, 0.159, 0.303, 1, 0.634],
     51: [1200, 1600, 0.186, 0.033, 0.967, 0.689],
     52: [1200, 1600, 0.434, 0.43, 0.705, 0.598],
-    56: [1200, 1600, 0.412, 0.085, 0.655, 0.413],
+    54: [1600, 1200, 0.316, 0.258, 0.682, 0.605],
     57: [1200, 1600, 0.276, 0.217, 0.685, 0.372],
     58: [1200, 1600, 0.401, 0.319, 0.581, 0.477],
     59: [1200, 1600, 0.037, 0.244, 0.629, 0.443],
     60: [1600, 1200, 0.355, 0, 0.648, 0.893],
     61: [1200, 1600, 0.3, 0.2, 0.7, 0.6],
-    67: [1200, 1600, 0.346, 0.268, 0.755, 0.423],
     68: [1200, 1600, 0.17, 0.263, 0.739, 0.57],
     69: [1200, 1600, 0.3, 0.2, 0.7, 0.6],
   };
 
   // Story chapters. photos: file numbers; caps: caption under each photo (same order), per language.
-  // tags: optional handwritten hashtag written on the photo itself (used for "firsts"); for tagged photos
-  // the caption strip shows the date it was taken. Story photos are shown whole: each frame takes the
-  // photo's own shape, so nothing is ever cropped.
+  // tags: optional hashtag (used for "firsts"). Each frame looks like an Instagram print: white border,
+  // deeper bottom edge with the hashtag (or, for untagged photos, the caption) handwritten on it.
+  // No dates on the photos (Hemang). Story photos are shown whole: each frame takes the photo's own
+  // shape, so nothing is ever cropped.
   const STORY = [
     {
       side: "left", photos: [1, 69, 3, 4],
@@ -156,12 +155,12 @@
       en: {
         title: "chapter one: a concert, then hot chocolate",
         body: "We met for the first time at a concert — and somehow didn't take a single photo. Our second date was the Christmas tree lighting at the Distillery District: our first hot chocolate, and our very first picture together.",
-        caps: ["The Distillery District, our first photo", "28 November 2025", "Our first December, twinkle lights & all", "Cold noses, warm hearts"],
+        caps: ["The Distillery District, our first photo", "", "Our first December, twinkle lights & all", "Cold noses, warm hearts"],
       },
       gu: {
         title: "પ્રકરણ એક: એક કોન્સર્ટ, પછી હોટ ચોકલેટ",
         body: "અમે પહેલી વાર એક કોન્સર્ટમાં મળ્યા — અને ત્યારે એક પણ ફોટો ન પાડ્યો! અમારી બીજી ડેટ ડિસ્ટિલરી ડિસ્ટ્રિક્ટની ક્રિસમસ ટ્રી લાઇટિંગ હતી: ત્યાં અમે પહેલી વાર સાથે હોટ ચોકલેટ પીધી અને અમારો પહેલો ફોટો પાડ્યો.",
-        caps: ["ડિસ્ટિલરી ડિસ્ટ્રિક્ટ, અમારો પહેલો ફોટો", "૨૮ નવેમ્બર ૨૦૨૫", "અમારો પહેલો ડિસેમ્બર, ઝગમગતી લાઇટો સાથે", "ઠંડું નાક, હૂંફાળું દિલ"],
+        caps: ["ડિસ્ટિલરી ડિસ્ટ્રિક્ટ, અમારો પહેલો ફોટો", "", "અમારો પહેલો ડિસેમ્બર, ઝગમગતી લાઇટો સાથે", "ઠંડું નાક, હૂંફાળું દિલ"],
       },
     },
     {
@@ -170,12 +169,12 @@
       en: {
         title: "chapter two: our firsts, of so many dates",
         body: "Our first big date was a seven-course dinner on the last night of 2025. Then came our first movie, our first Valentine's, a museum date full of illusions and our first artsy date — and we're still counting.",
-        caps: ["31 December 2025", "31 December 2025", "31 December 2025", "31 December 2025", "16 January 2026", "14 February 2026", "14 February 2026", "25 April 2026", ""],
+        caps: ["", "", "", "", "", "", "", "", ""],
       },
       gu: {
         title: "પ્રકરણ બે: અમારી પહેલી વારની કેટલીય ડેટ્સ",
         body: "અમારી પહેલી મોટી ડેટ ૨૦૨૫ની છેલ્લી રાત્રે સાત-કોર્સ ડિનર હતી. પછી આવી અમારી પહેલી મૂવી, પહેલો વેલેન્ટાઇન્સ ડે, ભ્રમથી ભરેલી મ્યુઝિયમ ડેટ અને અમારી પહેલી આર્ટી ડેટ — અને ગણતરી હજી ચાલુ છે.",
-        caps: ["૩૧ ડિસેમ્બર ૨૦૨૫", "૩૧ ડિસેમ્બર ૨૦૨૫", "૩૧ ડિસેમ્બર ૨૦૨૫", "૩૧ ડિસેમ્બર ૨૦૨૫", "૧૬ જાન્યુઆરી ૨૦૨૬", "૧૪ ફેબ્રુઆરી ૨૦૨૬", "૧૪ ફેબ્રુઆરી ૨૦૨૬", "૨૫ એપ્રિલ ૨૦૨૬", ""],
+        caps: ["", "", "", "", "", "", "", "", ""],
       },
     },
     {
@@ -197,12 +196,12 @@
       en: {
         title: "chapter four: mexico, garba & fall colours",
         body: "For her birthday we escaped to Mexico for a weekend. Then came our first Navratri together and our first fall colours trip up north.",
-        caps: ["Her birthday weekend in Mexico", "Off-roading, birthday edition", "Making a splash in Mexico", "Palm trees and birthday smiles", "Into the cenote", "5 September 2026", "5 September 2026", "4 October 2026", "Fall colours, up north"],
+        caps: ["Her birthday weekend in Mexico", "Off-roading, birthday edition", "Making a splash in Mexico", "Palm trees and birthday smiles", "Into the cenote", "", "", "", "Fall colours, up north"],
       },
       gu: {
         title: "પ્રકરણ ચાર: મેક્સિકો, ગરબા અને પાનખરના રંગો",
         body: "તેના જન્મદિવસે અમે વીકએન્ડ માટે મેક્સિકો ગયા. પછી આવી અમારી સાથેની પહેલી નવરાત્રિ અને પાનખરના રંગો જોવા ઉત્તર તરફની અમારી પહેલી ટ્રિપ.",
-        caps: ["મેક્સિકોમાં તેનો બર્થડે વીકએન્ડ", "બર્થડે સ્પેશિયલ ઑફ-રોડિંગ", "મેક્સિકોમાં છબછબિયાં", "તાડનાં વૃક્ષો અને બર્થડે સ્મિત", "મેક્સિકોની ગુફાના પાણીમાં", "૫ સપ્ટેમ્બર ૨૦૨૬", "૫ સપ્ટેમ્બર ૨૦૨૬", "૪ ઑક્ટોબર ૨૦૨૬", "ઉત્તરમાં પાનખરના રંગો"],
+        caps: ["મેક્સિકોમાં તેનો બર્થડે વીકએન્ડ", "બર્થડે સ્પેશિયલ ઑફ-રોડિંગ", "મેક્સિકોમાં છબછબિયાં", "તાડનાં વૃક્ષો અને બર્થડે સ્મિત", "મેક્સિકોની ગુફાના પાણીમાં", "", "", "", "ઉત્તરમાં પાનખરના રંગો"],
       },
     },
     {
@@ -211,12 +210,12 @@
       en: {
         title: "chapter five: the question",
         body: "A photoshoot for our wedding — or so she thought. Somewhere between the lake and the old stone buildings, I got down on one knee with a ring. The next day, we celebrated our first Diwali together.",
-        caps: ["The surprise", "She said yes", "Engaged", "8 November 2026"],
+        caps: ["The surprise", "She said yes", "Engaged", ""],
       },
       gu: {
         title: "પ્રકરણ પાંચ: એ સવાલ",
         body: "અમારા લગ્ન માટેનું ફોટોશૂટ — એવું તે માનતી હતી. તળાવ અને જૂની પથ્થરની ઇમારતો વચ્ચે ક્યાંક, હું વીંટી લઈને એક ઘૂંટણે બેસી ગયો. બીજા જ દિવસે અમે સાથે અમારી પહેલી દિવાળી ઉજવી.",
-        caps: ["સરપ્રાઇઝ", "તેણે હા પાડી", "સગાઈ થઈ ગઈ", "૮ નવેમ્બર ૨૦૨૬"],
+        caps: ["સરપ્રાઇઝ", "તેણે હા પાડી", "સગાઈ થઈ ગઈ", ""],
       },
     },
   ];
@@ -707,16 +706,13 @@
         const cap = t.caps[pi];
         const tag = ch.tags && ch.tags[pi];
         const k = cards.length;
-        // hashtag goes at the bottom of the photo, or at the top if the faces sit low
-        const [, , , fy0, , fy1] = PHOTOS[n];
-        const tagPos = fy0 > 1 - fy1 ? "top" : "bottom";
         const label = tag ? `${tag}${cap ? ` · ${cap}` : ""}` : cap;
         const wrap = document.createElement("div");
         wrap.className = "polaroid-wrap";
         wrap.innerHTML = `
           <div class="polaroid${tag ? " polaroid--first" : ""}" style="transform: rotate(${ROTATIONS[pi % ROTATIONS.length]}deg)" role="button" tabindex="0" aria-label="${esc(label)}">
-            <div class="polaroid__img" style="aspect-ratio:${PHOTOS[n][0]} / ${PHOTOS[n][1]}"><img src="${img(n)}" alt="${esc(label)}" loading="${k < 3 ? "eager" : "lazy"}" decoding="async" />${tag ? `<span class="polaroid__tag polaroid__tag--${tagPos}">${esc(tag)}</span>` : ""}</div>
-            <p class="polaroid__cap">${esc(cap) || "&nbsp;"}</p>
+            <div class="polaroid__img" style="aspect-ratio:${PHOTOS[n][0]} / ${PHOTOS[n][1]}"><img src="${img(n)}" alt="${esc(label)}" loading="${k < 3 ? "eager" : "lazy"}" decoding="async" /></div>
+            <p class="polaroid__cap${tag ? " polaroid__cap--tag" : ""}">${esc(tag || cap) || "&nbsp;"}</p>
           </div>`;
         const pol = $(".polaroid", wrap);
         const open = () => openLightbox(img(n), cap, tag);
@@ -753,20 +749,20 @@
     const textTop = mobile ? vh - Math.max(...chaptersM.map((m) => m.offsetHeight - 28)) : vh;
     cards.forEach((c, k) => {
       const [pw, ph] = PHOTOS[c.n];
-      // frame height ≈ width × (top border + photo + caption strip)
-      const perW = 0.045 + 0.91 * (ph / pw) + 0.16;
+      // frame height ≈ width × (top border + photo + deep bottom edge of the print)
+      const perW = 0.05 + 0.9 * (ph / pw) + 0.2;
       const room = mobile
-        ? textTop - 20 - stack[k]
+        ? textTop - 30 - stack[k]
         : Math.min(vh * CH_H[c.chapter % CH_H.length] * 1.12, vh - stack[k] - 22 * s);
       c.w = Math.max(140, Math.min(maxW[c.chapter], room / perW));
       c.el.style.width = `${c.w}px`;
-      c.el.style.setProperty("--cw", `${c.w}px`); // hashtag size follows the card size
+      c.el.style.setProperty("--cw", `${c.w}px`); // handwriting size follows the card size
     });
     // The estimate above assumes a one-line caption; long captions wrap on narrow cards. Measure the real
     // frames and shrink any that would run past their limit (two passes, since the caption re-wraps).
     for (let pass = 0; pass < 2; pass++) {
       cards.forEach((c, k) => {
-        const limit = mobile ? textTop - 20 : vh - 22 * s;
+        const limit = mobile ? textTop - 30 : vh - 22 * s;
         const hgt = c.el.offsetHeight;
         if (stack[k] + hgt > limit && hgt > 0) {
           c.w = Math.max(140, c.w * (limit - stack[k]) / hgt);
@@ -780,7 +776,17 @@
       const ws = cards.filter((c) => c.chapter <= i).map((c) => c.w);
       $(".chapter__spacer", ch).style.width = `${Math.max(...ws) + 24}px`;
     });
-    const natural = cards.map((_, k) => s * (291 + off) + s * GAP * k);
+    // Each print rests fully visible (hashtag on its bottom edge included) for HOLD px of scrolling before
+    // the next one slides up over its bottom edge: space the cards by the previous frame's height, not a
+    // fixed gap, since tall photos are taller than GAP.
+    const HOLD = mobile ? 150 : 170 * s;
+    const natural = [];
+    cards.forEach((c, k) => {
+      if (k === 0) { natural.push(s * (291 + off)); return; }
+      const p = cards[k - 1].el;
+      const capH = $(".polaroid__cap", p).offsetHeight;
+      natural.push(natural[k - 1] + Math.max(s * GAP, p.offsetHeight - capH + HOLD));
+    });
     const last = cards.length - 1;
     const range = natural[last] - stack[last] + vh * 0.15;
     story.style.height = `${range + vh}px`;

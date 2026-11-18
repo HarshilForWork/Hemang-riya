@@ -25,7 +25,7 @@ All guest-facing text is in `app.js`, near the top. Every entry has an English (
 
 ## Story chapters, captions and hashtags (current)
 
-Chapter two is a dedicated "firsts" chapter: each photo has a handwritten hashtag on it and the date under it. Other "first" photos elsewhere in the story get the same treatment. Hashtags are in Latin script in all languages (like #RiyaSangHemang); the dates under them are translated.
+Every story photo is framed like an Instagram print: white border with a deeper bottom edge, and words handwritten on that edge. Chapter two is a dedicated "firsts" chapter: each photo has its hashtag there. Other "first" photos elsewhere in the story get the same treatment; untagged photos show their caption instead. **No dates on the photos** (Hemang, 18 Nov 2026). Hashtags are in Latin script in all languages (like #RiyaSangHemang).
 
 1. *a concert, then hot chocolate* — The Distillery District, our first photo · #FirstHotChocolate (69) · Our first December, twinkle lights & all · Cold noses, warm hearts
 2. *our firsts, of so many dates* — #FirstBigDate (5) · #SevenCourses (41) · #NewYearsEve (40) · #FirstOfMany (43) · #FirstMovieDate (6) · #FirstValentines (8) · #ValentinesDinner (44) · #FirstMuseumDate (45) · #FirstArtsyDate (61, no date known)
@@ -33,9 +33,9 @@ Chapter two is a dedicated "firsts" chapter: each photo has a handwritten hashta
 4. *mexico, garba & fall colours* — Her birthday weekend in Mexico · Off-roading, birthday edition · Making a splash in Mexico · Palm trees and birthday smiles · Into the cenote · #FirstNavratri (57) · #GarbaNights (58) · #FirstFallColours (59) · Fall colours, up north (60)
 5. *the question* — The surprise · She said yes · Engaged · #FirstDiwali (38)
 
-Photo 60 has no hashtag on purpose: the couple's faces fill most of that photo, so any writing would cover them.
+Photo 60 has a caption ("Fall colours, up north") rather than a hashtag; it could take one now that hashtags sit below the photo.
 
-To tag a photo: add a `tags` array to its chapter in `STORY` (same order as `photos`, `null` for untagged) and put the date in that position of `caps` (both languages). Run `tools/test/test-story.js` — it fails if a hashtag covers a face.
+To tag a photo: add a `tags` array to its chapter in `STORY` (same order as `photos`, `null` for untagged) and leave that position of `caps` empty (both languages) — never a date. Run `tools/test/test-story.js` — it counts hashtags, flags dates, text written on a photo, and hashtags too long for the bottom edge.
 
 ## Trains (Mumbai → Nadiad)
 

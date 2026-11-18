@@ -1,4 +1,4 @@
-// Story section: photos whole (not cropped), frames on screen when landed, hashtags clear of faces,
+// Story section: photos whole (not cropped), frames on screen when landed, hashtags on the print's bottom edge (no dates),
 // chapter text clear of the photo pile.
 const scrollTo = (x, y) => window.scrollTo({ left: x, top: y, behavior: "instant" }); // the site uses smooth scrolling; tests must jump
 const wait = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -12,19 +12,11 @@ await Promise.all(imgs.map((i) => (i.complete ? 1 : new Promise((r) => { i.onloa
 const out = { storyPhotos: imgs.length, broken: imgs.filter((i) => !i.naturalWidth).length };
 out.cropped = imgs.filter((i) => i.naturalWidth && Math.abs((i.naturalWidth / i.naturalHeight) / (i.parentElement.clientWidth / i.parentElement.clientHeight) - 1) > 0.01).map((i) => i.src.split("/").pop());
 
-// hashtags vs faces (text box of the hashtag vs the faces area of its photo)
-out.hashtags = $$(".polaroid__tag").length;
-out.hashtagsOverFaces = [];
-for (const tag of $$(".polaroid__tag")) {
-  const im = tag.parentElement.querySelector("img"); const n = im.src.match(/(\d+)\.jpg/)[1];
-  const [, , x0, y0, x1, y1] = P[n];
-  const box = tag.parentElement.getBoundingClientRect();
-  const range = document.createRange(); range.selectNodeContents(tag); const t = range.getBoundingClientRect();
-  const f = { l: box.left + x0 * box.width, r: box.left + x1 * box.width, t: box.top + y0 * box.height, b: box.top + y1 * box.height };
-  const ow = Math.min(t.right, f.r) - Math.max(t.left, f.l), oh = Math.min(t.bottom, f.b) - Math.max(t.top, f.t);
-  const share = ow > 0 && oh > 0 ? (ow * oh) / ((f.r - f.l) * (f.b - f.t)) : 0;
-  if (share > 0.04) out.hashtagsOverFaces.push(`${n} ${tag.textContent} covers ${(share * 100).toFixed(0)}% of faces area`);
-}
+// Instagram-print bottom edge: hashtags handwritten there, nothing written on the photo, no dates
+out.hashtags = $$(".polaroid__cap--tag").length;
+out.textOnPhoto = $$(".polaroid__img").filter((b) => b.textContent.trim()).length;
+out.datesOnPhotos = $$(".polaroid__cap").map((c) => c.textContent).filter((t) => /20\d\d|૨૦૨|\d\s+(January|February|March|April|May|June|July|August|September|October|November|December)\b/.test(t));
+out.captionOverflow = $$(".polaroid__cap").filter((c) => c.scrollWidth > c.clientWidth + 1).map((c) => c.textContent);
 
 // walk through the story: landed frames on screen, chapter text clear of the pile
 const st = document.getElementById("story");
