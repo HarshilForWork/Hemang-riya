@@ -53,7 +53,7 @@ The six detail cards and their pop-up banners use free stock photos, **never the
 | sangeet.jpg | Sangeet | Hands playing a tabla, warm stage light | 1633411988188-6e63354a9019 |
 | wedding.jpg | Wedding | Joined mehndi hands tied with yellow cloth, sacred fire behind (cropped to the hands: `ART_POS` in app.js) | 1654156577076-e0350ba86cc1 |
 | travel.jpg | Travel & Stay | A train pulling into a Mumbai platform at sunset | 1582217900003-2b19c0e3a7d0 |
-| rsvp.jpg | RSVP | Cream wedding stationery suite (names on it are a stranger's, too small to read) | 1758825178518-ca48833a6c57 |
+| rsvp.jpg | RSVP | Cream wedding stationery suite (a stranger's names, too small to read; but **"WEDDING PARTY" and "SAVE THE DATE" are readable**, so the Sangeet-only site uses `more-dandiya.jpg` for its RSVP card instead; don't reuse this photo anywhere the wedding must stay hidden) | 1758825178518-ca48833a6c57 |
 | hashtag.jpg | #RiyaSangHemang | Instant prints on a dark table | 1771681617105-745758eae89b |
 | more-haldi.jpg | More to come (collage) | Haldi paste on a marigold tray | 1776581487097-1e40a4c0a15d |
 | more-mehndi.jpg | More to come (collage) | Mehndi hands | 1732118400647-a81e3b37be87 |
