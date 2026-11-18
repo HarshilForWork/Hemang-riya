@@ -20,10 +20,10 @@
   // Static page text, matched to data-i18n="key" in index.html
   const UI = {
     en: {
-      intro: "welcome to our love story...", introCta: "Click to enter",
+      intro: "welcome to the story of...", introCta: "scroll to begin",
       navSangeet: "Sangeet", navWedding: "Wedding", navFaq: "FAQ", navRsvp: "RSVP",
       heroName: "Riya & Hemang", heroPrompt: "Scroll to explore",
-      storyIntro: "we are pleased to cordially invite you to the adventure that is...", storyTitle: "our love story",
+      storyIntro: "a few moments that led us here...", storyTitle: "our love story",
       eventLead: "so please join us...", eventDate: "january 22 & 27, 2027",
       cdDays: "Days", cdHours: "Hours", cdMinutes: "Minutes", cdSeconds: "Seconds", until: "until the wedding",
       sangeetKicker: "The Sangeet", sangeetDate: "Friday, 22 January 2027", time: "6:00 PM onwards",
@@ -49,10 +49,10 @@
       ],
     },
     gu: {
-      intro: "અમારી પ્રેમકહાણીમાં આપનું સ્વાગત છે...", introCta: "પ્રવેશ કરવા ક્લિક કરો",
+      intro: "આપનું સ્વાગત છે, આ કહાણી છે...", introCta: "શરૂ કરવા સ્ક્રોલ કરો",
       navSangeet: "સંગીત", navWedding: "લગ્ન", navFaq: "પ્રશ્નો", navRsvp: "હાજરી જણાવો",
       heroName: "રિયા & હેમાંગ", heroPrompt: "આગળ જોવા સ્ક્રોલ કરો",
-      storyIntro: "આપને ભાવભર્યું આમંત્રણ આપતાં અમને આનંદ થાય છે, એ સાહસમાં જેનું નામ છે...", storyTitle: "અમારી પ્રેમકહાણી",
+      storyIntro: "થોડી પળો, જે અમને અહીં સુધી લાવી...", storyTitle: "અમારી પ્રેમકહાણી",
       eventLead: "તો જરૂર પધારજો...", eventDate: "૨૨ અને ૨૭ જાન્યુઆરી, ૨૦૨૭",
       cdDays: "દિવસ", cdHours: "કલાક", cdMinutes: "મિનિટ", cdSeconds: "સેકન્ડ", until: "લગ્નના શુભ દિવસ સુધી",
       sangeetKicker: "સંગીત સંધ્યા", sangeetDate: "શુક્રવાર, ૨૨ જાન્યુઆરી ૨૦૨૭", time: "સાંજે ૬:૦૦ વાગ્યાથી",
@@ -80,9 +80,9 @@
 
   // Gujarati accent lines shown only in "Mix" mode (data-accent="key")
   const ACCENT = {
-    intro: "અમારી પ્રેમકહાણીમાં આપનું સ્વાગત છે",
+    intro: "આપનું સ્વાગત છે, આ કહાણી છે",
     hero: "રિયા & હેમાંગ",
-    storyIntro: "અમારી પ્રેમકહાણીના સાહસમાં આપને ભાવભર્યું આમંત્રણ",
+    storyIntro: "થોડી પળો, જે અમને અહીં સુધી લાવી",
     storyTitle: "અમારી પ્રેમકહાણી",
     eventLead: "જરૂર પધારજો",
     sangeetKicker: "સંગીત સંધ્યા",
@@ -164,17 +164,17 @@
       },
     },
     {
-      side: "right", photos: [5, 41, 40, 43, 6, 8, 44, 45, 61],
-      tags: ["#FirstBigDate", "#SevenCourses", "#NewYearsEve", "#FirstOfMany", "#FirstMovieDate", "#FirstValentines", "#ValentinesDinner", "#FirstMuseumDate", "#FirstArtsyDate"],
+      side: "right", photos: [41, 40, 43, 6, 8, 44, 45, 61],
+      tags: ["#FirstBigDate", "#NewYearsEve", "#FirstOfMany", "#FirstMovieDate", "#FirstValentines", "#ValentinesDinner", "#FirstMuseumDate", "#FirstArtsyDate"],
       en: {
         title: "chapter two: our firsts, of so many dates",
         body: "Our first big date was a seven-course dinner on the last night of 2025. Then came our first movie, our first Valentine's, a museum date full of illusions and our first artsy date — and we're still counting.",
-        caps: ["", "", "", "", "", "", "", "", ""],
+        caps: ["", "", "", "", "", "", "", ""],
       },
       gu: {
         title: "પ્રકરણ બે: અમારી પહેલી વારની કેટલીય ડેટ્સ",
         body: "અમારી પહેલી મોટી ડેટ ૨૦૨૫ની છેલ્લી રાત્રે સાત-કોર્સ ડિનર હતી. પછી આવી અમારી પહેલી મૂવી, પહેલો વેલેન્ટાઇન્સ ડે, ભ્રમથી ભરેલી મ્યુઝિયમ ડેટ અને અમારી પહેલી આર્ટી ડેટ — અને ગણતરી હજી ચાલુ છે.",
-        caps: ["", "", "", "", "", "", "", "", ""],
+        caps: ["", "", "", "", "", "", "", ""],
       },
     },
     {
@@ -191,17 +191,17 @@
       },
     },
     {
-      side: "right", photos: [16, 17, 18, 51, 52, 57, 58, 59, 60],
-      tags: [null, null, null, null, null, "#FirstNavratri", "#GarbaNights", "#FirstFallColours", null],
+      side: "right", photos: [16, 17, 18, 51, 57, 58, 59, 60],
+      tags: [null, null, null, null, "#FirstNavratri", "#GarbaNights", "#FirstFallColours", null],
       en: {
         title: "chapter four: mexico, garba & fall colours",
         body: "For her birthday we escaped to Mexico for a weekend. Then came our first Navratri together and our first fall colours trip up north.",
-        caps: ["Her birthday weekend in Mexico", "Off-roading, birthday edition", "Making a splash in Mexico", "Palm trees and birthday smiles", "Into the cenote", "", "", "", "Fall colours, up north"],
+        caps: ["Her birthday weekend in Mexico", "Off-roading, birthday edition", "Making a splash in Mexico", "Palm trees and birthday smiles", "", "", "", "Fall colours, up north"],
       },
       gu: {
         title: "પ્રકરણ ચાર: મેક્સિકો, ગરબા અને પાનખરના રંગો",
         body: "તેના જન્મદિવસે અમે વીકએન્ડ માટે મેક્સિકો ગયા. પછી આવી અમારી સાથેની પહેલી નવરાત્રિ અને પાનખરના રંગો જોવા ઉત્તર તરફની અમારી પહેલી ટ્રિપ.",
-        caps: ["મેક્સિકોમાં તેનો બર્થડે વીકએન્ડ", "બર્થડે સ્પેશિયલ ઑફ-રોડિંગ", "મેક્સિકોમાં છબછબિયાં", "તાડનાં વૃક્ષો અને બર્થડે સ્મિત", "મેક્સિકોની ગુફાના પાણીમાં", "", "", "", "ઉત્તરમાં પાનખરના રંગો"],
+        caps: ["મેક્સિકોમાં તેનો બર્થડે વીકએન્ડ", "બર્થડે સ્પેશિયલ ઑફ-રોડિંગ", "મેક્સિકોમાં છબછબિયાં", "તાડનાં વૃક્ષો અને બર્થડે સ્મિત", "", "", "", "ઉત્તરમાં પાનખરના રંગો"],
       },
     },
     {
@@ -521,7 +521,12 @@
     window.scrollTo(0, 0);
   };
   intro.addEventListener("click", enter);
-  intro.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); enter(); } });
+  // "scroll to begin": a wheel scroll, a swipe or a tap all open the site
+  let wheelSum = 0, touchY = null;
+  intro.addEventListener("wheel", (e) => { wheelSum += Math.abs(e.deltaY); if (wheelSum > 30) enter(); }, { passive: true });
+  intro.addEventListener("touchstart", (e) => { touchY = e.touches[0].clientY; }, { passive: true });
+  intro.addEventListener("touchmove", (e) => { if (touchY !== null && Math.abs(e.touches[0].clientY - touchY) > 24) enter(); }, { passive: true });
+  intro.addEventListener("keydown", (e) => { if (["Enter", " ", "ArrowDown", "PageDown"].includes(e.key)) { e.preventDefault(); enter(); } });
 
   /* ---------------- NAV ---------------- */
   const nav = $("#nav");

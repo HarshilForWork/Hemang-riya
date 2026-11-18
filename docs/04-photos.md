@@ -11,7 +11,7 @@ The couple's photos were collected in a folder on Hemang's Mac (`~/Downloads/wed
 | 1 | 28 Nov 2025 | Christmas tree lighting at the Distillery District, Toronto — their **second date**, first hot chocolate, first photo together (they first met at a concert, no photos) | Story ch.1 |
 | 2 | 20 Dec 2025 | Not described | — |
 | 3, 4 | 25 Dec 2025 | Looking at Christmas trees in downtown Toronto | Story ch.1 |
-| 5, 40, 41, 43 | 31 Dec 2025 | First big date: a seven-course dinner (40 dressed up in the lift, 41 dessert, 43 at the restaurant entrance) | Story ch.2: #FirstBigDate, #NewYearsEve, #SevenCourses, #FirstOfMany |
+| 5, 40, 41, 43 | 31 Dec 2025 | First big date: a seven-course dinner (40 dressed up in the lift, 41 dessert, 43 at the restaurant entrance) | Story ch.2: 41 #FirstBigDate, 40 #NewYearsEve, 43 #FirstOfMany; 5 is a hero side photo only (bottom-right on phones) |
 | 6 | 16 Jan 2026 | First movie date | Story ch.2: #FirstMovieDate |
 | 7 | 7 Feb 2026 | Trip to Niagara Falls | Story ch.3 |
 | 8, 44 | 14 Feb 2026 | First Valentine's date (44 = the dinner) | Story ch.2: #FirstValentines, #ValentinesDinner |
@@ -25,7 +25,7 @@ The couple's photos were collected in a folder on Hemang's Mac (`~/Downloads/wed
 | 14 | 11 Jul 2026 | Summer selfie (GPS near the Rogers Centre) | — (was a hero side photo; swapped for 52) |
 | 49 | 11 Jul 2026 | Hemang asked to ignore | — |
 | 50 | 24 Jul 2026 | Selfie on the plane to Mexico | — (removed: Hemang felt it wasn't right for the site) |
-| 15–18, 51–53 | 24–28 Jul 2026 | Weekend getaway to Mexico for Riya's birthday (15 ≈ 16; 52 = at a cenote) | 16, 17, 18, 51, 52 in story ch.4; 52 also a hero side photo (bottom-left on phones) |
+| 15–18, 51–53 | 24–28 Jul 2026 | Weekend getaway to Mexico for Riya's birthday (15 ≈ 16; 52 = at a cenote) | 16, 17, 18, 51 in story ch.4; 52 is a hero side photo only (bottom-left on phones) |
 | 54 | 22 Aug 2026 | Sunny patio in Toronto, both in caps | Hero side photo (top-right on phones) |
 | 19–21, 23, 55–58 | 5 Sep & 17 Oct 2026 | Their first Navratri together (55, 56 = posed portrait in black outfits) | 57, 58 story ch.4 (#FirstNavratri, #GarbaNights); 21 Sangeet event photo; 20 Sangeet card; 23 "More to come" card |
 | 22, 59, 60 | 4 Oct 2026 | First fall colours trip (Hemang said Muskoka; GPS says Algonquin Park, so the site says "up north") | 59, 60 story ch.4 (#FirstFallColours on 59) |

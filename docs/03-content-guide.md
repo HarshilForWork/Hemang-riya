@@ -21,16 +21,20 @@ All guest-facing text is in `app.js`, near the top. Every entry has an English (
 
 ## Invitation line before the story
 
-`UI.storyIntro` + `UI.storyTitle`: "we are pleased to cordially invite you to the adventure that is…" → **"our love story"** (Gujarati: "આપને ભાવભર્યું આમંત્રણ આપતાં અમને આનંદ થાય છે, એ સાહસમાં જેનું નામ છે…" → "અમારી પ્રેમકહાણી"). Hemang's wording, from an Instagram post he liked; it replaced "you're cordially invited to celebrate the story of… our story".
+`UI.storyIntro` + `UI.storyTitle`: "a few moments that led us here…" → **"our love story"** (Gujarati: "થોડી પળો, જે અમને અહીં સુધી લાવી…" → "અમારી પ્રેમકહાણી"). Hemang chose this (option A of five calm, not-cheesy suggestions) on 18 Nov 2026. Earlier versions: "you're cordially invited to celebrate the story of… our story", then "we are pleased to cordially invite you to the adventure that is… our love story".
+
+## Welcome screen
+
+`UI.intro` / `UI.introCta`: "welcome to the story of…" / "scroll to begin" (Gujarati: "આપનું સ્વાગત છે, આ કહાણી છે…" / "શરૂ કરવા સ્ક્રોલ કરો"). The hero's big name "Riya & Hemang" completes the sentence. The page is locked behind this screen, so `app.js` listens on it for a wheel scroll, a swipe, Enter/Space/↓/PageDown, or a tap — any of them opens the site.
 
 ## Story chapters, captions and hashtags (current)
 
 Every story photo is framed like an Instagram print: white border with a deeper bottom edge, and words handwritten on that edge. Chapter two is a dedicated "firsts" chapter: each photo has its hashtag there. Other "first" photos elsewhere in the story get the same treatment; untagged photos show their caption instead. **No dates on the photos** (Hemang, 18 Nov 2026). Hashtags are in Latin script in all languages (like #RiyaSangHemang).
 
 1. *a concert, then hot chocolate* — The Distillery District, our first photo · #FirstHotChocolate (69) · Our first December, twinkle lights & all · Cold noses, warm hearts
-2. *our firsts, of so many dates* — #FirstBigDate (5) · #SevenCourses (41) · #NewYearsEve (40) · #FirstOfMany (43) · #FirstMovieDate (6) · #FirstValentines (8) · #ValentinesDinner (44) · #FirstMuseumDate (45) · #FirstArtsyDate (61, no date known)
+2. *our firsts, of so many dates* — #FirstBigDate (41, the seven-course dinner) · #NewYearsEve (40) · #FirstOfMany (43) · #FirstMovieDate (6) · #FirstValentines (8) · #ValentinesDinner (44) · #FirstMuseumDate (45) · #FirstArtsyDate (61, no date known)
 3. *our city, our adventures* — Niagara Falls · Moving day, with the best helper · Two fans, full World Cup fever · World Cup trophy sighting! · Allan Gardens · The Portugal parade, for Ronaldo's second-last World Cup game
-4. *mexico, garba & fall colours* — Her birthday weekend in Mexico · Off-roading, birthday edition · Making a splash in Mexico · Palm trees and birthday smiles · Into the cenote · #FirstNavratri (57) · #GarbaNights (58) · #FirstFallColours (59) · Fall colours, up north (60)
+4. *mexico, garba & fall colours* — Her birthday weekend in Mexico · Off-roading, birthday edition · Making a splash in Mexico · Palm trees and birthday smiles · #FirstNavratri (57) · #GarbaNights (58) · #FirstFallColours (59) · Fall colours, up north (60)
 5. *the question* — The surprise · She said yes · Engaged · #FirstDiwali (38)
 
 Photo 60 has a caption ("Fall colours, up north") rather than a hashtag; it could take one now that hashtags sit below the photo.

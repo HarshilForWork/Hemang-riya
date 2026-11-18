@@ -16,7 +16,9 @@
 | New photos: 40/41/43 with the big-date dinner, 44 Valentine's, 45 museum date, 46/47 replace the trophy photos, 48 replaces the parade photo, 51/52 Mexico, 57/58 replace Navratri, 59/60 replace the fall hike, 61 artsy date; 49 ignored | Hemang's instructions (18 Nov 2026) |
 | Photo 50 (plane selfie) not used, and no "first flight" chapter wording | Hemang: not appropriate for the website |
 | Moving day moved from the firsts chapter to "our city, our adventures" | It isn't a date; keeps the firsts chapter about dates |
-| Invitation line: "we are pleased to cordially invite you to the adventure that is… our love story" | Hemang found the old "cordially invited to celebrate the story of… our story" didn't read well |
+| Invitation line: "a few moments that led us here… our love story" | Hemang wanted something calm, subtle and not cheesy; two "cordially invite" versions before it didn't read well |
+| Welcome screen: "welcome to the story of…" + "scroll to begin"; scroll, swipe, key or tap all enter | Hemang's idea: the hero name "Riya & Hemang" finishes the sentence; guests naturally scroll on phones, so scrolling must work, not just a tap |
+| Photos 5 and 52 only in the opening collage, not also in the story; #FirstBigDate moved to 41 (the dinner), #SevenCourses dropped | Hemang: no repeats once they're on top |
 | Opening collage side photos = 68 (ring), 54, 52, 5 — no pre-wedding shoot photos | Hemang wants the shoot photos saved for save-the-date and countdown posts ("10 days to go" etc.). First set was 68/14/67/56; Hemang then swapped 56→5, 14→52, 67→54 (52 and 5 also appear in the story) |
 | Hot chocolate photo 69 added to chapter one with #FirstHotChocolate | Hemang's request |
 | Three languages EN / ગુજ / Mix; Hind Vadodara + Rasa fonts | Carried over from the earlier e-invite; Hindi ruled out |

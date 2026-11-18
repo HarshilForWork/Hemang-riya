@@ -51,4 +51,4 @@ node tools/test/cdp-test.mjs "http://localhost:5173/?lang=en" 390 664 1 tools/te
 
 ## Current status (18 Nov 2026)
 
-Live and working: hero, story (32 photos, 5 chapters, Instagram-print frames with handwritten hashtags on the "firsts", no dates), events, RSVP form with travel and stay, details, FAQ, footer, three languages. Waiting on: Sangeet/Wedding photos from Hemang, the Google Sheet for RSVPs (personal Gmail, paused), Gujarati proofreading, a test on a real iPhone. Full list in docs/07.
+Live and working: hero, story (30 photos, 5 chapters, Instagram-print frames with handwritten hashtags on the "firsts", no dates), events, RSVP form with travel and stay, details, FAQ, footer, three languages. Waiting on: Sangeet/Wedding photos from Hemang, the Google Sheet for RSVPs (personal Gmail, paused), Gujarati proofreading, a test on a real iPhone. Full list in docs/07.

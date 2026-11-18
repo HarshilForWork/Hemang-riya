@@ -33,10 +33,10 @@ Many guests travel Mumbai → Nadiad for the wedding. The site suggests trains (
 
 ## What's on the site (top to bottom)
 
-1. Welcome screen ("welcome to our love story…", click to enter)
+1. Welcome screen ("welcome to the story of…", "scroll to begin"; a scroll, swipe, arrow key or tap opens the site), and the hero's big "Riya & Hemang" finishes the sentence
 2. Hero: photo 37 (Toronto streetcar) shrinking into a collage with four more photos — 68 (Riya showing off the ring), 54 (sunny patio, in caps), 52 (Mexico cenote), 5 (first big date, elevator selfie); deliberately **not** pre-wedding shoot photos
-3. "we are pleased to cordially invite you to the adventure that is…" (word-by-word reveal), leading into the title "our love story"
-4. **Our love story**: five chapters, 32 photos framed like Instagram prints (white border, deeper bottom edge) that stack as you scroll; chapter two, "our firsts, of so many dates", and other "first" photos have a hashtag handwritten on the bottom edge (#FirstMovieDate, #FirstValentines…), other photos their caption; no dates on any photo
+3. "a few moments that led us here…" (word-by-word reveal), leading into the title "our love story"
+4. **Our love story**: five chapters, 30 photos framed like Instagram prints (white border, deeper bottom edge) that stack as you scroll; chapter two, "our firsts, of so many dates", and other "first" photos have a hashtag handwritten on the bottom edge (#FirstMovieDate, #FirstValentines…), other photos their caption; no dates on any photo
 5. "so please join us…" with the dates and a countdown
 6. The two events side by side (photo, date, time, venue, map link)
 7. RSVP call-out (opens the RSVP form)
