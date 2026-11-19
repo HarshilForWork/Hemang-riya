@@ -21,8 +21,8 @@ The couple sends each group of guests **one** link. There are **three separate c
 |---|---|---|---|---|
 | **Close guests**, invited to both events | https://hemang-riya.vercel.app | The whole story (5 chapters, 30 photos), Sangeet + Wedding, Travel & Stay | The couple's main Google Form (asks about the wedding) | `HarshilForWork/Hemang-riya` (public) · `site/` |
 | **Most guests**, invited to both events | https://riya-hemang-invite.vercel.app | The same look and both events (Travel & Stay too), much less to read: one-chapter story, 3 FAQs | The same main Google Form | `HarshilForWork/riya-hemang-invite` (private) · `lite-site/` |
-| **Sangeet-only guests** (Hemang's friends) | Sangeet site, `/` (not deployed yet) | Only the Sangeet (Fri 22 Jan 2027, Nerul, Navi Mumbai). **Never the wedding** | Its own Sangeet-only Google Form, in English: name, coming?, how many (made 19 Nov 2026 from the script in that repo's `tools/forms/`) | `HarshilForWork/Hemang-riya-sangeet` (public) · `sangeet-site/` |
-| **Riya's friends** who won't come but should still get the invite | Sangeet site, **`/riya`** (not deployed yet) | The same Sangeet page | **None**: no RSVP button, section, card or FAQ | Same repo and page; the path switches RSVP off |
+| **Sangeet-only guests** (Hemang's friends) | https://heya-sangeet.vercel.app | Only the Sangeet (Fri 22 Jan 2027, Nerul, Navi Mumbai). **Never the wedding** | Its own Sangeet-only Google Form, in English: name, coming?, how many (made 19 Nov 2026 from the script in that repo's `tools/forms/`) | `HarshilForWork/Hemang-riya-sangeet` (public) · `sangeet-site/` |
+| **Riya's friends** who won't come but should still get the invite | **https://heya-sangeet.vercel.app/riya** | The same Sangeet page | **None**: no RSVP button, section, card or FAQ | Same repo and page; the path switches RSVP off |
 
 - **Never send a Sangeet-only guest (rows 3–4) either of the first two links**: they show the wedding. Never put wedding details on the Sangeet site.
 - The copies don't share code. A fix or content change (RSVP link, contacts, photos, wording, bug fixes) reaches only the site you change. Ask which sites it applies to, then update, test and push each one.
@@ -91,4 +91,4 @@ Live and working:
 - footer quote on a dark frame
 - three languages
 
-Siblings: the short invite is live. The Sangeet-only site is built but not deployed; it has two links (`/` with RSVP, `/riya` without) and is waiting for its own Sangeet-only RSVP form (19 Nov 2026). Still open: Gujarati proofreading, a test on a real iPhone, and the accommodation details. Full list in docs/07.
+Siblings: the short invite is live. The Sangeet-only site is live at https://heya-sangeet.vercel.app (with its own Sangeet-only RSVP form) and https://heya-sangeet.vercel.app/riya (no RSVP), 19 Nov 2026. Still open: Gujarati proofreading, a test on a real iPhone, and the accommodation details. Full list in docs/07.
