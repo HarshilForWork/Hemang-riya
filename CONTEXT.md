@@ -13,7 +13,7 @@ The wedding website for **Riya & Hemang**: a single static page (HTML/CSS/JS, no
 
 The layout and scroll animations are modelled on a Cordially "origins" wedding template; all content and photos are Riya & Hemang's own.
 
-## Who gets which link (three sites, four links)
+## Who gets which link (three sites, five links)
 
 The couple sends each group of guests **one** link. There are **three separate copies** of this code; each is its own git repo with its own `CONTEXT.md`. This one is the full site (row 1).
 
@@ -21,10 +21,12 @@ The couple sends each group of guests **one** link. There are **three separate c
 |---|---|---|---|---|
 | **Close guests**, invited to both events | https://hemang-riya.vercel.app | The whole story (5 chapters, 30 photos), Sangeet + Wedding, Travel & Stay | The couple's main Google Form (asks about the wedding) | `HarshilForWork/Hemang-riya` (public) · `site/` |
 | **Most guests**, invited to both events | https://riya-hemang-invite.vercel.app | The same look and both events (Travel & Stay too), much less to read: one-chapter story, 3 FAQs | The same main Google Form | `HarshilForWork/riya-hemang-invite` (private) · `lite-site/` |
+| **Riya's guests**, invited to both events | **https://riya-hemang-invite.vercel.app/riya** | The same short invite, but the contacts (the FAQ's "Reach out to…" link and the RSVP answer) are Riya's family: Dharmesh Raval (her dad) and Kunj Raval (her brother) | The same main Google Form (its description and thank-you still name Hemang and Harsh) | Same repo and page; the path switches the contacts |
 | **Sangeet-only guests** (Hemang's friends) | https://heya-sangeet.vercel.app | Only the Sangeet (Fri 22 Jan 2027, Nerul, Navi Mumbai). **Never the wedding** | Its own Sangeet-only Google Form, in English: name, coming?, how many (made 19 Nov 2026 from the script in that repo's `tools/forms/`) | `HarshilForWork/Hemang-riya-sangeet` (public) · `sangeet-site/` |
-| **Riya's friends** who won't come but should still get the invite | **https://heya-sangeet.vercel.app/riya** | The same Sangeet page | **None**: no RSVP button, section, card or FAQ | Same repo and page; the path switches RSVP off |
+| **Riya's friends** who won't come but should still get the invite | **https://heya-sangeet.vercel.app/riya** | The same Sangeet page, with Riya's family as the contacts (Dharmesh and Kunj Raval) | **None**: no RSVP button, section, card or FAQ | Same repo and page; the path switches RSVP off and the contacts |
 
-- **Never send a Sangeet-only guest (rows 3–4) either of the first two links**: they show the wedding. Never put wedding details on the Sangeet site.
+- **Contacts** (19 Nov 2026): the `/` links give Hemang (+91 97693 33516) and Harsh (+91 83698 94213). Both `/riya` links (rows 3 and 5) give Riya's family instead, Dharmesh Raval (her dad, +91 99988 70158) and Kunj Raval (her brother, +91 70169 06401), so her guests reach her family and Hemang's guests reach his.
+- **Never send a Sangeet-only guest (rows 4–5) any of the first three links**: they show the wedding. Never put wedding details on the Sangeet site.
 - The copies don't share code. A fix or content change (RSVP link, contacts, photos, wording, bug fixes) reaches only the site you change. Ask which sites it applies to, then update, test and push each one.
 - Folders: on Hemang's Mac the repos sit side by side as `site/`, `lite-site/`, `sangeet-site/` (the docs use these names); on the Windows laptop they are `Hemang-riya/`, `riya-hemang-invite/`, `Hemang-riya-sangeet/`.
 - R&H logo explorations are in `logo-options/` next to the sites on the Mac, but the couple decided against any R&H / HR monogram, so none is used.
@@ -91,4 +93,4 @@ Live and working:
 - footer quote on a dark frame
 - three languages
 
-Siblings: the short invite is live. The Sangeet-only site is live at https://heya-sangeet.vercel.app (with its own Sangeet-only RSVP form) and https://heya-sangeet.vercel.app/riya (no RSVP), 19 Nov 2026. Still open: Gujarati proofreading, a test on a real iPhone, and the accommodation details. Full list in docs/07.
+Siblings: the short invite is live, plus Riya's link https://riya-hemang-invite.vercel.app/riya for her guests (her family as the contacts). The Sangeet-only site is live at https://heya-sangeet.vercel.app (with its own Sangeet-only RSVP form) and https://heya-sangeet.vercel.app/riya (no RSVP, Riya's family as the contacts), 19 Nov 2026. Still open: Gujarati proofreading, a test on a real iPhone, and the accommodation details. Full list in docs/07.
