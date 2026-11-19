@@ -23,7 +23,7 @@ The couple sends different guests different links, so there are **three separate
 | **Short invite** | `lite-site/` | `HarshilForWork/riya-hemang-invite` (private) | https://riya-hemang-invite.vercel.app | Most guests: the same look with much less to read (one-chapter story, 3 FAQs, no closing quote) |
 | **Sangeet-only** | `sangeet-site/` | `HarshilForWork/Hemang-riya-sangeet` (public) | not deployed yet | Guests invited to the Sangeet but **not** the wedding. It must never mention the wedding |
 
-They don't share code. A fix or content change here (RSVP link, contacts, photos, wording, bug fixes) does **not** reach the others. When you change something, ask which sites it applies to and update each one, testing and pushing each. R&H logo explorations (not used yet) are in `logo-options/` next to the sites.
+They don't share code. A fix or content change here (RSVP link, contacts, photos, wording, bug fixes) does **not** reach the others. When you change something, ask which sites it applies to and update each one, testing and pushing each. R&H logo explorations are in `logo-options/` next to the sites, but the couple decided against any R&H / HR monogram, so none is used.
 
 ## Documentation map
 

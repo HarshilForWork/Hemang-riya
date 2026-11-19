@@ -66,4 +66,4 @@
 - [ ] Photos 2, 39, 53, 55, 62–66 have no context yet (unused); 49 and 50 are not to be used.
 - [ ] **Repo visibility** — `Hemang-riya` and `Hemang-riya-sangeet` are public on GitHub (family photos, phone numbers). Suggested to Hemang to make them private; his call.
 - [ ] **Sangeet-only site** — not deployed yet (repo exists); its own open items are in `sangeet-site/CONTEXT.md` (separate Sangeet Google Form, copy approval).
-- [ ] **R&H logo** — options in `logo-options/` (Claude Design canvas linked in its README, plus three Canva designs). Hemang hasn't picked one; the nav still shows plain text "R&H".
+- [x] **R&H logo**: dropped. The couple looked at every option (in `logo-options/`, plus Canva designs) and decided against any R&H / HR monogram. The nav has no logo now, just the links, centred (RSVP alone on the right on phones). Don't add initials back; the full names "Riya & Hemang" are fine where they already appear.
