@@ -23,7 +23,7 @@ out.facesCut = $$("img[data-n]").filter((el) => el.parentElement.clientWidth && 
 // detail cards and pop-up banners use artwork (stock photo or illustration), never the couple's photos
 out.cardCouplePhotos = $$(".dcard img[data-n]").map((el) => el.dataset.n);
 out.bannerCouplePhotos = []; out.bannerEmpty = [];
-for (const id of ["sangeet", "wedding", "travel", "hashtag", "more"]) { // RSVP opens the Google Form (test-rsvp.js)
+for (const id of ["sangeet", "wedding", "travel", "more"]) { // RSVP opens the Google Form (test-rsvp.js)
   $(`.dcard[data-overlay="${id}"]`).click(); await wait(650);
   const b = $(".op__banner");
   if (b.querySelector("img[data-n]")) out.bannerCouplePhotos.push(id);

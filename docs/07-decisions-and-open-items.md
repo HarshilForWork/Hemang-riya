@@ -4,6 +4,7 @@
 
 | Decision | Reason / who decided |
 |---|---|
+| No FAQ and no wedding hashtag on any site (22 Nov 2026): FAQ section, nav link, #RiyaSangHemang card/pop-up, footer tag and page-description hashtag removed; the "Reach out to …" link moved under the RSVP button; detail cards now centre a short last row | Hemang: "I don't need Q&A… there's no hashtag" |
 | Rebuild the Cordially "origins" demo (jim-pam.cordially.io) as the base, then replace all content | Hemang wanted that look and scroll animation |
 | Hero photo = 37 (Toronto streetcar) | Hemang's choice (replaced the twirl photo 30) |
 | Never crop faces; polaroids take the photo's shape; face-aware placement elsewhere | Hemang's top requirement (raised twice) |
